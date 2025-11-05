@@ -9,22 +9,22 @@ No JS
 - The panels are closed by default.
 - Clicking the `summary` toggles the open/close state.
 
-## Basic
+## [Basic](basic)
 - [Basline Widely Available](https://webstatus.dev/features/details)
 
-## Initially Open
+## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
 - [Basline Widely Available](https://webstatus.dev/features/details)
 
-## Exclusive Open
+## [Exclusive Open](exclusive-open)
 - Add a `name` attribute with the same value to multiple `details` elements to restrict only one to be open at a time, similar to `radio` buttons.
 - [Basline Widely Available](https://webstatus.dev/features/details)
 
-## Adjust `::marker`
+## [Adjust `::marker`](adjust-marker)
 - Adjust the `::marker` appearance via CSS.
 - [Baseline Limited Availability](https://webstatus.dev/features/marker)
 
-## Animate Open/Close
+## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - [Baseline Newly Availabile](https://webstatus.dev/?q=details-content+OR+content-visibility+OR+transition-behavior)
 - [Baseline Limited Availability](https://webstatus.dev/features/interpolate-size)
