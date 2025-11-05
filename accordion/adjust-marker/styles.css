@@ -1,0 +1,21 @@
+.animate-marker {
+  & summary::marker {
+    content: none; /* Hide marker for Modern browsers */
+  }
+  & summary {
+    list-style: none; /* Hide marker for WebKit browsers */
+    position: relative;
+    padding-inline-start: 1.5rem;
+    &::before {
+      content: '▶'; /* Replace marker so it can be animated */
+      position: absolute;
+      inset-inline-start: 0.5rem;
+      inset-block-start: 0.75rem;
+      font-size: 0.75em;
+      transition: rotate 0.25s ease-in;
+    }
+    [open] &::before {
+      rotate: 90deg;
+    }
+  }
+}
