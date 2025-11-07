@@ -1,21 +1,23 @@
 .animate-marker {
   & summary::marker {
-    content: none; /* Hide marker for Modern browsers */
+    content: none; /* Hide default marker for Modern browsers */
   }
   & summary {
-    list-style: none; /* Hide marker for WebKit browsers */
-    position: relative;
+    list-style: none; /* Hide default marker for older WebKit browsers */
+    position: relative; /* Set positioning context for custom marker below */
     padding-inline-start: 1.5rem; /* Adust for your layout */
     &::before {
-      content: '▶'; /* Replace marker so it can be animated */
+      content: '▶'; /* Replace default marker so it can be animated */
       position: absolute;
       inset-inline-start: 0.5rem; /* Adust for your layout */
       inset-block-start: 0.75rem; /* Adust for your layout */
       font-size: 0.75em; /* Adust for your layout */
-      transition: rotate 0.25s ease-in;
+      @media (prefers-reduced-motion: no-preference) { /* Be nice to others */
+        transition: rotate 0.25s ease-in;
+      }
     }
     [open] &::before {
-      rotate: 90deg;
+      rotate: 90deg; /* Simple rotation to indicate panel is open */
     }
   }
 }
