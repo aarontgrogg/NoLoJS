@@ -7,31 +7,31 @@ aka: Expanding Content Panel
 - Clicking the `summary` toggles the open/close state.
 
 ## [Basic](basic)
-- No JS
+- JS: No
 - Basline: [Widely Available](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
-- No JS
+- JS: No
 - Basline: [Widely Available](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Exclusive Open](exclusive-open)
 - Add a `name` attribute with the same value to multiple `details` elements to restrict only one to be open at a time, similar to `radio` buttons.
-- No JS
+- JS: No
 - Basline: [Widely Available](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Adjust `::marker`](adjust-marker)
 - Adjust the `::marker` appearance via CSS.
-- No JS
+- JS: No
 - Basline: [Limited Availability](https://webstatus.dev/features/marker)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
-- No JS
+- JS: No
 - Basline: [Newly Availabile](https://webstatus.dev/?q=details-content+OR+content-visibility+OR+transition-behavior)
 - Basline: [Limited Availability](https://webstatus.dev/features/interpolate-size)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
