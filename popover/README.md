@@ -3,9 +3,10 @@
 aka: Modal / Overlay
 
 - Using the HTML [`popover`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover) attribute creates no-JavaScript popovers.
-- The panels are `positionL fixed` and location "offscreen" by default.
 - There are three native "types", `auto` (default), `manual` and `hint`.\
 (At this time, `hint` is implemented inconsistently, so recommend avoiding it.)
+- The default CSS for any `popover` is: `position: fixed`, `margin: auto` and `display: none` (if not `open`).
+- You can override any of this via CSS.
 - You can also add a `::backdrop`, customize the location and animate the show/hide via CSS.
 
 ## [Auto](auto) (default)
