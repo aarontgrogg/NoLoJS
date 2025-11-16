@@ -18,7 +18,7 @@ aka: Modal / Overlay
 - Basline: [Newly Available](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
 
-## [Add `::backdrop`](backdrop)
+## [Add `::backdrop`](add-backdrop)
 - Add a `::backdrop` via CSS.
 - JS: No
 - Basline: [Widely Availability](https://webstatus.dev/features/backdrop)
