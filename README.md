@@ -6,11 +6,11 @@ Reduce the JS Workload with no- or lo-JS options.
 
 For years, JavaScript has been the web's workhorse. If HTML and CSS couldn't do something, we used JavaScript.
 
-And that has certainly helped push the user’s experience, and HTML and CSS themselves, forward!
+And while that **has** helped push the user’s experience, and HTML and CSS themselves, forward, the web is choking on JS.
 
-But as HTML and CSS gain capabilities, we should transfer any of the JavaScript workload possible to them.
+As HTML and CSS gain capabilities, we should transfer any JavaScript workload possible to them.
 
-This is an organic collection of common JS patterns that can be replaced with just HTML and CSS, and no, or very little, JS.
+This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
 
 As HTML and CSS continue to mature, this collection should expand.
 
