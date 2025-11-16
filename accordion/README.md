@@ -1,4 +1,4 @@
-# accordion
+# Accordion
 
 aka: Expanding Content Panel
 
