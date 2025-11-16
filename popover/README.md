@@ -1,4 +1,4 @@
-# popover
+# Popover
 
 aka: Modal / Overlay
 
