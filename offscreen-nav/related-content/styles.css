@@ -1,0 +1,12 @@
+aside {
+  position: relative;
+  background-color: var(--green-med);
+  border: 4px solid var(--green-dark);
+  padding: .5rem 1rem;
+  max-width: 400px;
+  & button {
+    position: absolute;
+    top: .5rem;
+    right: 1em;
+  }
+}
