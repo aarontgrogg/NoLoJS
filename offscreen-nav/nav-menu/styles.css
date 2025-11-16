@@ -1,0 +1,20 @@
+/* Override User-Agent styles */
+nav {
+  display: block; /* Allows animation */
+  margin: 0; /* Prevents center/center */
+  border: 0; /* Kills fat black border */
+}
+/* Start offstage, animate onstage, add backdrop */
+nav {
+  height: 100vh;
+  translate: -100vw;
+  opacity: 0;
+  transition: all 150ms;
+  &:popover-open {
+    translate: 0;
+    opacity: 1;
+  }
+  &::backdrop {
+    background: rgb(0 0 0 / 50%);
+  }
+}
