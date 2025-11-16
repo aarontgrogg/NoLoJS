@@ -19,6 +19,12 @@ aka: Modal / Overlay
 - Basline: [Newly Available](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
 
+## [Add "close" button](add-close-button)
+- Add a `::backdrop` via CSS.
+- JS: No
+- Basline: [Widely Availability](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
+- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+
 ## [Add `::backdrop`](add-backdrop)
 - Add a `::backdrop` via CSS.
 - JS: No
