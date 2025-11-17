@@ -1,0 +1,13 @@
+<button popovertarget="pop-with-close">
+   Toggle Related Content with "close" button
+</button>
+<dialog popover="manual" id="pop-with-close">
+  <h2>I'm some Related Content with a "close" button!</h2>
+  <p>A <code>manual</code> popover can <strong>not</strong> be "light dismissed".</p>
+  <p>Opening a <code>manual</code> popover does <strong>not</strong> automatically close any other <code>manual</code> popovers that were open, but <em>will</em> close any <code>auto</code> popovers that were open.</p>
+  <p>Clicking the element that opened an <code>auto</code> popover a second time will close the popover that it opened.</p>
+  <p>You can also add a "close" button to any popover; note the `popovertargetaction="hide"` on the button below.</p>
+  <p>The default CSS is initially `position: fixed` and hidden offscreen.</p>
+  <p>When opened, the default CSS positions the popover center/center on screen.</p>
+  <button popovertarget="pop-with-close" popovertargetaction="hide">×</button>
+</dialog>
