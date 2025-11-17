@@ -18,10 +18,16 @@
     background-color: rgb(0 0 0 / .5);
   }
 }
+/* Add backdrop in case reduced-motion is requested */
+dialog::backdrop {
+  background-color: rgb(0 0 0 / .5);
+}
 /* Apply both animations */
-dialog {
-    animation: dialogFadeIn 250ms ease-in forwards;
-    &::backdrop {
-      animation: backdropFadeIn 250ms ease-in forwards;
+@media (prefers-reduced-motion: no-preference) {
+  dialog {
+      animation: dialogFadeIn 250ms ease-in forwards;
+      &::backdrop {
+        animation: backdropFadeIn 250ms ease-in forwards;
+    }
   }
 }
