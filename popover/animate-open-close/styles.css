@@ -19,7 +19,7 @@
   }
 }
 /* Apply both animations */
-.popovers--animation dialog {
+dialog {
     animation: dialogFadeIn 250ms ease-in forwards;
     &::backdrop {
       animation: backdropFadeIn 250ms ease-in forwards;
