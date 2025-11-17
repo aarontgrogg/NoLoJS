@@ -1,4 +1,4 @@
-.animate-open-close {
+details {
   interpolate-size: allow-keywords; /* Allows animation between numeric and text values; in this case block-size: 0 --> auto; */
   &::details-content {
     block-size: 0; /* Initial state is 0 height */
