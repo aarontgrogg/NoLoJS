@@ -1,7 +1,7 @@
 # NoLoJS
 Reduce the JS Workload with no- or lo-JS options.
 
-> **I have nothing against JS**, but it has better things to do 
+> **I have nothing against JS**, but it has better things to do \
 > than manage your accordions and offscreen nav menus...
 
 For years, JavaScript has been the web's workhorse. If HTML and CSS couldn't do something, we used JavaScript.
