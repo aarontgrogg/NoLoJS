@@ -9,7 +9,9 @@ nav {
   height: 100vh;
   translate: -100vw;
   opacity: 0;
-  transition: all 150ms;
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all 150ms;
+  }
   &:popover-open {
     translate: 0;
     opacity: 1;
