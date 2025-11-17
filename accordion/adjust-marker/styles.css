@@ -1,4 +1,4 @@
-.animate-marker {
+details {
   & summary::marker {
     content: none; /* Hide default marker for Modern browsers */
   }
