@@ -14,4 +14,4 @@ This is an organic collection of common JS patterns that can be replaced with ju
 
 As HTML and CSS continue to mature, this collection should expand.
 
-Please feel free to copy these and suggest others.
+Please feel free to copy these and suggest others; Issues and PRs welcome!
