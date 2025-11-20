@@ -1,22 +1,22 @@
-# Loading attribute
+# Loading attribute for images
 
-aka: Eager- or Lazy-load images and videos
+aka: Eager- or Lazy-load images
 
-- Using the HTML [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) and [`preload`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video#preload) attributes creates no-JavaScript lazy-loading.
-- `img` elements use the `loading` attriute.
-- `video` elements use the `preload` attriute.
+- Using the HTML [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) attribute on an `img` asset creates no-JavaScript lazy-loading.
 - Tells the browser to either load the asset immediately or delay it.
+- A value of `eager` (default) tells the browser to start downloading the asset immediately.
+- A value of `lazy` tells the browser **NOT** to start downloading the asset immediately, but wait until the asset is nearly within the viewport.
 
 ## [Eager](eager)
 - JS: No
 - Basline: [Newly Available](https://webstatus.dev/features/loading-lazy) \
-  Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
+  In Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
   Neither Firefox nor Safari support `loading` for `iframe`.
 - CodePen: https://codepen.io/aarontgrogg/pen/raezQJv
 
 ## [Lazy](lazy)
 - JS: No
 - Basline: [Newly Available](https://webstatus.dev/features/loading-lazy) \
-  Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
+  In Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
   Neither Firefox nor Safari support `loading` for `iframe`.
 - CodePen: https://codepen.io/aarontgrogg/pen/raezQJv
