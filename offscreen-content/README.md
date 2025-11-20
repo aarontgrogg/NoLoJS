@@ -11,28 +11,28 @@ aka: Offscreen Nav / Related Content
 
 ## [Nav Menu](nav-menu)
 - JS: No
-- Basline: [Newly Available](https://webstatus.dev/features/popover)
+- Baseline: [Newly Available](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Related Content](related-content)
 - JS: No
-- Basline: [Newly Available](https://webstatus.dev/features/popover)
+- Baseline: [Newly Available](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Add "close" button](add-close-button)
 - Add a `::backdrop` via CSS.
 - JS: No
-- Basline: [Widely Availability](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
+- Baseline: [Widely Availability](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Add `::backdrop`](add-backdrop)
 - Add a `::backdrop` via CSS.
 - JS: No
-- Basline: [Widely Availability](https://webstatus.dev/features/backdrop)
+- Baseline: [Widely Availability](https://webstatus.dev/features/backdrop)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - JS: No
-- Basline: [Widely Availability](https://webstatus.dev/features/animations-css)
+- Baseline: [Widely Availability](https://webstatus.dev/features/animations-css)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
