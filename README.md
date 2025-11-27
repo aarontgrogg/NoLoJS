@@ -17,7 +17,7 @@ As HTML and CSS continue to mature, this collection should expand.
 
 Please feel free to copy these and suggest others; Issues and PRs welcome!
 
-## References
+## Resources
 
 There have been plenty of similar articles about this topic. Here are a few:
 - [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/), by [Anthony Ricaud](https://ricaud.me/)
