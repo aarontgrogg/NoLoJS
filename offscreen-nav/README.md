@@ -1,6 +1,6 @@
-# Offscreen Content
+# Offscreen Nav
 
-aka: Related Content
+aka: Mobile Nav
 
 - Using the HTML [`popover`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover) attribute creates no-JavaScript offscreen content.
 - There are three values for the `popover` attribute: `auto` (default, same as none and ""), `manual` and `hint`.\
