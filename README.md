@@ -19,15 +19,15 @@ Please feel free to copy these and suggest others; Issues and PRs welcome!
 
 ## Resources
 
-There have been plenty of articles written on this topic, here are a few (some are a bit dated now, so buyer beware):
-- [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/)
-- [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/), by [Anthony Ricaud](https://ricaud.me/)
-- [When HTML & CSS Replace Javascript: A Simple Element Cheatsheet](https://pagepro.co/blog/html-css-vs-javascript/) by [Joanna Chmiel](https://www.linkedin.com/in/joanna-chmiel-319756164/)
-- [You Don’t Need JavaScript for That](https://www.youtube.com/watch?v=0rZywO6jdU4), by [Kevin Powell](https://www.kevinpowell.co/)
-- [5 things you don't need Javascript for](https://lexoral.com/blog/you-dont-need-js/) by [Steven Waterman](https://lexoral.com/)
-- [Replacing JS with HTML and CSS](https://www.youtube.com/watch?v=d_CVzwfIzHM) by [Chris Ferdinandi](https://gomakethings.com/)
-- [You don't need JavaScript for that](https://www.htmhell.dev/adventcalendar/2023/2/) by [Kilian Valkhof](https://kilianvalkhof.com/)
-- [Modern CSS Techniques That Replace JavaScript](https://medium.com/@muhammadhashir752/modern-css-techniques-that-replace-javascript-and-save-you-time-a9f6c595318a) by [Muhammad Hashir](https://www.linkedin.com/in/m-hashir)
+A lot of people have written articles on this topic, and for quite some time, here are just a few (some are a bit dated now, so buyer-beware):
+- [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/) (2016-05)
+- [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/), by [Anthony Ricaud](https://ricaud.me/) (2020-12)
+- [5 things you don't need Javascript for](https://lexoral.com/blog/you-dont-need-js/) by [Steven Waterman](https://lexoral.com/) (2022-02)
+- [When HTML & CSS Replace Javascript: A Simple Element Cheatsheet](https://pagepro.co/blog/html-css-vs-javascript/) by [Joanna Chmiel](https://www.linkedin.com/in/joanna-chmiel-319756164/) (2022-05)
+- [Replacing JS with HTML and CSS](https://www.youtube.com/watch?v=d_CVzwfIzHM) by [Chris Ferdinandi](https://gomakethings.com/) (2023-05)
+- [You don't need JavaScript for that](https://www.htmhell.dev/adventcalendar/2023/2/) by [Kilian Valkhof](https://kilianvalkhof.com/) (2023-12)
+- [You Don’t Need JavaScript for That](https://www.youtube.com/watch?v=0rZywO6jdU4) by [Kevin Powell](https://www.kevinpowell.co/) (2024-11)
+- [Modern CSS Techniques That Replace JavaScript](https://medium.com/@muhammadhashir752/modern-css-techniques-that-replace-javascript-and-save-you-time-a9f6c595318a) by [Muhammad Hashir](https://www.linkedin.com/in/m-hashir) (2025-06)
 
 And here are a couple of fantastic all-around NoLoJS resources:
 - [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic!)
