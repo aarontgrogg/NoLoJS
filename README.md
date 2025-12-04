@@ -23,6 +23,7 @@ There have been plenty of articles written on this topic, here are a few (some a
 - [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/)
 - [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/), by [Anthony Ricaud](https://ricaud.me/)
 - [When HTML & CSS Replace Javascript: A Simple Element Cheatsheet](https://pagepro.co/blog/html-css-vs-javascript/) by [Joanna Chmiel](https://www.linkedin.com/in/joanna-chmiel-319756164/)
+- [You Don’t Need JavaScript for That](https://www.youtube.com/watch?v=0rZywO6jdU4), by [Kevin Powell](https://www.kevinpowell.co/)
 - [5 things you don't need Javascript for](https://lexoral.com/blog/you-dont-need-js/) by [Steven Waterman](https://lexoral.com/)
 - [Replacing JS with HTML and CSS](https://www.youtube.com/watch?v=d_CVzwfIzHM) by [Chris Ferdinandi](https://gomakethings.com/)
 - [You don't need JavaScript for that](https://www.htmhell.dev/adventcalendar/2023/2/) by [Kilian Valkhof](https://kilianvalkhof.com/)
