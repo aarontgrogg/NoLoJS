@@ -9,7 +9,7 @@ aka: Related Content
 - You can override any of this via CSS.
 - You can also add a `::backdrop`, customize the location and animate the show/hide via CSS.
 
-## [Nav Menu](nav-menu)
+## [Related Content](related-content)
 - JS: No
 - Baseline: [Newly Available](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
