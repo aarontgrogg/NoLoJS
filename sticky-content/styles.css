@@ -1,0 +1,9 @@
+/* Make these elements "sticky" */
+header, nav, aside {
+  position: sticky;
+  top: 0;
+}
+/* Optionally reposition some elements */
+nav, aside {
+  top: 50px;
+}
