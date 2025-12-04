@@ -23,7 +23,7 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / .5);
 }
 /* Apply both animations */
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) { /* Be nice to others */
   dialog {
       animation: dialogFadeIn 250ms ease-in forwards;
       &::backdrop {
