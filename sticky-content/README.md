@@ -8,6 +8,7 @@ aka: Sticky Headers, Floating Sidebar
 
 > [!WARNING]
 > There are [some "oddities"](https://frontendmasters.com/blog/the-weird-parts-of-position-sticky/) that you should be aware of.
+> 
 > Also, `overflow: hidden` will prevent `position: sticky` from working; [use `overflow: clip` instead](https://gomakethings.com/the-overflow-hidden-property-and-sticky-headers/).
 
 ## [CSS](styles.css)
