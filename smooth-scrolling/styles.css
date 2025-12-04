@@ -1,0 +1,10 @@
+/* Make an element scroll "smoothly" */
+@media (prefers-reduced-motion: no-preference) { /* Only apply if the user did NOT request reduced motion */
+    html {
+        scroll-behavior: smooth;
+    }
+}
+/* Optionally give some "breathing room" for the scrolled-to element */
+:target {
+  scroll-margin-top: .5em; /* Or whatever space you need */
+}
