@@ -6,27 +6,7 @@
 - The value `content` allows all of the above form elements to collapse to the minimum width required or expand as necessary, and allows `output` or `textarea` elements to expand their height as necessary.
 - The value `fixed` (default) restricts all of the above behavior.
 
-## [File](file)
-- JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
-- CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
-
-## [Input](input)
-- JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
-- CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
-
-## [Select](select)
-- JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
-- CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
-
-## [Output](output)
-- JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
-- CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
-
-## [Textarea](textarea)
+## [CSS](styles.css)
 - JS: No
 - Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
 - CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
