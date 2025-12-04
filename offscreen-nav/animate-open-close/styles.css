@@ -15,7 +15,7 @@ nav {
   }
 }
 /* Animate nav open/close, if user is okay with animation */
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) { /* Be nice to others */
   nav {
     transition: all 150ms;
   }
