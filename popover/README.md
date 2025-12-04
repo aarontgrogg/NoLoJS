@@ -9,6 +9,9 @@ aka: Modal / Overlay
 - You can override any of this via CSS.
 - You can also add a `::backdrop`, customize the location and animate the show/hide via CSS.
 
+> [!TIP]
+> If you want to prevent layout shift as the scrollbar disappears/reappears, add this to your `html` CSS: `scrollbar-gutter: stable;`
+
 ## [Auto](auto) (default)
 - JS: No
 - Baseline: [Newly Available](https://webstatus.dev/features/popover)
