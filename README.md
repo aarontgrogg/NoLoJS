@@ -36,7 +36,7 @@ And here are a couple of fantastic all-around NoLoJS resources:
 There are surely many more examples, so please contribute!
 
 > [!NOTE]
-> I was _well_ into this project when I finally stumbled across [the massive You-Dont-Need-JavaScript repo](https://github.com/you-dont-need/You-Dont-Need-JavaScript)... And while it _does_ have lots of examples, I find the lack of descriptions and demos disappointing/discouraging. Also, as all the code examples are full page, it can be hard to discern what is needed for the feature, and what is just to "make the rest of the page work"... Anyhow, going to continue pushing forward with this, as I think it is a useful endeavour.
+> I was _well_ into this project when I finally stumbled across the _massive_ [You-Dont-Need-JavaScript repo](https://github.com/you-dont-need/You-Dont-Need-JavaScript)... And while it _does_ have lots of examples, I find the lack of descriptions and demos disappointing/discouraging. Also, as all the code examples are full page, it can be hard to discern what is needed for the feature, and what is just to make the rest of the page work or look good... Anyhow, going to continue pushing forward with this, as I think it is a useful endeavour.
 
 ## Contribute
 
