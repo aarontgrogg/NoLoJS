@@ -1,0 +1,40 @@
+/* Basic carousel CSS */
+ul {
+  /* Resets for carousel appearance */
+  list-style: none;
+  padding: 0;
+  /* The only CSS necessary for a simple swiper Carousel */
+  display: flex;
+  overflow-inline: auto;
+  /* Prevents accidental page Back/Forward */
+  overscroll-behavior-inline: contain;
+  /* Confines the scrolling direction */
+  scroll-snap-type: inline mandatory;
+  /* Be nice to others */
+  @media (prefers-reduced-motion: no-preference) { 
+    /* Makes the sliding a little smoother */
+    scroll-behavior: smooth;
+  }
+  
+/** Add navigation buttons **/
+  /* Optionally remove the scrollbar from the carousel container */
+  scrollbar-width: none;
+  /* Using Anchor Position to place the buttons. */
+  anchor-name: --css-carousel__adding-buttons;
+  
+  /* Create both buttons, define anchor scope */
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --css-carousel__adding-buttons;
+  }
+  /* Position "Previous" button, add an arrow as content, and provide `alt` text */
+  &::scroll-button(inline-start) {
+    position-area: inline-start center;
+    content: "⬅" / "Scroll Left";
+  }
+  /* Position "Next" button, add an arrow as content, and provide `alt` text */
+  &::scroll-button(inline-end) {
+    position-area: inline-end center;
+    content: "⮕" / "Scroll Right";
+  }
+}
