@@ -1,0 +1,17 @@
+ul {
+  /* Resets for carousel appearance */
+  list-style: none;
+  padding: 0;
+  /* The only CSS necessary for a simple swiper Carousel */
+  display: flex;
+  overflow-inline: auto;
+  /* Prevents accidental page Back/Forward */
+  overscroll-behavior-inline: contain;
+  /* Confines the scrolling direction */
+  scroll-snap-type: inline mandatory;
+  /* Be nice to others */
+  @media (prefers-reduced-motion: no-preference) { 
+    /* Makes the sliding a little smoother */
+    scroll-behavior: smooth;
+  }
+}
