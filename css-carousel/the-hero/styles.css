@@ -1,0 +1,81 @@
+/* Basic carousel CSS */
+ul {
+  /* Resets for carousel appearance */
+  list-style: none;
+  padding: 0;
+  /* The only CSS necessary for a simple swiper Carousel */
+  display: flex;
+  overflow-inline: auto;
+  /* Prevents accidental page Back/Forward */
+  overscroll-behavior-inline: contain;
+  /* Confines the scrolling direction */
+  scroll-snap-type: inline mandatory;
+  /* Be nice to others */
+  @media (prefers-reduced-motion: no-preference) { 
+    /* Makes the sliding a little smoother */
+    scroll-behavior: smooth;
+  }
+  
+/** This is really just using full-width slides, adding buttons and dots **/
+  /* Give some breathing room */
+  margin-block-end: 3rem;
+  /* Optionally remove the scrollbar */
+  scrollbar-width: none;
+  /* Position the dots where you wish */
+  scroll-marker-group: after;
+  /* Creating Anchor Position scope */
+  anchor-name: --css-carousel__hero;
+
+  /* Create and position the navigation buttons (see "navigation-buttons" for more detail) */
+  &::scroll-button(*) {
+    position-anchor: --css-carousel__hero;
+    position: fixed;
+    top: calc(anchor(top) + 40%);
+    z-index: 1;
+  }
+  &::scroll-button(inline-start) {
+    content: "⬅" / "Scroll Left";
+    left: calc(anchor(left) + 10px);
+  }
+  &::scroll-button(inline-end) {
+    content: "⮕" / "Scroll Right";
+    right: calc(anchor(right) + 10px);
+  }
+
+  /* Create and position the indicator dots (see "indicator-dots" for more detail) */
+  &::scroll-marker-group {
+    position-anchor: --css-carousel__hero;
+    position-area: block-end;
+    position-visibility: always;
+    position: fixed;
+    /* Give some breathing room */
+    top: 1rem;
+    /* Customize the dots as you wish */
+    display: grid;
+    grid-auto-columns: 20px;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+  
+  li {
+    /* Optionally force swipes to center the new slide */
+    scroll-snap-align: center;
+    /* Optionally force swipes to stop for each slide */
+    scroll-snap-stop: always;
+    
+    &::scroll-marker {
+      content: ' ';
+      cursor: pointer;
+      /* Customize the dots as you wish */
+      aspect-ratio: 1;
+      border-radius: 100%;
+      border: 1px solid #000;
+    }
+
+    &::scroll-marker:target-current {
+      /* Customize the "current" dot as you wish */
+      background-color: #000;
+    }
+  }
+  
+}
