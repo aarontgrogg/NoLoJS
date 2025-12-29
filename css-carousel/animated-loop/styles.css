@@ -26,7 +26,8 @@ ul {
 }
 
 /* Create the animation for the loop effect */
+/** Note that iOS (currently) needs the GPU activation from translate3d **/
 @keyframes animated-loop {
-	from { translate: 0; }
-	to { translate: -100%; }
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-100%, 0, 0); }
 }
