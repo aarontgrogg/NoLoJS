@@ -17,7 +17,7 @@ aka: Slider, Swiper
 - Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
-## [navigation Buttons](navigation-buttons)
+## [Navigation Buttons](navigation-buttons)
 - JS: No
 - Baseline: [Limited Available](https://webstatus.dev/features/scroll-buttons)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
@@ -39,8 +39,7 @@ aka: Slider, Swiper
 
 ## [The Hero](the-hero)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)\
-            [Limited Available](https://webstatus.dev/?q=scroll-buttons+OR+scroll-target-group)
+- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap) / [Limited Available](https://webstatus.dev/?q=scroll-buttons+OR+scroll-target-group)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## Resources
