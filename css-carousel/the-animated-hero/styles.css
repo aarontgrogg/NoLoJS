@@ -1,0 +1,60 @@
+/** Requires wrapper element to control overflow **/
+div {
+  /* Optionally remove the scrollbar */
+  scrollbar-width: none;
+  /* Setup basic Carousel */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-inline: auto;
+  /* Prevent accidental page Back/Forward */
+  overscroll-behavior-inline: contain;
+  /* Confine the scrolling direction */
+  scroll-snap-type: inline mandatory;
+  /* Be nice to others */
+  @media (prefers-reduced-motion: no-preference) { 
+    /* Makes the sliding a little smoother */
+    scroll-behavior: smooth;
+  }
+}
+
+/** Both ULs should be `flex` and have animation **/
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Allow both ULs to expand fully, preventing overlap */
+  flex: 0 0 auto;
+  /* Be nice to others */
+  @media (prefers-reduced-motion: no-preference) { 
+    animation: animated-loop__hero 10s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    /* Optionally pause animation if the user hovers over **the parent** */
+    :hover & {
+      animation-play-state: paused;
+    }
+  }
+}
+
+/** LIs should always snap and stop **/
+li {
+  scroll-snap-stop: always;
+}
+
+/* Create the animation for the loop effect */
+/** Note that iOS (currently) needs the GPU activation from translate3d **/
+@keyframes animated-loop__hero {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  33.333% {
+    transform: translate3d(-600px, 0, 0);
+  }
+  66.666% {
+    transform: translate3d(-1200px, 0, 0);
+  }
+  99.999% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
