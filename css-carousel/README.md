@@ -54,3 +54,4 @@ aka: Slider, Swiper
 - https://chrome.dev/carousel/
 - https://www.sarasoueidan.com/blog/css-carousels-accessibility/
 - https://www.youtube.com/watch?v=KD1Yo8a_Qis
+- https://www.linkedin.com/posts/utsavmeena_how-to-create-an-image-carousel-in-pure-css-activity-7382816860511092736-CBaW/
