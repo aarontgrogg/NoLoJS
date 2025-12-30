@@ -42,6 +42,11 @@ aka: Slider, Swiper
 - Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap) / [Limited Available](https://webstatus.dev/?q=scroll-buttons+OR+scroll-target-group)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
+## [The Animted Hero](the-animated-hero)
+- JS: No
+- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+
 ## Resources
 - https://adactio.com/journal/tags/carousel
 - https://developer.chrome.com/blog/carousels-with-css
