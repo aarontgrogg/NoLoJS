@@ -1,0 +1,32 @@
+/* Wrapper grid, aligns content over media */
+.container--media-content {
+  display: grid;
+  grid-template: "media-content";
+  place-items: center;
+  place-content: start;
+  & > * {
+    grid-area: media-content;
+  }
+}
+/* Media grid, aligns `picture` element over `video` element */
+.container--media {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: "media";
+  place-items: stretch;
+  place-content: stretch;
+  & > * {
+    grid-area: media;
+  }
+  & img, video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+/* Needed to retain accessibility to content, for CTA, etc. */
+.container--content {
+  position: relative;
+}
