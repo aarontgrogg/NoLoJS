@@ -42,6 +42,11 @@ aka: Slider, Swiper
 - Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap) / [Limited Available](https://webstatus.dev/?q=scroll-buttons+OR+scroll-target-group)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
+## [The Animted Hero](the-animated-hero)
+- JS: No
+- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+
 ## Resources
 - https://adactio.com/journal/tags/carousel
 - https://developer.chrome.com/blog/carousels-with-css
@@ -49,3 +54,4 @@ aka: Slider, Swiper
 - https://chrome.dev/carousel/
 - https://www.sarasoueidan.com/blog/css-carousels-accessibility/
 - https://www.youtube.com/watch?v=KD1Yo8a_Qis
+- https://www.linkedin.com/posts/utsavmeena_how-to-create-an-image-carousel-in-pure-css-activity-7382816860511092736-CBaW/
