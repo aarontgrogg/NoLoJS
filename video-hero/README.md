@@ -12,8 +12,11 @@
 - CSS `grid` also allows you to easily **remove** any of the `video`, `picture` or content containers, and the rest still just renders as it should.
 - No JS needed to check screen size and update asset URLs, so no waiting for LCP, and no related CLS when sizes change onscreen.
 
-## [Content over video/picture](content-over-video-picture)
+## [Content over `video`/`picture`](content-over-video-picture)
 - JS: No
-- Baseline: `picture`: [Widely Available](https://webstatus.dev/features/picture), `video`: [Widely Available](https://webstatus.dev/features/video), `grid`: [Widely Available](https://webstatus.dev/features/grid)
+- Baseline: 
+  `picture`: [Widely Available](https://webstatus.dev/features/picture), 
+  `video`: [Widely Available](https://webstatus.dev/features/video), 
+  `grid`: [Widely Available](https://webstatus.dev/features/grid)
 - Explanation: https://aarontgrogg.com/blog/2026/01/06/improving-lcp-for-video-hero-components/
 - Demo: https://aarontgrogg.com/lab/video-hero-components/
