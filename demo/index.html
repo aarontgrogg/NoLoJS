@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NoLoJS - Reducing reliance on JS</title>
+    </head>
+    <body>
+        <!-- Header will be "sticky" at the top of the screen -->
+        <header class="header-sticky">
+            <!-- TODO: Logo -> SVG, perhaps animate on load? -->
+            <!-- TODO: Logo should get smaller on scroll -->
+            <h1>NoLoJS</h1>
+            <!-- Nav will be offscreen on mobile, but fully visible on deskstop -->
+            <nav>
+                <button popovertarget="menu-main">Show Menu</button>
+                <ul popover id="menu-main">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            <!-- This menu contains toggles for contolling the page content/features -->
+            <aside class="menu-utility">
+                <!-- TODO: Toggle for exposing "explanations" -->
+                <!-- TODO: Toggle for exposing "explanations" -->
+            </aside>
+        </header>
+        <main>
+            <!-- This hero carousel will be full-width on all devices, and swipable -->
+            <section class="carousel-hero">
+                <!-- TODO: 3-slide, content-over-media, describe this component, preload link for 1st image, all images loading="eager" -->
+                 <ul>
+                    <li class="content content-over-media">
+                        <img src="" loading="eager" width="" height="" alt="">
+                        <p></p>
+                    </li>
+                    <li class="content content-over-media">
+                        <img src="" loading="eager" width="" height="" alt="">
+                        <p></p>
+                    </li>
+                    <li class="content content-over-media">
+                        <img src="" loading="eager" width="" height="" alt="">
+                        <p></p>
+                    </li>
+                 </ul>
+            </section>
+            <!-- This content section describes some of the NoLoJS features -->
+            <section class="content">
+                <!-- TODO: Brief intro paragraph -->
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+            <!-- This hero content will be full-width on all devices, content-over-video -->
+            <section class="content content-over-video">
+                <!-- TODO: 3-slide, content-over-media, desscribe this component, preload link for 1st image, all images loading="eager" -->
+            </section>
+            <!-- This logo carousel will be full-width on all devices, and automatically scrolling -->
+            <section class="carousel-scroll">
+
+            </section>
+            <aside>
+
+            </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
