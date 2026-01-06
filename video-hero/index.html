@@ -1,6 +1,10 @@
+<!-- Wrapper for content and media -->
 <div class="container--media-content">
+  <!-- Wrapper for `picture` and `video` elements -->
   <div class="container--media">
+    <!-- Each `width`, `height` and `media` value should match, respectively (first `pciture` > `source` with first `video` > `source`, etc.) -->
     <picture>
+      <!-- `fetchpriority="high"` assumes this component is above-the-fold; if not, replace it with `loading="lazy"`-->
       <source 
               fetchpriority="high"
               width="720"
@@ -16,6 +20,7 @@
       <img src="" alt="Wonderfully descriptive text" />
     </picture>
     <video playsinline autoplay loop muted controls>
+      <!-- `fetchpriority="high"` assumes this component is above-the-fold; if not, replace it with `preload="none"`-->
       <source 
               fetchpriority="high"
               width="720"
@@ -30,6 +35,7 @@
               media="(min-width: 481px)" />
     </video>
   </div>
+  <!-- Wrapper for any content you wish to display over the media; can also be removed without causing harm -->
   <div class="container--content">
     <h1>My Brilliant Product</h1>
     <p>Something you really need to buy now!</p>
