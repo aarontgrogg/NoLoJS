@@ -1,0 +1,38 @@
+<div class="container--media-content">
+  <div class="container--media">
+    <picture>
+      <source 
+              fetchpriority="high"
+              width="720"
+              height="1280"
+              srcset="/path/to/portrait/image.webp" 
+              media="(max-width: 480px)" />
+      <source 
+              fetchpriority="high"
+              width="1280"
+              height="720"
+              srcset="/path/to/landscape/image.webp" 
+              media="(min-width: 481px)" />
+      <img src="" alt="Wonderfully descriptive text" />
+    </picture>
+    <video playsinline autoplay loop muted controls>
+      <source 
+              fetchpriority="high"
+              width="720"
+              height="1280"
+              src="/path/to/portrait/video.mp4" 
+              media="(max-width: 480px)" />
+      <source 
+              fetchpriority="high"
+              width="1280"
+              height="720"
+              src="/path/to/landscape/video.mp4" 
+              media="(min-width: 481px)" />
+    </video>
+  </div>
+  <div class="container--content">
+    <h1>My Brilliant Product</h1>
+    <p>Something you really need to buy now!</p>
+    <button>Add to Cart</button>
+  </div>
+</div>
