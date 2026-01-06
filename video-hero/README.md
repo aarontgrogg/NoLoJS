@@ -10,6 +10,7 @@
 - CSS `grid` allows you to easily position the `video` *over* the `picture`, so it appears as if the image just "comes to life".
 - CSS `grid` also allows you to easily position any content *over* the `video`/`picture` so users can reaed your content while waiting for the video to load.
 - CSS `grid` also allows you to easily **remove** any of the `video`, `picture` or content containers, and the rest still just renders as it should.
+- No JS needed to check screen size and update asset URLs, so no waiting for LCP, and no related CLS when sizes change onscreen.
 
 ## [Content over video/picture](content-over-video-picture)
 - JS: No
