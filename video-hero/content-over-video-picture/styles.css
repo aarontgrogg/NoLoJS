@@ -11,7 +11,7 @@
 /* Media grid, aligns `picture` element over `video` element */
 .container--media {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: grid;
   grid-template: "media";
   place-items: stretch;
@@ -22,7 +22,7 @@
   & img, video {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 }
