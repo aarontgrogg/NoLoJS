@@ -1,0 +1,56 @@
+/**
+ * NoLoJS CSS
+ **/
+
+/** Base CSS, or for comsetics **/
+:root {
+  --green-dark: #34a0a4;
+  --green-med: #a1c9c9;
+  --green-light: #f6f7f1;
+}
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+body {
+  background-color: var(--green-light);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  padding-block-end: 10rem;
+}
+hr {
+  margin-block: 2em;
+}
+img {
+  display: block;
+}
+
+
+
+
+
+
+/** All CSS Carousels will use these basic starting blocks **/
+/* Because I choose to use a UL for my carousel, remove browser defaults */
+.css-carousel__animated-loop {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    /* The only CSS necessary for a Carousel */
+    .css-carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-inline: auto;
+    }
+    /* Add a few niceties... */
+    .css-carousel {
+        /* Prevents accidental Back/Forward */
+        overscroll-behavior-inline: contain;
+        /* Confines the scrolling direction */
+        scroll-snap-type: inline mandatory;
+        /* Makes the sliding a little smoother */
+        scroll-behavior: smooth;
+    }
+}

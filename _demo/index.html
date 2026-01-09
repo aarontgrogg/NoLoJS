@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NoLoJS - Reducing reliance on JS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- TODO: Header is "sticky" at the top of the screen -->
+        <!-- TODO: On scroll, Header shrinks, as does logo and H1 font-size -->
+        <header class="header-sticky header-shrink">
+            <h1>NoLoJS</h1>
+            <!-- TODO: Nav is offscreen on mobile, but fully visible on deskstop -->
+            <nav>
+                <button popovertarget="menu-main">Show Menu</button>
+                <!-- TODO: These deep-links smooth-scroll to the chosen section -->
+                <ul popover id="menu-main">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            <!-- TODO: This menu contains toggles for contolling the page content/features -->
+            <aside class="menu-utility">
+                <!-- TODO: Toggle for exposing "explanations" -->
+            </aside>
+        </header>
+        <main>
+            <!-- TODO: This hero carousel is CSS-onlly, and is swipable -->
+            <section class="carousel-hero">
+                <!-- TODO: 3-slide, content-over-media, preload link for 1st image, all images loading="eager" -->
+                 <ul class="css-carousel css-carousel__hero">
+                    <li class="content-over-media">
+                        <img src="https://placehold.co/600x400/red/red/avif" alt="Placeholder Image" width="600" height="400">
+                        <p>This carousel is CSS-only!</p>
+                    </li>
+                    <li class="content-over-media">
+                        <img src="https://placehold.co/600x400/blue/blue/avif" alt="Placeholder Image" width="600" height="400">
+                        <p>Even the arrow nav buttons and dot indicators are CSS-only.</p>
+                    </li>
+                    <li class="content-over-media">
+                        <img src="https://placehold.co/600x400/orange/orange/avif" alt="Placeholder Image" width="600" height="400">
+                        <p>On devices that do not support these features, it is simply a slider</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- This content section has a CSS-onlly parallax background image -->
+            <section class="content-parallax">
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+            <!-- This hero content will be full-width on all devices, content-over-video -->
+            <section class="content-over-video">
+                <!-- TODO: 3-slide, content-over-media, describe this component, preload link for 1st image, all images loading="eager" -->
+            </section>
+            <!-- This logo carousel will be full-width on all devices, and automatically scrolling -->
+            <section class="css-carousel css-carousel__wrapper">
+                <p>This scrolling marquee is also 100% CSS-only. It does require duplicate HTML (two ULs with LIs and images), but uses the same images in both ULs, so the only penalty is sligjtly increased document size.</p>
+                <ul class="css-carousel__animated-loop">
+                    <li><img src="https://placehold.co/150x150/red/white?text=Slide+1" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/blue/white?text=Slide+2" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/orange/white?text=Slide+3" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/green/white?text=Slide+4" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/purple/white?text=Slide+5" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/yellow/black?text=Slide+6" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/aqua/black?text=Slide+7" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                    <li><img src="https://placehold.co/150x150/lime/black?text=Slide+8" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
+                </ul>
+            </section>
+            <aside>
+
+            </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
