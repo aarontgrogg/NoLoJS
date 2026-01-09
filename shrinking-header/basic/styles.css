@@ -1,17 +1,24 @@
-/* Use custom properties to simplify this */
+/* Use custom properties for clarity */
 :root {
   --logo-height-large: 140px;
   --title-size-large: 3rem;
   --logo-height-small: 35px;
   --title-size-small: 1rem;
+  --header-padding: 1rem;
+  --article-margin: calc(var(--logo-height-large) + (var(--header-padding) * 2));
 }
 
-/* Fix to the top of the page, full-width */
 header {
+  /* Fix to the top of the page, full-width */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  /* Make logo and title align horizontally */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: var(--header-padding);
   /* Make the header large */
   & h1 {
     font-size: var(--title-size-large);
@@ -24,7 +31,7 @@ header {
 /* Give the content some breathing room for the fixed header */
 article {
   /* The height of the logo, plus the header top & bottom padding */
-  margin-top: calc(var(--logo-height-large) + 2rem);
+  margin-top: var(--article-margin);
 }
 
 /* Only apply if the user did NOT request reduced motion */
