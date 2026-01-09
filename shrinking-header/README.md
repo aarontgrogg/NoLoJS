@@ -14,7 +14,7 @@ aka: Fixed Header, Shrink on Scroll Header
 > [!TIP]
 > Depending on what you are animating, it may be possible to have child elements respond to the parent container's size, meaning you would only need to animate the parent container's size!
 
-## [CSS](styles.css)
+## [Basic](basic)
 - JS: No
 - Baseline: [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline), [`scroll()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/scroll)
 - CodePen: https://codepen.io/aarontgrogg/pen/emzzVGR
