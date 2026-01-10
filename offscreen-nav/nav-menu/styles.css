@@ -2,18 +2,18 @@ nav {
   /* Set as custom properties for consistency */
   --hidden: -100vw;
   --visible: 0;
-  /* Override User-Agent styles */
   ul {
+    /* Override User-Agent styles */
     margin: 0; /* Prevents center/center */
     border: 0; /* Kills fat black border */
-  }
-/* Start offstage, move onstage */
-  ul {
+    /* Start offstage... */
     translate: var(--hidden);
+    /* ... and move onstage when open */
     &:popover-open {
       translate: var(--visible);
       @starting-style {
         translate: var(--hidden);
       }
     }
+  }
 }
