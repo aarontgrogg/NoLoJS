@@ -8,30 +8,32 @@ aka: Expanding Content Panel
 
 ## [Basic](basic)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/details)
+- Baseline: [`details`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/details)
+- Baseline: [`open`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Exclusive Open](exclusive-open)
 - Add a `name` attribute with the same value to multiple `details` elements to restrict only one to be open at a time, similar to `radio` buttons.
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/details)
+- Baseline: [`name`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Adjust `::marker`](adjust-marker)
 - Adjust the `::marker` appearance via CSS.
 - JS: No
-- Baseline: [Limited Availability](https://webstatus.dev/features/marker)
+- Baseline: [`::marker`](https://webstatus.dev/features/marker)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - JS: No
-- Baseline: [Newly Availabile](https://webstatus.dev/?q=details-content+OR+content-visibility+OR+transition-behavior)
-- Baseline: [Limited Availability](https://webstatus.dev/features/interpolate-size)
+- Baseline: [`::details-content`](https://webstatus.dev/features/details-content), 
+            [`content-visibility`](https://webstatus.dev/features/content-visibility), 
+            [`transition-behavior`](https://webstatus.dev/features/transition-behavior), 
+            [`interpolate-size`](https://webstatus.dev/features/interpolate-size)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
