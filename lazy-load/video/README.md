@@ -10,15 +10,15 @@ aka: Pre- or Lazy-load video assets
 
 ## [Auto](auto)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/audio)
+- Baseline: [`video`](https://webstatus.dev/features/video)
 - CodePen: https://codepen.io/aarontgrogg/pen/NPNveKa
 
 ## [None](none)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/audio)
+- Baseline: [`video`](https://webstatus.dev/features/video)
 - CodePen: https://codepen.io/aarontgrogg/pen/NPNveKa
 
 ## [Metadata](metadata)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/audio)
+- Baseline: [`video`](https://webstatus.dev/features/video)
 - CodePen: https://codepen.io/aarontgrogg/pen/NPNveKa
