@@ -2,7 +2,9 @@
  * NoLoJS CSS
  **/
 
-/** Base CSS, or for comsetics **/
+/*****
+ * Base CSS, for comsetics
+*****/
 :root {
   --green-dark: #34a0a4;
   --green-med: #a1c9c9;
@@ -81,6 +83,12 @@ main {
 }
 
 
+
+/*****
+ * Begin Feature CSS
+*****/
+
+
 /** Smooth Scrolling **/
 /* Only apply if the user did NOT request reduced motion */
 @media (prefers-reduced-motion: no-preference) {
@@ -139,7 +147,7 @@ main {
 }
 
 
-/** Offscreen nav on small screens **/
+/** Offscreen nav for small screens **/
 nav {
   /* Set as custom properties for consistency */
   --hidden: -100vw;
@@ -158,6 +166,10 @@ nav {
       @starting-style {
         translate: var(--hidden);
       }
+    }
+    /* Add opening animation, if the user is okay with that */
+    @media (prefers-reduced-motion: no-preference) {
+        transition: translate 150ms;
     }
     /* Add backdrop */
     &::backdrop {
