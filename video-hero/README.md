@@ -14,9 +14,10 @@
 
 ## [Content over `video`/`picture`](content-over-video-picture)
 - JS: No
-- Baseline: 
-  `picture`: [Widely Available](https://webstatus.dev/features/picture), 
-  `video`: [Widely Available](https://webstatus.dev/features/video), 
-  `grid`: [Widely Available](https://webstatus.dev/features/grid)
+- Baseline: [`picture`](https://webstatus.dev/features/picture), 
+            [`video`](https://webstatus.dev/features/video), 
+            [`grid`](https://webstatus.dev/features/grid)
+
+## Resources
 - Explanation: https://aarontgrogg.com/blog/2026/01/06/improving-lcp-for-video-hero-components/
 - Demo: https://aarontgrogg.com/lab/video-hero-components/

@@ -11,14 +11,14 @@ aka: Eager- or Lazy-load images
 
 ## [Eager](eager)
 - JS: No
-- Baseline: [Newly Available](https://webstatus.dev/features/loading-lazy) \
+- Baseline: [`loading-lazy`](https://webstatus.dev/features/loading-lazy) \
   In Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
   Neither Firefox nor Safari support `loading` for `iframe`.
 - CodePen: https://codepen.io/aarontgrogg/pen/raezQJv
 
 ## [Lazy](lazy)
 - JS: No
-- Baseline: [Newly Available](https://webstatus.dev/features/loading-lazy) \
+- Baseline: [`loading-lazy`](https://webstatus.dev/features/loading-lazy) \
   In Firefox since 2023-12-19 (121), Safari since 2023-03-27 (16.4) \
   Neither Firefox nor Safari support `loading` for `iframe`.
 - CodePen: https://codepen.io/aarontgrogg/pen/raezQJv

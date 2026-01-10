@@ -1,9 +1,10 @@
-<!-- `popovertarget="menu"` on the `button` connects to `id="menu"` on the `nav` -->
-<button popovertarget="menu">
-   Toggle Menu
-</button>
-<nav popover id="menu" role="menu">
-   <ul>
+<nav>
+   <!-- `popovertarget` on the `button` connects to... -->
+   <button popovertarget="menu">
+      Toggle Menu
+   </button>
+   <!-- ...the `id` on the `ul` -->
+   <ul popover id="menu" role="menu">
      <li>Nav option 1</li>
      <li>Nav option 2</li>
      <li>Nav option 3</li>

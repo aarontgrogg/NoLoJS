@@ -14,23 +14,23 @@ aka: Related Content
 
 ## [Related Content](related-content)
 - JS: No
-- Baseline: [Newly Available](https://webstatus.dev/features/popover)
+- Baseline: [`popover`](https://webstatus.dev/features/popover)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Add "close" button](add-close-button)
-- Add a `::backdrop` via CSS.
+- Add a "close" button to popover.
 - JS: No
-- Baseline: [Widely Availability](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
+- Baseline: [`popovertargetaction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Add `::backdrop`](add-backdrop)
 - Add a `::backdrop` via CSS.
 - JS: No
-- Baseline: [Widely Availability](https://webstatus.dev/features/backdrop)
+- Baseline: [`::backdrop`](https://webstatus.dev/features/backdrop)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - JS: No
-- Baseline: [Widely Availability](https://webstatus.dev/features/animations-css)
+- Baseline: [`animations-css`](https://webstatus.dev/features/animations-css)
 - CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG

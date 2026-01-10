@@ -12,5 +12,5 @@ aka: Sticky Headers, Floating Sidebar
 
 ## [CSS](styles.css)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/sticky-positioning)
+- Baseline: [`sticky-positioning`](https://webstatus.dev/features/sticky-positioning)
 - CodePen: https://codepen.io/aarontgrogg/pen/RNaYByN
