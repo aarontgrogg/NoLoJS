@@ -22,5 +22,5 @@
 
 ## [CSS](styles.css)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/features/scroll-behavior)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior)
 - CodePen: https://codepen.io/aarontgrogg/pen/OPNovZR
