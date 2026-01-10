@@ -8,15 +8,15 @@ aka: Combobox
 
 ## [Text input](text)
 - JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/datalist)
+- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
 - CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
 
 ## [Number input](number)
 - JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/datalist)
+- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
 - CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
 
 ## [Time input](time)
 - JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/datalist)
+- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
 - CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
