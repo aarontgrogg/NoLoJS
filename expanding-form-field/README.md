@@ -9,5 +9,5 @@ aka: Auto-Growing Inputs
 
 ## [CSS](styles.css)
 - JS: No
-- Baseline: [Limited availability](https://webstatus.dev/features/field-sizing)
+- Baseline: [`field-sizing`](https://webstatus.dev/features/field-sizing)
 - CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
