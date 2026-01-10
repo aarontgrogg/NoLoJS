@@ -9,42 +9,49 @@ aka: Slider, Swiper
 
 ## [Simple Swiper](simple-swiper)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
+            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [Snappy Swiper](snappy-swiper)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
+            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [Navigation Buttons](navigation-buttons)
 - JS: No
-- Baseline: [Limited Available](https://webstatus.dev/features/scroll-buttons)
+- Baseline: [`scroll-buttons`](https://webstatus.dev/features/scroll-buttons)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [Indicator Dots](indicator-dots)
 - JS: No
-- Baseline: [Limited Available](https://webstatus.dev/features/scroll-target-group)
+- Baseline: [`scroll-target-group`](https://webstatus.dev/features/scroll-target-group)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [Swipe by Groups](swipe-by-groups)
 - JS: No
-- Baseline: [Limited Available](https://webstatus.dev/features/column-pseudo)
+- Baseline: [`column-pseudo`](https://webstatus.dev/features/column-pseudo)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [Animated Loop](animated-loop)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
+            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [The Hero](the-hero)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap) / [Limited Available](https://webstatus.dev/?q=scroll-buttons+OR+scroll-target-group)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
+            [`scroll-snap`](https://webstatus.dev/features/scroll-snap), 
+            [`scroll-buttons`](https://webstatus.dev/features/scroll-buttons), 
+            [`scroll-target-group`](https://webstatus.dev/features/scroll-target-group)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## [The Animted Hero](the-animated-hero)
 - JS: No
-- Baseline: [Widely Available](https://webstatus.dev/?q=scroll-behavior+OR+scroll-snap)
+- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
+            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
 - CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
 
 ## Resources
