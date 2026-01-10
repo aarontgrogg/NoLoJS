@@ -10,7 +10,8 @@
   --header-height-large: 150px;
   --header-height-small: 75px;
   --header-padding: 1rem;
-  --content-margin: calc(var(--header-height-large) + (var(--header-padding) * 2));
+  --content-margin: var(--header-height-large);
+  --small-screen-breakpoint: 600px;
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -39,8 +40,12 @@ header {
     padding: var(--header-padding);
     background-color: var(--green-dark);
 }
+nav ul {
+    list-style: none;
+}
 main {
-    padding: 2rem;
+    padding-block: 1rem;
+    padding-inline: 2rem;
 }
 
 
@@ -103,10 +108,17 @@ main {
 
 
 /** Offscreen nav on mobile **/
-/* Hide the nav button on larger screens */
 @media (min-width: 600px) {
+    /* Hide the nav button on larger screens */
     header button {
         display: none;
+    }
+    /* Show the nav menu on larger screens */
+    nav ul {
+        position: static;
+        display: flex;
+        background: none;
+        border: 0;
     }
 }
 
