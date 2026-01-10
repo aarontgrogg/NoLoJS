@@ -1,22 +1,25 @@
-/* Override User-Agent styles */
 nav {
-  display: block; /* Allows animation */
-  margin: 0; /* Prevents center/center */
-  border: 0; /* Kills fat black border */
-}
-/* Start offstage, move onstage */
-nav {
-  height: 100vh;
-  translate: -100vw;
-  opacity: 0;
-  &:popover-open {
-    translate: 0;
-    opacity: 1;
+  /* Set as custom properties for consistency */
+  --hidden: -100vw;
+  --visible: 0;
+  ul {
+    /* Override User-Agent styles */
+    margin: 0; /* Prevents center/center */
+    border: 0; /* Kills fat black border */
+    /* Start offstage... */
+    translate: var(--hidden);
+    /* ... and move onstage when open */
+    &:popover-open {
+      translate: var(--visible);
+      @starting-style {
+        translate: var(--hidden);
+      }
+    }
   }
 }
 /* Animate nav open/close, if user is okay with animation */
 @media (prefers-reduced-motion: no-preference) { /* Be nice to others */
-  nav {
+  nav ul {
     transition: all 150ms;
   }
 }
