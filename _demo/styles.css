@@ -7,31 +7,111 @@
   --green-dark: #34a0a4;
   --green-med: #a1c9c9;
   --green-light: #f6f7f1;
+  --header-height-large: 150px;
+  --header-height-small: 75px;
+  --header-padding: 1rem;
+  --content-margin: calc(var(--header-height-large) + (var(--header-padding) * 2));
 }
-*, *::before, ::after {
+*, ::before, ::after {
     box-sizing: border-box;
 }
 body {
+  margin: 0;
+  padding-block-end: 10rem;
   background-color: var(--green-light);
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  margin: 0;
-  padding-block-end: 10rem;
+  color: #444;
 }
-hr {
-  margin-block: 2em;
+h1 {
+  font-size: 2rem;
+  text-align: center;
 }
-img {
-  display: block;
+img, video {
+  width: 100%;
+  height: auto;
+}
+header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: var(--header-padding);
+    background-color: var(--green-dark);
+}
+main {
+    padding: 2rem;
 }
 
 
+/** Smooth Scrolling **/
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+/* Give some "breathing room" for the scrolled-to element */
+:target {
+  scroll-margin-top: 100px;
+}
 
 
+/** Sticky Header **/
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* Push the content down for the fixed header */
+main {
+  /* The height of the logo, plus the header top & bottom padding */
+  margin-top: var(--content-margin);
+}
 
 
-/** All CSS Carousels will use these basic starting blocks **/
+/** Shrinking Header **/
+/* Make the logo initially large */
+.header-shrink {
+    height: var(--header-height-large);
+    & img {
+        max-height: 100%;
+        width: auto;
+    }
+}
+/* Define the animations that should happen when the user scrolls */
+@keyframes header-scroll {
+    to { 
+        height: var(--header-height-small); 
+    }
+}
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) { 
+    /* Make sure the device supports scroll animation */
+    @supports (animation-timeline: scroll()) {
+        .header-shrink {
+            /* Assign the animations to the elements */
+            animation: header-scroll linear both;
+            /* Passing nothing into `scroll()` will assign the animation to the document scroll */
+            animation-timeline: scroll();
+            /* 100px is a magic number; the animation will start at 0 and end at 100px; choose whatever numbers you want */
+            animation-range: 0 100px;
+        }
+    }
+}
+
+
+/** Offscreen nav on mobile **/
+/* Hide the nav button on larger screens */
+@media (min-width: 600px) {
+    header button {
+        display: none;
+    }
+}
+
+
+/** All CSS Carousels use these starting blocks **/
 /* Because I choose to use a UL for my carousel, remove browser defaults */
 .css-carousel__animated-loop {
     ul {
