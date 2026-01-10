@@ -10,14 +10,9 @@
         <!-- Header is "sticky" at the top of the screen -->
         <!-- On scroll, Header shrinks, as does logo -->
         <header class="header-sticky header-shrink">
-            <img 
-                src="NoLoJS.avif" 
-                fetchpriority="high"
-                width="700"
-                height="330" />
             <!-- Nav is offscreen on mobile, but fully visible on deskstop -->
             <nav>
-                <button popovertarget="menu-main">Show Menu</button>
+                <button popovertarget="menu-main">Menu</button>
                 <!-- TODO: These deep-links smooth-scroll to the chosen section -->
                 <ul popover id="menu-main">
                     <li><a href="">Item 1</a></li>
@@ -27,9 +22,14 @@
                     <li><a href="">Item 5</a></li>
                 </ul>
             </nav>
+            <img 
+                src="NoLoJS.avif" 
+                fetchpriority="high"
+                width="700"
+                height="330" />
             <!-- TODO: This menu contains toggles for contolling the page content/features -->
             <aside class="menu-utility">
-                <!-- TODO: Toggle for exposing "explanations" -->
+                <!-- TODO: Toggle for exposing "explanations"? -->
             </aside>
         </header>
         <main>

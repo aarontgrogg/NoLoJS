@@ -36,13 +36,45 @@ img, video {
 header {
     display: flex;
     gap: 1rem;
+    justify-content: center;
     align-items: center;
     padding: var(--header-padding);
     background-color: var(--green-dark);
 }
-nav ul {
-    list-style: none;
+nav {
+    & button {
+        position: absolute;
+        left: .5rem;
+        bottom: .5rem;
+        border-radius: 4px;
+        padding: .5rem;
+        border: 1px solid var(--green-light);
+        background-color: var(--green-dark);
+        color: var(--green-light);
+        font-size: 16px;
+        cursor: pointer;
+    }
+    & ul {
+        list-style: none;
+        background-color: var(--green-light);
+        box-shadow: 2px 0 8px black;
+    }
+    & li {
+        padding: .5rem 1rem;
+        background-color: var(--green-med);
+        border-bottom: 1px solid var(--green-light);
+        transition: all 150ms;
+        &:hover {
+            background-color: var(--green-dark);
+            color: var(--green-light);
+            cursor: pointer;
+        }
+    }
+    & a {
+        display: block;
+    }
 }
+
 main {
     padding-block: 1rem;
     padding-inline: 2rem;
@@ -71,8 +103,8 @@ main {
 }
 /* Push the content down for the fixed header */
 main {
-  /* The height of the logo, plus the header top & bottom padding */
-  margin-top: var(--content-margin);
+    /* The height of the logo, plus the header top & bottom padding */
+    margin-top: var(--content-margin);
 }
 
 
@@ -107,8 +139,38 @@ main {
 }
 
 
-/** Offscreen nav on mobile **/
+/** Offscreen nav on small screens **/
+nav {
+  /* Set as custom properties for consistency */
+  --hidden: -100vw;
+  --visible: 0;
+  ul {
+    /* Override User-Agent styles */
+    margin: 0; /* Prevents center/center */
+    border: 0; /* Kills fat black border */
+    /* Set top position for onscreen nav */
+    top: var(--content-margin);
+    /* Start offstage... */
+    translate: var(--hidden);
+    /* ... and move onstage when open */
+    &:popover-open {
+      translate: var(--visible);
+      @starting-style {
+        translate: var(--hidden);
+      }
+    }
+    /* Add backdrop */
+    &::backdrop {
+      background: rgb(0 0 0 / 50%);
+    }
+  }
+}
+/* Override offscreen on larger screens */
 @media (min-width: 600px) {
+    /* Flip the layout on larger screens */
+    header {
+        flex-direction: row-reverse;
+    }
     /* Hide the nav button on larger screens */
     header button {
         display: none;
