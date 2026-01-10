@@ -74,6 +74,7 @@ nav {
     }
     & a {
         display: block;
+        text-decoration: none;;
     }
 }
 
@@ -182,17 +183,24 @@ nav {
     /* Flip the layout on larger screens */
     header {
         flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
     /* Hide the nav button on larger screens */
     header button {
         display: none;
     }
-    /* Show the nav menu on larger screens */
+    /* Overrides for larger screens */
     nav ul {
         position: static;
         display: flex;
+        gap: 1rem;
         background: none;
         border: 0;
+        translate: none;
+        box-shadow: none;
+        & li:hover {
+            background-color: white;
+        }
     }
 }
 
