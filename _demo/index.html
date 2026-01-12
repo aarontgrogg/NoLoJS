@@ -34,33 +34,36 @@
         </header>
         <main>
             <h1>Reducing the JS load where we can...</h1>
-            <!-- TODO: This hero carousel is CSS-onlly, and is swipable -->
+            <!-- TODO: This hero carousel is CSS-only, and is swipable -->
             <section class="carousel-hero">
                 <!-- TODO: 3-slide, content-over-media, preload link for 1st image, all images loading="eager" -->
                  <ul class="css-carousel css-carousel__hero">
                     <li class="content-over-media">
                         <img src="https://placehold.co/600x400/red/red/avif" alt="Placeholder Image" width="600" height="400">
                         <p>This carousel is CSS-only!</p>
+                        <p>Meaning, no JS at all</p>
+                        <p>Swipe from right to left</p>
+                        <p>&lt;--</p>
                     </li>
                     <li class="content-over-media">
                         <img src="https://placehold.co/600x400/blue/blue/avif" alt="Placeholder Image" width="600" height="400">
-                        <p>Even the arrow nav buttons and dot indicators are CSS-only.</p>
+                        <p>In the latest browsers</p>
+                        <p>You should see nav arrows and dot indicators</p>
+                        <p>And swiping should snap; all CSS</p>
                     </li>
                     <li class="content-over-media">
                         <img src="https://placehold.co/600x400/orange/orange/avif" alt="Placeholder Image" width="600" height="400">
-                        <p>On devices that do not support these features, it is simply a slider</p>
+                        <p>In older browsers</p>
+                        <p>It is simply a slider</p>
+                        <p>You could add a polyfill if necessary</p>
                     </li>
                 </ul>
             </section>
-            <!-- This content section has a CSS-onlly parallax background image -->
+            <!-- This content section has a CSS-only parallax background image -->
             <section class="content-parallax">
-                <p></p>
-                <p></p>
-                <p></p>
-            </section>
-            <!-- This hero content will be full-width on all devices, content-over-video -->
-            <section class="content-over-video">
-                <!-- TODO: 3-slide, content-over-media, describe this component, preload link for 1st image, all images loading="eager" -->
+                <p>In the latest browsers</p>
+                <p>This section should have a CSS-only parallax background</p>
+                <p>In older browsers, it should just be a static background</p>
             </section>
             <!-- This logo carousel will be full-width on all devices, and automatically scrolling -->
             <section class="css-carousel css-carousel__wrapper">
@@ -76,12 +79,45 @@
                     <li><img src="https://placehold.co/150x150/lime/black?text=Slide+8" alt="Placeholder Image" width="150" height="150" loading="lazy"></li>
                 </ul>
             </section>
+            <!-- This FAQ section uses detail/sumary elements -->
+            <section class="faq">
+                <!-- TODO: Multiple detail/summary elements, check NoLoJS presentation for possible content -->
+                <details>
+                    <summary>How does this component work?</summary>
+                    <p>This FAQ section uses the HTML <code>details</code> and <code>summary</code> elements, which are natively supported in modern browsers. When a user clicks on a <code>summary</code>, the corresponding <code>details</code> are revealed or hidden.</p>
+                </details>
+                <details>
+                    <summary>Do I need JS this functionality?</summary>
+                    <p>No, this is pure HTML and CSS. The <code>details</code> and <code>summary</code> elements work without no JS, making them a great native choice for content that doesn't need to be initially visible.</p>
+                </details>
+                <details>
+                    <summary>Can I force an option to be initially open?</summary>
+                    <p>Yes, just add an <code>open</code> attribute to the <code>details</code> element you want to be expanded by default. For example: <code>&lt;details open&gt;</code>.</p>
+                </details>
+                <details>
+                    <summary>Are these elements accessible?</summary>
+                    <p>Yes, the <code>details</code> and <code>summary</code> elements are inherently accessible, as they provide keyboard navigation and screen reader support out of the box. However, it's always a good idea to test your implementation to ensure it meets your accessibility standards.</p>
+                </details>
+                <details>
+                    <summary>Can I force only one to be open at a time?</summary>
+                    <p>Yes, by simply adding a same <code>name</code> attribute with the same value to multiple <code>details</code> elements, similarly to how you would a radio button group. For example:</p>
+                        <pre>
+                            &lt;details name="faq"&gt;
+                                &lt;summary&gt;FAQ 1&lt;/summary&gt;
+                            &lt;/details&gt;
+                            &lt;details name="faq"&gt;
+                                &lt;summary&gt;FAQ 2&lt;/summary&gt;
+                            &lt;/details&gt;
+                        </pre>
+                </details>
+            </section>
             <aside>
 
             </aside>
         </main>
         <footer>
-
+            <p>&copy; 2026 NoLoJS</p>
+            <p><a href="https://github.com/aarontgrogg/NoLoJS/" target="_blank">https://github.com/aarontgrogg/NoLoJS/</a></p>
         </footer>
     </body>
 </html>

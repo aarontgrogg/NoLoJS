@@ -205,9 +205,9 @@ nav {
 }
 
 
-/** All CSS Carousels use these starting blocks **/
-/* Because I choose to use a UL for my carousel, remove browser defaults */
+/** CSS Carousel **/
 .css-carousel__animated-loop {
+    /* Override some browser defaults */
     ul {
         list-style: none;
         padding: 0;
