@@ -19,21 +19,22 @@
     box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding-block-end: 10rem;
-  background-color: var(--green-light);
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #444;
+    margin: 0;
+    padding-block-end: 10rem;
+    background-color: var(--green-light);
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #444;
 }
 h1 {
-  font-size: 2rem;
-  text-align: center;
+    margin: 0;
+    padding-block: 2rem;
+    font-size: 2rem;
+    text-align: center;
 }
-img, video {
-  width: 100%;
-  height: auto;
+h2 {
+    text-align: center;
 }
 header {
     display: flex;
@@ -77,10 +78,38 @@ nav {
         text-decoration: none;;
     }
 }
-
 main {
     padding-block: 1rem;
-    padding-inline: 2rem;
+    & > *:not(.container--content__full-width) {
+        padding-inline: 2rem;
+    }
+}
+hr {
+    margin-block: 2em;
+    margin-inline: 1rem;
+}
+p {
+    margin-block: .5em;
+}
+dialog {
+    max-width: 90%;
+    padding-inline: 1rem;
+    background-color: var(--green-med);
+    border: 2px solid var(--green-dark);
+    box-shadow: 5px 5px 10px;
+}
+::backdrop {
+    background: rgb(0 0 0 / .65);
+}
+button {
+    border: 1px solid var(--green-dark);
+    border-radius: 5px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    display: inline-block;
+    background-color: var(--green-dark);
+    cursor: pointer;
+    color: var(--green-light);
 }
 
 
@@ -99,7 +128,7 @@ main {
 }
 /* Give some "breathing room" for the scrolled-to element */
 :target {
-  scroll-margin-top: 100px;
+    scroll-margin-top: 100px;
 }
 
 
@@ -108,6 +137,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
 }
 /* Push the content down for the fixed header */
@@ -163,10 +193,10 @@ nav {
     translate: var(--hidden);
     /* ... and move onstage when open */
     &:popover-open {
-      translate: var(--visible);
-      @starting-style {
-        translate: var(--hidden);
-      }
+        translate: var(--visible);
+        @starting-style {
+            translate: var(--hidden);
+        }
     }
     /* Add opening animation, if the user is okay with that */
     @media (prefers-reduced-motion: no-preference) {
@@ -174,7 +204,7 @@ nav {
     }
     /* Add backdrop */
     &::backdrop {
-      background: rgb(0 0 0 / 50%);
+        background: rgb(0 0 0 / 50%);
     }
   }
 }
@@ -205,26 +235,143 @@ nav {
 }
 
 
-/** CSS Carousel **/
+/** All content-over-media components **/
+.container--media-content {
+    display: grid;
+    grid-template: "media-content";
+    place-items: center;
+    justify-content: start;
+    & > * {
+        grid-area: media-content;
+    }
+}
+.container--media {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: "media";
+    place-items: stretch;
+    place-content: stretch;
+}
+.container--content {
+    position: relative;
+    margin-block: 4vw;
+    margin-inline: 2vw;
+    padding-inline: 8vw;
+}
+
+
+/** All CSS Carousels will use these basic starting blocks **/
+.css-carousel {
+    /* Because I choose to use a UL for my carousel, remove browser defaults */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* The only CSS necessary for a basic Carousel */
+    display: flex;
+    flex-wrap: nowrap;
+    /* Help content-over-media stand out*/
+    .container--content {
+        max-width: 90%;
+        text-align: center;
+        background-color: rgba(255 255 255 / 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+/** The Hero Carousel **/
+.css-carousel__hero {
+    /* Max width, based on image size, center to keep pretty */
+    max-width: 1200px;
+    margin-inline: auto;
+    /* Give some breathing room for dot indicators */
+    margin-block-end: 5rem;
+    /* Set the slides to create a single row */
+    overflow-inline: auto;
+    /* Prevents accidental Back/Forward */
+    overscroll-behavior-inline: contain;
+    /* Optionally remove the scrollbar */
+    scrollbar-width: none;
+    /* Confines the scrolling direction */
+    scroll-snap-type: inline mandatory;
+    /* Makes the sliding a little smoother */
+    scroll-behavior: smooth;
+    /* Setup anchor for navigation arrows and indicator dots */
+    anchor-name: --css-carousel__hero;
+    /* Position the dots where you wish */
+    scroll-marker-group: after;
+
+    &::scroll-button(*) {
+        position-anchor: --css-carousel__hero;
+        position: fixed;
+        top: anchor(center);
+        z-index: 1;
+    }
+    &::scroll-button(inline-start) {
+        left: calc(anchor(left) + 10px);
+        content: "⬅" / "Scroll Left";
+    }
+    &::scroll-button(inline-end) {
+        right: calc(anchor(right) + 10px);
+        content: "⮕" / "Scroll Right";
+    }
+
+    &::scroll-marker-group {
+        position-anchor: --css-carousel__hero;
+        position-area: block-end;
+        position-visibility: always;
+        position: fixed;
+        margin-block-start: 1rem;
+        /* Customize the dots as you wish */
+        display: grid;
+        grid-auto-columns: 15px;
+        grid-auto-flow: column;
+        gap: 20px;
+    }
+  
+    li {
+        flex: 0 0 100%;
+        /* Optionally force swipes to center the new slide */
+        scroll-snap-align: center;
+        /* Optionally force swipes to stop for each slide */
+        scroll-snap-stop: always;
+        &::scroll-marker {
+            content: ' ';
+            /* Customize the dots as you wish */
+            aspect-ratio: 1;
+            border-radius: 100%;
+            border: 1px solid var(--green-dark);
+        }
+        &::scroll-marker:target-current {
+            /* Customize the current dot as you wish */
+            background: var(--green-med);
+        }
+    }
+    img {
+        /* Make hero carousel images responsive */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+  
+}
+
+
+/** CSS Animated Carousel **/
+/* Create the animation for the loop effect (note iOS needs the GPU activation from translate3d */
+@keyframes css-carousel__animated-loop {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-100%, 0, 0); }
+}
+/* Kill the scrollbar for the wrapper */
+.css-carousel__wrapper {
+    display: flex;
+    scrollbar-width: none;
+    /* Set the slides to create a single row */
+    overflow-inline: auto;
+}
+/* Make both ULs `flex`, and give them both the animation */
 .css-carousel__animated-loop {
-    /* Override some browser defaults */
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    /* The only CSS necessary for a Carousel */
-    .css-carousel {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-inline: auto;
-    }
-    /* Add a few niceties... */
-    .css-carousel {
-        /* Prevents accidental Back/Forward */
-        overscroll-behavior-inline: contain;
-        /* Confines the scrolling direction */
-        scroll-snap-type: inline mandatory;
-        /* Makes the sliding a little smoother */
-        scroll-behavior: smooth;
-    }
+    animation: css-carousel__animated-loop 20s linear infinite;
 }
