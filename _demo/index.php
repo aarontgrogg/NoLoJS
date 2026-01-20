@@ -23,7 +23,7 @@
                 x Smooth scroll
                 x Burger menu
                 x Hero carousel 
-                Modal
+                x Modal
                 Scroll animation
                 x Logo carousel 
                 x FAQs
@@ -148,17 +148,22 @@
             <!-- This content section has a CSS-only parallax background image -->
             <section class="container--content__full-width content-parallax">
                 <h2>Parallax</h2>
-                <div class="container--content">
-                    <p>In the latest browsers</p>
-                    <p>This section should have a CSS-only parallax background</p>
-                    <p>In older browsers, it should just be a static background</p>
+                <div class="container--media-content">
+                    <div class="container--media">
+                        <!--img src="shutter-speed-3LXPDYb83MY-unsplash.avif" alt="Mountains placeholder image" width="1200" height="800"-->
+                    </div>
+                    <div class="container--content">
+                        <p>In the latest browsers</p>
+                        <p>This section should have a CSS-only parallax background</p>
+                        <p>In older browsers, it should just be a static background</p>
+                    </div>
                 </div>
             </section>
 
             <hr>
 
             <!-- This FAQ section uses detail/sumary elements -->
-            <section class="faq">
+            <section class="container--accordion">
                 <h2>Accordion</h2>
                 <!-- TODO: Multiple detail/summary elements, check NoLoJS presentation for possible content -->
                 <details>
@@ -177,22 +182,18 @@
                     <summary>Can I force an option to be initially open?</summary>
                     <p>Yes, just add an <code>open</code> attribute to the <code>details</code> element you want to be expanded by default.</p>
                     <p>For example:</p>
-                        <pre>
-&lt;details open&gt;
-                        </pre>
+                        <pre>&lt;details open&gt;</pre>
                 </details>
                 <details>
                     <summary>Can I force only one to be open at a time?</summary>
                     <p>Yes, by simply adding a same <code>name</code> attribute with the same value to multiple <code>details</code> elements, similarly to how you would a radio button group.</p>
                     <p>For example:</p>
-                        <pre>
-&lt;details name="faq"&gt;
+                        <pre>&lt;details name="faq"&gt;
     &lt;summary&gt;FAQ 1&lt;/summary&gt;
 &lt;/details&gt;
 &lt;details name="faq"&gt;
     &lt;summary&gt;FAQ 2&lt;/summary&gt;
-&lt;/details&gt;
-                        </pre>
+&lt;/details&gt;</pre>
                 </details>
             </section>
 
@@ -213,12 +214,16 @@
                     <button popovertarget="popover1">Close</button>
                 </dialog>
             </section>
+
+            <hr>
             
         </main>
 
         <footer>
-            <p>&copy; 2026 NoLoJS</p>
-            <p><a href="https://github.com/aarontgrogg/NoLoJS/" target="_blank">https://github.com/aarontgrogg/NoLoJS/</a></p>
+            <p>
+                &copy; <?php echo date('Y'); ?> NoLoJS<br>
+                <a href="https://github.com/aarontgrogg/NoLoJS/" target="_blank">https://github.com/aarontgrogg/NoLoJS/</a>
+            </p>
         </footer>
 
     </body>
