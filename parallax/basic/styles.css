@@ -1,0 +1,50 @@
+/* Create containment and set scroll zone */
+html {
+    overflow-y: hidden;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: clip;
+    height: 100vh;
+}
+
+/* Aligns content element over the media element */
+.parallax-container {
+    height: 100vh;
+    display: grid;
+    grid-template: "container";
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    & > * {
+      grid-area: container;
+    }
+}
+
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  /* Set the perspective for the "3D" of the parallax on the scrolling body */
+  body {
+      perspective: 1px;
+  }
+  /* Set the parallax container as the "stage" */
+  .parallax-container {
+      transform-style: preserve-3d;
+  }
+  /* Push the image to the "back" of the stage,
+      and scale it up to compensate for being in the back */
+  .parallax-background {
+      transform: translateZ(-2px) scale(1.25);
+  }
+  /* Push the text "back" a little, but not as much,
+      and scale it up to compensate as well */
+  .parallax-foreground {
+      transform: translateZ(-1px) scale(3);
+  }
+}
+/* Note that any elements above or below the parallax component need this to make them "overlap" the parallax image */
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
