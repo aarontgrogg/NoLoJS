@@ -129,7 +129,7 @@ button {
 
 
 /*****
- * Begin Feature CSS
+ * Begin Features CSS
 *****/
 
 
@@ -389,6 +389,74 @@ nav {
 .css-carousel__animated-loop {
     animation: css-carousel__animated-loop 20s linear infinite;
 }
+
+
+/** Parallax **/
+/* For all users, mostly layout */
+.parallax__wrapper {
+    /* Add some constraints to prevent bleeding out of container */
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow: clip;
+    & .container--media-content {
+        justify-content: normal;
+    }
+    & .container--content {
+        margin-inline: 0;
+        padding-inline: 2vw;
+        background-color: rgb(255 255 255 / .65);
+    }
+    & img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        scale: 1.75;
+    }
+}
+/* Only apply if the user did NOT request reduced motion */
+    .parallax__wrapper {
+        /* Add parallax context */
+        translate: 0;
+        /* Make sure the content-over-media styles are applied */
+        & .container--media-content {
+            & > div {
+                /* Set initial position to allow animation */
+                position: fixed;
+                top: 50%;
+                translate: 0 -50% 0;
+                /* Add timeline and range*/
+                animation-timeline: view();
+                animation-range: entry 10% exit 100%;
+            }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            /* Apply the animations */
+            & .container--media {
+                animation: parallax-image linear both;
+            }
+            & .container--content {
+                animation: parallax-text linear both;
+            }
+        }
+    }
+    @keyframes parallax-image {
+        from {
+            translate: 0 -50% 0;
+        }
+        to {
+            translate: 0 -85% 0;
+        }
+    }
+    /* Animation for foreground text */
+    @keyframes parallax-text {
+        from {
+            translate: 0 125% 0;
+        }
+        to {
+            translate: 0 -200% 0;
+        }
+    }
+
 
 
 /** Accordion **/

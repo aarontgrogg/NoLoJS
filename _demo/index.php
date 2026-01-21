@@ -82,7 +82,7 @@
                         </div>
                         <div class="container--content">
                             <p>This carousel is CSS-only!</p>
-                            <p>Swipe &larr; or click the nav<br>
+                            <p>Swipe &larr;<br>
                                 to learn more about it...</p>
                         </div>
                     </li>
@@ -148,14 +148,16 @@
             <!-- This content section has a CSS-only parallax background image -->
             <section class="container--content__full-width content-parallax">
                 <h2>Parallax</h2>
-                <div class="container--media-content">
-                    <div class="container--media">
-                        <!--img src="shutter-speed-3LXPDYb83MY-unsplash.avif" alt="Mountains placeholder image" width="1200" height="800"-->
-                    </div>
-                    <div class="container--content">
-                        <p>In the latest browsers</p>
-                        <p>This section should have a CSS-only parallax background</p>
-                        <p>In older browsers, it should just be a static background</p>
+                <div class="parallax__wrapper">
+                    <div class="container--media-content">
+                        <div class="container--media">
+                            <img src="shutter-speed-3LXPDYb83MY-unsplash.avif" alt="Mountains placeholder image" width="1200" height="800">
+                        </div>
+                        <div class="container--content">
+                            <p>In the latest browsers</p>
+                            <p>This section should have a CSS-only parallax background</p>
+                            <p>In older browsers, it should just be a static background</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -207,10 +209,10 @@
                 <p>Click the close button when you're done.</p>
                 <p><button popovertarget="popover1">Open Modal</button></p>
                 <dialog popover="manual" id="popover1">
-                    <p>This is a modal dialog.</p>
+                    <p>This is a modal popover.</p>
                     <p>Native HTML and CSS, no JS required.</p>
                     <p>Initial CSS places it center in the screen, over all other content.</p>
-                    <p>Click the "Close" button to close this.</p>
+                    <p>Because this is a `manual` popover, you need to click the "Close" button to close it.</p>
                     <button popovertarget="popover1">Close</button>
                 </dialog>
             </section>
