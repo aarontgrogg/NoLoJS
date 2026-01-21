@@ -22,17 +22,18 @@
                 x Sticky header
                 x Smooth scroll
                 x Burger menu
-                x Hero carousel 
+                x Hero carousel
                 x Modal
                 Scroll animation
-                x Logo carousel 
+                x Logo carousel
+                x Parallax
                 x FAQs
                 x Lazy load images
             Should also include?
                 Preload links
                 Spec Rules
-                View Transitions 
-                Comp Libraries 
+                View Transitions
+                Comp Libraries
                 `defer`/`async` toggle for any js files
                 Live Baseline data/ logos somehow?
         -->
@@ -154,9 +155,9 @@
                             <img src="shutter-speed-3LXPDYb83MY-unsplash.avif" alt="Mountains placeholder image" width="1200" height="800">
                         </div>
                         <div class="container--content">
-                            <p>In the latest browsers</p>
-                            <p>This section should have a CSS-only parallax background</p>
-                            <p>In older browsers, it should just be a static background</p>
+                            <p>In the latest browsers,</p>
+                            <p>This section should have a CSS-only parallax background.</p>
+                            <p>In older browsers, it should just be a static background.</p>
                         </div>
                     </div>
                 </div>
