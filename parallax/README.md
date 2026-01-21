@@ -29,3 +29,4 @@
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/view-timeline
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-range
+- https://scroll-driven-animations.style/
