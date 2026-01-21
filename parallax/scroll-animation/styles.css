@@ -1,0 +1,51 @@
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  /* Create 3D animations */
+  /* Reduce the parallax "speed" by reducing the Y animation from/to "range". 
+     From -10% to -90% would create a much faster parallax effect.
+  */
+  /* Animation for background image */
+  @keyframes parallax-image {
+    from {
+      translate: -50% -50% 0;
+    }
+    to {
+      translate: -50% -75% 0;
+    }
+  }
+  /* Animation for foreground text */
+  @keyframes parallax-text {
+    from {
+      translate: -50% 150% 0;
+    }
+    to {
+      translate: -50% -250% 0;
+    }
+  }
+  /* Create 3D animation context */
+  .parallax-container {
+    view-timeline: --header-vtl;
+    & > div {
+      /* Initial position, to allow animation*/
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* Add timeline and range*/
+      animation-timeline: --header-vtl;
+      animation-range: normal;
+    }
+  }
+  /* Apply the animations */
+  .parallax-background {
+    animation: parallax-image linear both;
+  }
+  .parallax-foreground {
+    animation: parallax-text linear both;
+  }
+}
+/* The header and main elements need this to "overlap" the parallax background image */
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
