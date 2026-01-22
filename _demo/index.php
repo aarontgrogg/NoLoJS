@@ -22,18 +22,17 @@
                 x Sticky header
                 x Smooth scroll
                 x Burger menu
-                x Hero carousel
+                x Hero carousel 
                 x Modal
                 Scroll animation
-                x Logo carousel
-                x Parallax
+                x Logo carousel 
                 x FAQs
                 x Lazy load images
             Should also include?
                 Preload links
                 Spec Rules
-                View Transitions
-                Comp Libraries
+                View Transitions 
+                Comp Libraries 
                 `defer`/`async` toggle for any js files
                 Live Baseline data/ logos somehow?
         -->
@@ -72,12 +71,10 @@
 
             <hr>
 
-            <!-- TODO: This hero carousel is CSS-only, and is swipable -->
             <section class="container--content__full-width carousel-hero ">
                 <h2>Hero Carousel</h2>
-                <!-- TODO: 3-slide, content-over-media, preload link for 1st image, all images loading="eager" -->
                  <ul class="css-carousel css-carousel__hero">
-                    <li class="container--media-content">
+                    <li class="container--media-content content-over-media">
                         <div class="container--media">
                             <img src="mohammad-rahmani-3Sx3hSQcQIA-unsplash.avif" alt="IT-related placeholder image" width="1200" height="500">
                         </div>
@@ -87,7 +84,7 @@
                                 to learn more about it...</p>
                         </div>
                     </li>
-                    <li class="container--media-content">
+                    <li class="container--media-content content-over-media">
                         <div class="container--media">
                             <img src="mohammad-rahmani-7aIP3q4wCfY-unsplash.avif" alt="IT-related placeholder image" width="1200" height="500">
                         </div>
@@ -97,7 +94,7 @@
                                 and swiping should snap to the next/previous slide.</p>
                         </div>
                     </li>
-                    <li class="container--media-content">
+                    <li class="container--media-content content-over-media">
                         <div class="container--media">
                             <img src="mohammad-rahmani-CDBkMNZmd7o-unsplash.avif" alt="IT-related placeholder image" width="1200" height="500">
                         </div>
@@ -150,7 +147,7 @@
             <section class="container--content__full-width content-parallax">
                 <h2>Parallax</h2>
                 <div class="parallax__wrapper">
-                    <div class="container--media-content">
+                    <div class="container--media-content content-over-media">
                         <div class="container--media">
                             <img src="shutter-speed-3LXPDYb83MY-unsplash.avif" alt="Mountains placeholder image" width="1200" height="800">
                         </div>
@@ -161,6 +158,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Image courtesy of <a href="https://unsplash.com/@shutter_speed_" target="_blank">Shutter Speed</a> -->
             </section>
 
             <hr>
@@ -168,7 +166,6 @@
             <!-- This FAQ section uses detail/sumary elements -->
             <section class="container--accordion">
                 <h2>Accordion</h2>
-                <!-- TODO: Multiple detail/summary elements, check NoLoJS presentation for possible content -->
                 <details>
                     <summary>How does this component work?</summary>
                     <p>This section uses the HTML <code>details</code> and <code>summary</code> elements, which are natively supported in modern browsers. When a user clicks on a <code>summary</code>, the corresponding <code>details</code> are revealed or hidden.</p>
@@ -185,19 +182,53 @@
                     <summary>Can I force an option to be initially open?</summary>
                     <p>Yes, just add an <code>open</code> attribute to the <code>details</code> element you want to be expanded by default.</p>
                     <p>For example:</p>
-                        <pre>&lt;details open&gt;</pre>
+                        <pre>&lt;details <span>open</span>&gt;</pre>
                 </details>
                 <details>
                     <summary>Can I force only one to be open at a time?</summary>
                     <p>Yes, by simply adding a same <code>name</code> attribute with the same value to multiple <code>details</code> elements, similarly to how you would a radio button group.</p>
                     <p>For example:</p>
-                        <pre>&lt;details name="faq"&gt;
+                        <pre>&lt;details <span>name="faq"</span>&gt;
     &lt;summary&gt;FAQ 1&lt;/summary&gt;
 &lt;/details&gt;
-&lt;details name="faq"&gt;
+&lt;details <span>name="faq"</span>&gt;
     &lt;summary&gt;FAQ 2&lt;/summary&gt;
 &lt;/details&gt;</pre>
                 </details>
+            </section>
+
+            <hr>
+
+            <!-- This content section has several CSS-only fly-in scroll animations -->
+            <section class="container--content">
+                <h2>Scroll Animation</h2>
+                <p>Scroll down the page.</p>
+                <p>The content blocks below should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                <div class="container--media-content scroll-animation--fly-in fly-in--left">
+                    <div class="container--media">
+                        <img src="jack-anstey-XVoyX7l9ocY-unsplash.jpg" alt="Image of a train rounding a curved, stone bridge" width="640" height="409">
+                    </div>
+                    <div class="container--content">
+                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                    </div>
+                </div>
+                <div class="container--media-content scroll-animation--fly-in fly-in--right">
+                    <div class="container--media">
+                        <img src="jack-anstey-llNrizoUL84-unsplash.jpg" alt="Image of a driving toward the camera with a majestic mountain range in the distance" width="640" height="409">
+                    </div>
+                    <div class="container--content">
+                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                    </div>
+                </div>
+                <div class="container--media-content scroll-animation--fly-in fly-in--up">
+                    <div class="container--media">
+                        <img src="jack-anstey-LeIwrDwG0p8-unsplash.jpg" alt="Image of a curved beach with rugged hills behind the beach and an arched tunnel through the rocks over the water" width="640" height="409">
+                    </div>
+                    <div class="container--content">
+                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                    </div>
+                </div>
+                <!-- Images courtesy of <a href="https://unsplash.com/@jack_anstey" target="_blank">Jack Anstey</a> -->
             </section>
 
             <hr>
@@ -213,7 +244,7 @@
                     <p>This is a modal popover.</p>
                     <p>Native HTML and CSS, no JS required.</p>
                     <p>Initial CSS places it center in the screen, over all other content.</p>
-                    <p>Because this is a `manual` popover, you need to click the "Close" button to close it.</p>
+                    <p>Because this is a <code>manual</code> popover, you need to click the "Close" button to close it.</p>
                     <button popovertarget="popover1">Close</button>
                 </dialog>
             </section>
