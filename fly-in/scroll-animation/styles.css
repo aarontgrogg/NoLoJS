@@ -1,0 +1,4 @@
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  
+}
