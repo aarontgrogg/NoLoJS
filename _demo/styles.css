@@ -101,9 +101,17 @@ hr {
 p {
     margin-block: .5em;
 }
+code,
 pre {
     background-color: #333;
     color: lime;
+    & span {
+        color: red;
+    }
+}
+code {
+    padding-block: 2px;
+    padding-inline: 4px;
 }
 dialog {
     max-width: 90%;
@@ -412,8 +420,9 @@ nav {
         justify-content: normal;
     }
     & .container--content {
-        margin-inline: 0;
-        padding-inline: 2vw;
+        margin-inline: 8vw;
+        padding-inline: 4vw;
+        padding-block: 2vw;
         background-color: rgb(255 255 255 / .65);
     }
     & img {
