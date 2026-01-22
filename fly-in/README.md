@@ -2,9 +2,9 @@
 
 aka: Animated Content, Slide-In Panels
 
-- Using a combination of CSS [`perspective`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/perspective), 
-  [`transform-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-style), and a couple of 
-  [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform) properties creates a no-JavaScript content animation as the user scrolls the page.
+- Using a combination of CSS [`view-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/view-timeline), 
+  [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline), and a couple of 
+  [`animation-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-range) properties creates a no-JavaScript content animation as the user scrolls the page.
 
 > [!IMPORTANT]
 > Animation like this should always be placed within a `media` query that checks whether or not the user `prefers-reduced-motion`. \
