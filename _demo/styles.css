@@ -136,6 +136,7 @@ button {
 /** Smooth Scrolling **/
 /* Only apply if the user did NOT request reduced motion */
 @media (prefers-reduced-motion: no-preference) {
+    /* Makes the sliding a little smoother */
     html {
         scroll-behavior: smooth;
     }
@@ -212,8 +213,9 @@ nav {
             translate: var(--hidden);
         }
     }
-    /* Add opening animation, if the user is okay with that */
+    /* Only apply if the user did NOT request reduced motion */
     @media (prefers-reduced-motion: no-preference) {
+        /* Animate the menu opening */
         transition: translate 150ms;
     }
     /* Add backdrop */
@@ -309,12 +311,15 @@ nav {
     scrollbar-width: none;
     /* Confines the scrolling direction */
     scroll-snap-type: inline mandatory;
-    /* Makes the sliding a little smoother */
-    scroll-behavior: smooth;
     /* Setup anchor for navigation arrows and indicator dots */
     anchor-name: --css-carousel__hero;
     /* Position the dots where you wish */
     scroll-marker-group: after;
+    /* Only apply if the user did NOT request reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        /* Makes the sliding a little smoother */
+        scroll-behavior: smooth;
+    }
 
     &::scroll-button(*) {
         position-anchor: --css-carousel__hero;
@@ -378,16 +383,22 @@ nav {
     from { transform: translate3d(0, 0, 0); }
     to { transform: translate3d(-100%, 0, 0); }
 }
-/* Kill the scrollbar for the wrapper */
+/* Make both ULs `flex` and setup overflow scolling */
 .css-carousel__wrapper {
-    display: flex;
-    scrollbar-width: none;
+    display: flex;;
     /* Set the slides to create a single row */
     overflow-inline: auto;
 }
-/* Make both ULs `flex`, and give them both the animation */
-.css-carousel__animated-loop {
-    animation: css-carousel__animated-loop 20s linear infinite;
+/* Only apply if the user did NOT request reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+    /* Kill the scrollbar for the wrapper */
+    .css-carousel__wrapper {
+        scrollbar-width: none;
+    }
+    /* Add the animation */
+    .css-carousel__animated-loop {
+        animation: css-carousel__animated-loop 20s linear infinite;
+    }
 }
 
 
@@ -429,12 +440,14 @@ nav {
                 animation-range: entry 10% exit 100%;
             }
         }
+        /* Only apply if the user did NOT request reduced motion */
         @media (prefers-reduced-motion: no-preference) {
             /* Apply the animations */
             & .container--media {
                 animation: parallax-image linear both;
             }
             & .container--content {
+                margin-block: 0;
                 animation: parallax-text linear both;
             }
         }
@@ -469,10 +482,13 @@ nav {
         interpolate-size: allow-keywords; /* Allows animation between numeric and text values; in this case block-size: 0 --> auto; */
         &::details-content {
             block-size: 0; /* Initial state is 0 height */
-            @media (prefers-reduced-motion: no-preference) { /* Be nice to others */
-            transition: block-size 0.25s ease-in,
-                        content-visibility 0.25s ease-in;
-            transition-behavior: allow-discrete; /* Switch between numeric and text value will happen at 50% */
+            /* Only apply if the user did NOT request reduced motion */
+            @media (prefers-reduced-motion: no-preference) { 
+                /* Animate the opening */
+                transition: block-size 0.25s ease-in,
+                            content-visibility 0.25s ease-in;
+                /* Switch between numeric and text value will happen at 50% */
+                transition-behavior: allow-discrete;
             }
         }
         &[open]::details-content {
