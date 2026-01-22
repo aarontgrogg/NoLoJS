@@ -325,7 +325,6 @@ nav {
         position-anchor: --css-carousel__hero;
         position: fixed;
         top: anchor(center);
-        z-index: 1;
     }
     &::scroll-button(inline-start) {
         left: calc(anchor(left) + 10px);
