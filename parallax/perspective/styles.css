@@ -3,8 +3,8 @@ html {
     overflow-y: hidden;
 }
 body {
-    overflow-y: scroll;
     overflow-x: clip;
+    overflow-y: scroll;
     height: 100vh;
 }
 
