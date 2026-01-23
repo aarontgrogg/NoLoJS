@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>NoLoJS - Reducing reliance on JS</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css?<?php echo rand(); ?>">
         <meta name="author" content="Aaron T. Grogg">
         <meta name="copyright" content="Aaron T. Grogg">
         <meta name="keywords" content="NoLoJS, No Low JavaScript, Reduce JavaScript, Web Performance, Web Development, Frontend Development, Web Design">
@@ -14,8 +14,9 @@
         <!-- TODO: 
             - Add favicon
             - Create separate feature-detection JS file, add JS support as needed. 
-            - Add CWV library, and ideally a script that tracks how much JS had to be added (# files, KBs), display in an offscreen panel. 
-            - Do cross-browser tests, track numbers. 
+            - Add CWV library, and ideally a script that tracks how much JS had to be added (# files, KBs), display in an offscreen panel.
+                - Would ideally track these stats, too, send to RUM?
+            - Do cross-browser tests, track numbers.
             - Then add toggle that kills feature-detection JS and adds all-JS files, to implement all features via JS libraries. 
             - Now do tests and track again. 
             Features:
@@ -34,7 +35,7 @@
                 View Transitions 
                 Comp Libraries 
                 `defer`/`async` toggle for any js files
-                Live Baseline data/ logos somehow?
+                Live Baseline data/logos somehow?
         -->
     </head>
     <body>
