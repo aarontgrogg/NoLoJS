@@ -21,3 +21,4 @@ aka: Animated Content, Slide-In Panels
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-range
 - https://scroll-driven-animations.style/
+- https://theosoti.com/blog/scroll-driven-animation/
