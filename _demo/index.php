@@ -200,7 +200,7 @@
             <hr>
 
             <!-- This content section has several CSS-only fly-in scroll animations -->
-            <section class="container--content">
+            <section class="container--content container--cards">
                 <h2>Fly-In Content</h2>
                 <p>Scroll down the page a little more.</p>
                 <p>The content blocks below should each have a CSS-only fly-in animation as they enter the viewport.</p>
