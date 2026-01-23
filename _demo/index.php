@@ -201,15 +201,15 @@
 
             <!-- This content section has several CSS-only fly-in scroll animations -->
             <section class="container--content">
-                <h2>Scroll Animation</h2>
-                <p>Scroll down the page.</p>
+                <h2>Fly-In Content</h2>
+                <p>Scroll down the page a little more.</p>
                 <p>The content blocks below should each have a CSS-only fly-in animation as they enter the viewport.</p>
                 <div class="container--media-content scroll-animation--fly-in fly-in--left">
                     <div class="container--media">
                         <img src="jack-anstey-XVoyX7l9ocY-unsplash.jpg" alt="Image of a train rounding a curved, stone bridge" width="640" height="409">
                     </div>
                     <div class="container--content">
-                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                        <p>In supporting browsers, this content section should each have a CSS-only fly-in animation, coming in from the right, as it enters the viewport.</p>
                     </div>
                 </div>
                 <div class="container--media-content scroll-animation--fly-in fly-in--right">
@@ -217,7 +217,7 @@
                         <img src="jack-anstey-llNrizoUL84-unsplash.jpg" alt="Image of a driving toward the camera with a majestic mountain range in the distance" width="640" height="409">
                     </div>
                     <div class="container--content">
-                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                        <p>In supporting browsers, this image and text should each have a CSS-only fly-in animation, coming in from the left, as it enters the viewport.</p>
                     </div>
                 </div>
                 <div class="container--media-content scroll-animation--fly-in fly-in--up">
@@ -225,7 +225,7 @@
                         <img src="jack-anstey-LeIwrDwG0p8-unsplash.jpg" alt="Image of a curved beach with rugged hills behind the beach and an arched tunnel through the rocks over the water" width="640" height="409">
                     </div>
                     <div class="container--content">
-                        <p>This image and text should each have a CSS-only fly-in animation as they enter the viewport.</p>
+                        <p>In supporting browsers, this image and text should each have a CSS-only fly-in animation, animating upward, as it enters the viewport.</p>
                     </div>
                 </div>
                 <!-- Images courtesy of <a href="https://unsplash.com/@jack_anstey" target="_blank">Jack Anstey</a> -->
