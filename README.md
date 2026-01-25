@@ -2,20 +2,27 @@
 
 Reduce the JS Workload with no- or lo-JS options.
 
-> **I have nothing against JS**, but it has better things to do \
+> **I have nothing against JS**, \
+> but it has better things to do \
 > than manage your accordions and nav menus...
 
-For years, JavaScript has been the web's workhorse. If HTML and CSS couldn't do something, we used JavaScript.
+For years, JavaScript has been the web's workhorse. If HTML or CSS couldn't do what we wanted, we grabbed JavaScript to do it.
 
-And while that **has** helped push the user’s experience, and HTML and CSS themselves, forward, the web is choking on JS.
+While that **has** helped push the user’s experience forward, the web is choking on JS.
 
-As HTML and CSS gain capabilities, we should transfer any JavaScript workload possible to them.
+So as HTML and CSS continue to get stronger, we should transfer any JavaScript workload possible to them.
 
 This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
 
 As HTML and CSS continue to mature, this collection should expand.
 
 Please feel free to copy these and suggest others; Issues and PRs welcome!
+
+
+## Demo
+Page using several of these NoLoJS patterns:\
+https://aarontgrogg.com/nolojs/
+
 
 ## Resources
 

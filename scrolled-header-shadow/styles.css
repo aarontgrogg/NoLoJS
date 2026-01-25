@@ -1,0 +1,10 @@
+/* Identify the scroll container */
+html {
+    container-type: scroll-state;
+}
+/* Add this CSS if the users scrolls at all */
+@container scroll-state(scrollable: top) {
+  header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+}
