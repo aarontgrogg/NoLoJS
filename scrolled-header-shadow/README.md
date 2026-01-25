@@ -5,7 +5,7 @@
 - Using a [`container-type: scroll-state`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type) and 
   [`container scroll-state(scrollable: top)`](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries) creates a no-JavaScript header drop-shadow when the user scrolls the page.
 
-## [Scroll Animation](scroll-animation)
+## [Basic](basic)
 - JS: No
 - Baseline: [`container-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/container-type), 
             [`scroll-state queries`](https://webstatus.dev/features/container-scroll-state-queries)
