@@ -21,14 +21,25 @@
             - Now do tests and track again. 
             Features:
                 x Sticky header
+                x Shrinking header on scroll
+                - Header drop shadow on scroll
                 x Smooth scroll
                 x Burger menu
                 x Hero carousel 
                 x Modal
-                Scroll animation
+                x Scroll animation
                 x Logo carousel 
+                x Parallax sections
                 x FAQs
                 x Lazy load images
+                - View Transitions - "Add to Cart" button somewhere, animates into Cart?
+                - sticky TOC, highlight current section?
+                - 
+            Add hints for each feature, ? icon, but initially hide, have check/toggle in upper-right, check shows icons, clik icons to see explanations
+                Use anchor-position for the icons,
+                body:has(.show-icons:checked) { 
+                    .hints { display: block; }
+                }
             Should also include?
                 Preload links
                 Spec Rules
