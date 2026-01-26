@@ -424,6 +424,82 @@ nav {
 
 
 /** CSS Animated Carousel **/
+.container--tabs {
+    /* Initially create a multi-column grid */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 1rem;
+    max-width: 600px;
+    margin-inline: auto;
+    background: var(--green-med);
+    /* Hide tabs that are currently "offscreen" */
+    overflow-y: hidden;
+    /* Hide the horizontal scrollbar */
+    scrollbar-width: none;
+    /* Fixed height is not always appropriate, but highlights tab content can scroll within each tab panel */
+    block-size: 300px;
+    /* Give some space above for the "tabs" */
+    margin-block-start: 4rem;
+    /* Define where where the "tabs" sit */
+    scroll-marker-group: before;
+    /* Define content scroll behavior */
+    scroll-snap-type: x mandatory;
+    /* Create anchor for reference */
+    anchor-name: --tabs;
+  
+  /* Define the "tab" group */
+  &::scroll-marker-group {
+    /* Create the tabs layout */
+    display: flex;
+    column-gap: 1rem;
+    align-items: end;
+    justify-content: start;
+    /* Correlate & position the tab anchors */
+    position-anchor: --tabs;
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(left);
+    right: anchor(right);
+  }
+}
+.container--tab {
+    padding: 1rem;
+    overflow-y: scroll;
+    /* Define scroll snap to the start of each slide */
+    scroll-snap-align: start;
+    /* If you want to get fancy, and make the tab content scrollbars match your design */
+    scrollbar-color: var(--green-dark) var(--green-med); /* Firefox, thumb color, track color */
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--green-dark); /* WebKit, color of the thumb */
+        border-radius: 6px; /* WebKit, rounded corners for the thumb */
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--green-med); /* WebKit, color of the track */
+    }
+    &::scroll-marker {
+        /* Create the "tab" content based on its `aria-label` */
+        content: attr(aria-label);
+        /* Make it look pretty... */
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        white-space: nowrap;
+        padding-inline: 1.5rem;
+        padding-block: 1rem;
+        background: var(--green-dark);
+        border: 1px solid var(--green-med);
+        border-bottom: none;
+        color: white;
+  }
+  /* can change the appearance of the `:target-current`, but note that nesting this does NOT work */
+  &::scroll-marker:target-current {
+    background: var(--green-med);
+  }
+}  
+
+
+
+/** CSS Animated Carousel **/
 /* Create the animation for the loop effect (note iOS needs the GPU activation from translate3d */
 @keyframes css-carousel__animated-loop {
     from { transform: translate3d(0, 0, 0); }

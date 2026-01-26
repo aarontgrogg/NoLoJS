@@ -20,18 +20,6 @@
             - Then add toggle that kills feature-detection JS and adds all-JS files, to implement all features via JS libraries. 
             - Now do tests and track again. 
             Features:
-                x Sticky header
-                x Shrinking header on scroll
-                - Header drop shadow on scroll
-                x Smooth scroll
-                x Burger menu
-                x Hero carousel 
-                x Modal
-                x Scroll animation
-                x Logo carousel 
-                x Parallax sections
-                x FAQs
-                x Lazy load images
                 - View Transitions - "Add to Cart" button somewhere, animates into Cart?
                 - sticky TOC, highlight current section?
                 - 
@@ -53,6 +41,7 @@
 
         <!-- Header is "sticky" at the top of the screen -->
         <!-- On scroll, Header shrinks, as does logo -->
+        <!-- On scroll, Header gets a slight drop-shadow -->
         <header class="header-sticky header-shrink">
             <!-- Nav is offscreen on mobile, but fully visible on deskstop -->
             <nav>
@@ -73,7 +62,7 @@
                 height="330" />
             <!-- TODO: This menu contains toggles for contolling the page content/features -->
             <aside class="menu-utility">
-                <!-- TODO: Toggle for exposing "explanations"? -->
+                <!-- TODO: Toggle for exposing "explanations" -->
             </aside>
         </header>
 
@@ -83,6 +72,7 @@
 
             <hr>
 
+            <!-- This hero carousel allows CSS-only Previous and Next navigation, as well as dot indicator navigation, or simply swiping -->
             <section class="container--content__full-width carousel-hero ">
                 <h2>Hero Carousel</h2>
                  <ul class="css-carousel css-carousel__hero">
@@ -119,6 +109,33 @@
                     </li>
                 </ul>
                 <!-- Images courtesy of <a href="https://unsplash.com/@afgprogrammer" target="_blank">Mohammad Rahmani</a> -->
+            </section>
+
+            <hr>
+
+            <!-- This CSS-only tabbed content panel allows content to be "tabbed" on and offscreen -->
+            <section class="container--content">
+                <h2>Tabbed Content</h2>
+                  <div class="container--tabs">
+                    <div class="container--tab" aria-label="Tab 1">
+                        <p>These tabs, heavily inspried by the good work at <a href="https://chrome.dev/carousel/horizontal/series/" target="_blank">Chrome.dev CSS Carousel Gallery</a>, use a combination of Anchor Positioning, Scroll Snap and Scroll Markers to create a CSS-only tabbed content panel.</p>
+                        <p>In supporting browsers, as you click each tab, the content panels should slide left or right, as appropriate. This is all CSS, no JS involved.</p>
+                        <p>Maxime porro veritatis consequuntur blanditiis distinctio voluptate sint hic architecto, praesentium obcaecati! Voluptatibus porro ratione debitis, natus error quasi provident fugiat ut, hic eum quibusdam veniam dolore a. Veniam, dolore?</p>
+                    </div>
+                    <div class="container--tab" aria-label="Tab 2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, corporis alias. Eius optio iure, consectetur saepe itaque sed provident velit accusamus esse cum magni pariatur facere quisquam nulla placeat! Deleniti!</p>
+                        <p>Saepe adipisci quibusdam nihil doloremque veritatis sunt ex, voluptatibus obcaecati? Dolor inventore natus distinctio delectus voluptatem saepe officia laboriosam corporis asperiores quo! Sint ipsum incidunt accusamus possimus rerum vitae mollitia.</p>
+                        <p>Minima nam reprehenderit cum nihil error sed ipsam libero, exercitationem non in aperiam praesentium dicta expedita dolorem eveniet natus architecto molestiae velit voluptate doloremque dolores tempora totam porro officia. Architecto.</p>
+                        <p>Omnis soluta labore libero dolorum earum, dolor, commodi cum beatae harum minus reiciendis dolores maxime, facere sapiente perferendis! Qui, laboriosam. Commodi tenetur veritatis culpa corrupti impedit magnam vitae nobis quidem!</p>
+                    </div>
+                    <div class="container--tab" aria-label="Tab 3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio expedita animi laudantium quasi sapiente, dolorum quo perferendis officia velit nemo reiciendis nostrum nihil ullam sed pariatur provident. Harum, itaque.</p>
+                        <p>Minima nam reprehenderit cum nihil error sed ipsam libero, exercitationem non in aperiam praesentium dicta expedita dolorem eveniet natus architecto molestiae velit voluptate doloremque dolores tempora totam porro officia. Architecto.</p>
+                        <p>Omnis soluta labore libero dolorum earum, dolor, commodi cum beatae harum minus reiciendis dolores maxime, facere sapiente perferendis! Qui, laboriosam. Commodi tenetur veritatis culpa corrupti impedit magnam vitae nobis quidem!</p>
+                        <p>Odit, reiciendis blanditiis ut minus modi quis soluta odio aliquid alias facere ab non veritatis magnam, deleniti mollitia error esse iusto adipisci numquam velit? Reiciendis rerum aperiam ut cum perspiciatis?</p>
+                        <p>Maxime porro veritatis consequuntur blanditiis distinctio voluptate sint hic architecto, praesentium obcaecati! Voluptatibus porro ratione debitis, natus error quasi provident fugiat ut, hic eum quibusdam veniam dolore a. Veniam, dolore?</p>
+                    </div>
+                </div>
             </section>
 
             <hr>
