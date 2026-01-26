@@ -15,7 +15,7 @@ aka: Content Panels
             [`anchor-positioning`](https://webstatus.dev/features/anchor-positioning)
 - CodePen: https://codepen.io/aarontgrogg/pen/PwzJKVg
 
-## [Animated](animated)
+## [Animated Content](animated-content)
 - JS: No
 - Baseline: All of the above, and adding [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior)
 - CodePen: https://codepen.io/aarontgrogg/pen/PwzJKVg
