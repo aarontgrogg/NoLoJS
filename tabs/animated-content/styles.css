@@ -1,0 +1,47 @@
+/* Mostly the same as the Basic version, except adding `scroll-behavior: smooth;` to the `.tabs` element */
+.tabs {
+  /* Initially create a multi-column grid */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  /* Hide tabs that are currently "offscreen" */
+  overflow-y: hidden;
+  /* Hide the horizontal scrollbar */
+  scrollbar-width: none;
+  /* Give some space above for the "tabs" */
+  margin-block-start: 4rem;
+  /* Define where where the "tabs" sit */
+  scroll-marker-group: before;
+  /* Define content scroll behavior */
+  scroll-snap-type: x mandatory;
+  /* Create anchor for reference */
+  anchor-name: --tabs;
+  /* Only apply if the user did NOT request reduced motion */
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+  
+  /* Define the "tab" group */
+  &::scroll-marker-group {
+    /* Create the tabs layout */
+    display: flex;
+    /* Correlate & position the tab anchors */
+    position-anchor: --tabs;
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(left);
+    right: anchor(right);
+  }
+}
+.tab {
+  /* Define scroll snap to the start of each slide */
+  scroll-snap-align: start;
+  &::scroll-marker {
+    /* Create the "tab" content based on its `aria-label` */
+    content: attr(aria-label);
+  }
+  /* can change the appearance of the `:target-current`, but note that nesting this does NOT work */
+  &::scroll-marker:target-current {
+    background: var(--green-med);
+  }
+}
