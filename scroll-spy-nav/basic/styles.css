@@ -1,0 +1,8 @@
+ul {
+  /* Identify the scroll group that the browser monitors */
+  scroll-target-group: auto;
+  /* And as <a> elements within that group come into frame, they are automatically treated as the "current target" */
+  a:target-current {
+    /* Whatever style you wish to denote the "current target" */
+    font-weight: bold;
+}
