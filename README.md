@@ -14,6 +14,8 @@ So as HTML and CSS continue to get stronger, we should transfer any JavaScript w
 
 This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
 
+Note that most above have variantions within the parent folder (for example, opening CSS Carousels reveals 8 variations).
+
 As HTML and CSS continue to mature, this collection should expand.
 
 Please feel free to copy these and suggest others; Issues and PRs welcome!
@@ -26,7 +28,7 @@ https://aarontgrogg.com/nolojs/
 
 ## Resources
 
-A lot of people have written articles on this topic, and for quite some time, here are just a few (some are a bit dated now, so buyer-beware):
+A lot of people have been writing on this topic for quite some time. Here are just a few (again, some are a bit dated now, so buyer-beware):
 - [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/) (2016-05)
 - [Less JavaScript](https://adactio.medium.com/less-javascript-70735cb87495) by [Jeremy Keith](http://adactio.com/) (2016-11)
 - [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/) by [Anthony Ricaud](https://ricaud.me/) (2020-12)
