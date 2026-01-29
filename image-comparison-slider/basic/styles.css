@@ -1,0 +1,55 @@
+/* General layout */
+.container {
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+/* Overlap the image containers, and stretch the images to fill the container */
+div div {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div div {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
+#left img {
+  object-position: 0 0;
+}
+#right img {
+  object-position: 100% 0;
+}
+/* Setup the `range` element */
+input {
+  --thumb-width: 17px;
+  width: calc(100% + var(--thumb-width));
+  z-index: 1;
+}
+
+/* Set the anchor position */
+#right {
+  left: anchor(--thumb center);
+}
+
+/* Attach the slider handle to the anchor*/
+input::-webkit-slider-thumb {
+  anchor-name: --thumb;
+}
+input::-moz-range-thumb {
+  anchor-name: --thumb;
+}
+input::-ms-thumb {
+  anchor-name: --thumb;
+}
