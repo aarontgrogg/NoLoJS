@@ -2,7 +2,7 @@
 
 Reduce the JS Workload with no- or lo-JS options.
 
-> **I have nothing against JS**, \
+> ***I have nothing against JS***, \
 > but it has better things to do \
 > than manage your accordions and nav menus...
 
