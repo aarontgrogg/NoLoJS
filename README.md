@@ -15,7 +15,8 @@ This is an organic collection of common JS patterns that can be replaced with ju
 As HTML and CSS continue to mature, this collection should expand.
 
 > [!TIP]
-> Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).
+> Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).\
+> And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
 
 Please feel free to copy these and suggest others; [Issues and PRs are welcome](#contribute)!
 
@@ -27,7 +28,7 @@ https://aarontgrogg.com/nolojs/
 
 ## Resources
 
-A lot of people have been writing on this topic for quite some time. Here are just a few (again, some are a bit dated now, so buyer-beware):
+A lot of people have been writing on this topic for quite some time. Here are just a few (note, some are a bit dated now, so buyer-beware):
 - [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/) (2016-05)
 - [Less JavaScript](https://adactio.medium.com/less-javascript-70735cb87495) by [Jeremy Keith](http://adactio.com/) (2016-11)
 - [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/) by [Anthony Ricaud](https://ricaud.me/) (2020-12)
@@ -38,7 +39,7 @@ A lot of people have been writing on this topic for quite some time. Here are ju
 - [You Don’t Need JavaScript for That](https://www.youtube.com/watch?v=0rZywO6jdU4) by [Kevin Powell](https://www.kevinpowell.co/) (2024-11)
 - [Modern CSS Techniques That Replace JavaScript](https://medium.com/@muhammadhashir752/modern-css-techniques-that-replace-javascript-and-save-you-time-a9f6c595318a) by [Muhammad Hashir](https://www.linkedin.com/in/m-hashir) (2025-06)
 
-And here are a couple of fantastic all-around NoLoJS resources:
+And here are a couple of fantastic all-around "no or low JS" resources:
 - [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic!)
 - [Utsav Meena](https://www.linkedin.com/in/utsavmeena/)
 
