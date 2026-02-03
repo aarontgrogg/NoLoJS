@@ -70,5 +70,5 @@ and ideally a contact method, should there be questions.
 
 ## Contact
 
-If you'd like to just reach out to me for some reason, please feel free to do so [via email](mailto:aarontgrogg@gmail.com) or any of the contact methods listed on [my GitHub profile](https://github.com/aarontgrogg).
+If you'd like to just reach out to me for some reason, please feel free to do so via email (aarontgrogg@gmail.com) or any of the contact methods listed on [my GitHub profile](https://github.com/aarontgrogg).
 
