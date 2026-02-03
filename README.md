@@ -53,12 +53,12 @@ There are surely many more examples, so please contribute!
 If you'd like to add your favorite no- or lo-JS pattern, please submit a PR, and please try to follow this established pattern as much as possible...
 - If creating a new top-level pattern, name it after the _feature_, not the HTML element or CSS property; in theory, this should make it easier for people to find.\
   Example: The use of `lazy-load` instead of something like `loading` or `preload`. Ideally someone looking to lazy-load something might find that more easily.
-- Within the pattern, create a `README.md` that includes any other names by which this might be called, a brief description, and links to any variations of that pattern.\
-  Each variation should have a brief description, list whether it is "No" or "Lo" JS, link to Baseline or CanIUse for that feature, and ideally provide a working example via CodePen or similar.
+- Within the pattern, create a top-level `README.md` that includes any other names by which this might be called, a brief description, and links to any variations of that pattern.\
+  Each variation should have a brief description, list whether it is "No JS" or "Lo JS", link to Baseline or CanIUse for that feature, and ideally provide a working example via CodePen or similar.
   Example: Within the `accordion` pattern, [the `README.md`](https://github.com/aarontgrogg/NoLoJS/tree/main/accordion) states "aka: Expanding Content Panel", how it is 
   implemented and why that is a benefit, then lists (and links to) five variations of that pattern, including links to a CodePen for each.
-- Finally, within each variation, include a simple index.html, styles.css and script.js, each as needed, with _as little code as is required to make the pattern work_ (not an entire page). 
-  Ideally code can be kept to a minimum, to help clarity / reduce confusion, but feel free to include comments if you think they will help the pattern to the user better understand. 
+- Finally, within each variation, include a simple index.html, styles.css and script.js, each as needed, with _as little code as is required to make the pattern work_ (not an entire HTML document). 
+  Ideally code can be kept to a minimum, to help with clarity and to reduce confusion, but feel free to include comments if you think they will help the user better understand. 
   Try to eliminate unnecessary fonts, colors, margins, padding, etc., unless it is crucial to making the pattern work.\
   Example: [The `accordion` > `adjust-marker` pattern](https://github.com/aarontgrogg/NoLoJS/tree/main/accordion/adjust-marker) contains an 
   [index.html](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/index.html) and [styles.css](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/styles.css) file, 
@@ -67,3 +67,8 @@ If you'd like to add your favorite no- or lo-JS pattern, please submit a PR, and
 
 If you find an error, or would like to submit an alternate or improved method for some pattern, please create an Issue, providing as much supporting information as possible, 
 and ideally a contact method, should there be questions.
+
+## Contact
+
+If you'd like to just reach out to me for some reason, please feel free to do so [via email](mailto:aarontgrogg@gmail.com) or any of the contact methods listed on [my GitHub profile](https://github.com/aarontgrogg).
+
