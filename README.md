@@ -9,16 +9,15 @@ Reduce the JS Workload with no- or lo-JS options.
 For years, JavaScript has been the web's workhorse. If HTML or CSS couldn't do what we wanted, we grabbed JavaScript to do it.
 
 While that **has** helped push the user’s experience forward, the web is choking on JS.
-
 So as HTML and CSS continue to get stronger, we should transfer any JavaScript workload possible to them.
 
 This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
-
-Note that most above have variantions within the parent folder (for example, opening CSS Carousels reveals 8 variations).
-
 As HTML and CSS continue to mature, this collection should expand.
 
-Please feel free to copy these and suggest others; Issues and PRs welcome!
+> [!TIP]
+> Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).
+
+Please feel free to copy these and suggest others; [Issues and PRs are welcome](#contribute)!
 
 
 ## Demo
