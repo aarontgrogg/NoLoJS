@@ -6,26 +6,35 @@
 <body class="component">
   {% include header.html %}
 
-  {% assign file_path_to_check = page.dir'/styles.css' %}
-  {% assign file_exists = false %}
-  
-  {% for static_file in site.static_files %}
-    {% if static_file.path == file_path_to_check %}
-      {% assign file_exists = true %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  
-  {% if file_exists %}
-  <style style="display: block;">
-      {% include_relative file_path_to_check %}
-  </style>
-  {% else %}
-  <p>No Special CSS.</p>
-  {% endif %}
-
   <article>
-    {{ content }}
+
+    <h2>CSS</h2>
+        {% assign file_path_to_check = 'styles.css' %}
+        {% assign file_exists = false %}
+        
+        {% for static_file in site.static_files %}
+            {% if static_file.path == file_path_to_check %}
+              {% assign file_exists = true %}
+              {% break %}
+            {% endif %}
+        {% endfor %}
+        
+        {% if file_exists %}
+        <style style="display: block;">
+          {% include_relative file_path_to_check %}
+        </style>
+        {% else %}
+        <p>No Special CSS.</p>
+        {% endif %}
+      
+    <h2>HTML</h2>
+        {% highlight html %}
+        {{ content }}
+        {% endhighlight %}
+      
+    <h2>Example</h2>
+        {{ content }}
+      
   </article>
     
   {% include footer.html %}
