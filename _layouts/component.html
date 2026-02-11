@@ -6,30 +6,33 @@
 <body class="component">
     {% include header.html %}
     <article class="standalone">
-
-        <h2>CSS</h2>
-        {% assign file_path_to_check = 'styles.css' %}
-        {% assign file_exists = false %}
-        
-        {% for static_file in site.static_files %}
-            {% if static_file.path == file_path_to_check %}
-              {% assign file_exists = true %}
-              {% break %}
-            {% endif %}
-        {% endfor %}
-        
-        {% if file_exists %}
-        <style style="display: block;">
-          {% include_relative file_path_to_check %}
-        </style>
-        {% else %}
-        <p>No Special CSS.</p>
-        {% endif %}
       
         <h2>HTML</h2>
+        {% if page.html %}
         {% highlight html %}
         {{ content }}
         {% endhighlight %}
+        {% else %}
+        <p>No HTML.</p>
+        {% endif %}
+        
+        <h2>CSS</h2>
+        {% if page.css %}
+        <style style="display: block;">
+          {% include_relative 'style.css' %}
+        </style>
+        {% else %}
+        <p>No CSS.</p>
+        {% endif %}
+        
+        <h2>JS</h2>
+        {% if page.js %}
+        <script style="display: block;">
+          {% include_relative 'script.js' %}
+        </script>
+        {% else %}
+        <p>No JS.</p>
+        {% endif %}
       
         <h2>Example</h2>
         {{ content }}
