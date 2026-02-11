@@ -1,5 +1,5 @@
 ---
-name: Accordion, Basic
+name: Accordion - Basic
 template: component
 html: true
 css: false
