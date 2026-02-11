@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Accordion
-code_root: site.components.code.accordion.code
 ---
 # Accordion
 
@@ -15,9 +14,10 @@ aka: Expanding Content Panel
 - JS: No
 - Baseline: [`details`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- CSS: Nothing special.
 - HTML: 
 {% highlight html %}
-{{ page.code_root.basic.code }}
+{% include basic/index.html }}
 {% endhighlight %}
 
 ## [Initially Open](initially-open)
