@@ -10,7 +10,7 @@
         <h2>HTML</h2>
         {% if page.html %}
         {% highlight html %}
-        {{ content }}
+        {{ page.content }}
         {% endhighlight %}
         {% else %}
         <p>No HTML.</p>
@@ -19,7 +19,7 @@
         <h2>CSS</h2>
         {% if page.css %}
         <style style="display: block;">
-          {% include_relative 'style.css' %}
+          {% include_relative style.css %}
         </style>
         {% else %}
         <p>No CSS.</p>
@@ -28,14 +28,14 @@
         <h2>JS</h2>
         {% if page.js %}
         <script style="display: block;">
-          {% include_relative 'script.js' %}
+          {% include_relative script.js %}
         </script>
         {% else %}
         <p>No JS.</p>
         {% endif %}
       
         <h2>Example</h2>
-        {{ content }}
+        {{ page.content }}
       
     </article>
     {% include footer.html %}
