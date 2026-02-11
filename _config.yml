@@ -3,5 +3,5 @@ description: An organic collection of common JS patterns that can be replaced wi
 markdown: kramdown
 highlighter: rouge
 collections:
-  scripts:
+  components:
     output: true
