@@ -1,0 +1,109 @@
+/**
+ * NoLoJS CSS
+ **/
+
+/*****
+ * Base CSS, for comsetics
+*****/
+:root {
+  --green-dark: #34a0a4;
+  --green-med: #a1c9c9;
+  --green-light: #f6f7f1;
+  --header-height-large: 150px;
+  --header-height-small: 75px;
+  --header-padding: 1rem;
+  --content-margin: var(--header-height-large);
+  --small-screen-breakpoint: 600px;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+html {
+    background-color: var(--green-dark);
+}
+body {
+    margin: 0;
+    background-color: var(--green-light);
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.2;
+    color: #444;
+}
+h1 {
+    margin: 0;
+    padding-block: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+header,
+footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: var(--header-padding);
+    color: var(--green-light);
+    font-size: 16px;
+    background-color: var(--green-dark);
+    & a {
+        color: var(--green-dark);
+    }
+}
+footer {
+    flex-direction: column;
+    text-align: center;
+}
+article {
+    padding-block: 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+hr {
+    margin-block: 2em;
+    margin-inline: 1rem;
+}
+p {
+    margin-block: .5em;
+}
+code,
+pre {
+    background-color: #333;
+    color: lime;
+    & span {
+        color: red;
+    }
+}
+code {
+    padding-block: 2px;
+    padding-inline: 4px;
+}
+dialog {
+    max-width: 90%;
+    padding-inline: 1rem;
+    background-color: var(--green-med);
+    border: 2px solid var(--green-dark);
+    box-shadow: 5px 5px 10px;
+}
+::backdrop {
+    background: rgb(0 0 0 / .65);
+}
+button {
+    border: 1px solid var(--green-dark);
+    border-radius: 5px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    display: inline-block;
+    background-color: var(--green-dark);
+    cursor: pointer;
+    color: var(--green-light);
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
