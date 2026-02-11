@@ -10,8 +10,7 @@ details {
       content: '▶'; /* Replace default marker so it can be animated */
       position: absolute;
       inset-inline-start: 0.5rem; /* Adust for your layout */
-      inset-block-start: 0.75rem; /* Adust for your layout */
-      font-size: 0.75em; /* Adust for your layout */
+      font-size: 0.8em; /* Adust for your layout */
       @media (prefers-reduced-motion: no-preference) { /* Be nice to others */
         transition: rotate 0.25s ease-in;
       }
