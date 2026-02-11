@@ -1,7 +1,8 @@
 ---
-name: Accordin, Basic
+name: Accordion, Basic
 template: component
 ---
+
 <details>
   <summary>MD Initially closed, click to open</summary>
   <p>This content is initially hidden, but is revealed by clicking the summary.<br>Click again to re-close it.</p>
