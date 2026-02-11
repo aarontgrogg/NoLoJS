@@ -1,3 +1,8 @@
+---
+layout: post
+title: Accordion
+code_root: site.components.code.accordion.code
+---
 # Accordion
 
 aka: Expanding Content Panel
@@ -10,6 +15,10 @@ aka: Expanding Content Panel
 - JS: No
 - Baseline: [`details`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- HTML: 
+{% highlight html %}
+{{ page.code_root.basic.code }}
+{% endhighlight %}
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
