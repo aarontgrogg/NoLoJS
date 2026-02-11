@@ -81,6 +81,12 @@ code {
     padding-block: 2px;
     padding-inline: 4px;
 }
+blockquote {
+    color: currentColor;
+    border-left: 4px solid currentColor;
+    padding: 0 1em;
+    margin-inline: 0;
+}
 dialog {
     max-width: 90%;
     padding-inline: 1rem;
