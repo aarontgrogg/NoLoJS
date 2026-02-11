@@ -1,8 +1,3 @@
----
-name: Accordion
-layout: default
----
-
 # Accordion
 
 aka: Expanding Content Panel
