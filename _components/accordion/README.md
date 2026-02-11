@@ -1,7 +1,6 @@
 ---
-layout: default
-title: Accordion
 name: Accordion
+layout: default
 ---
 
 # Accordion
@@ -16,8 +15,12 @@ aka: Expanding Content Panel
 - JS: No
 - Baseline: [`details`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
-- CSS: Nothing special.
-- HTML: 
+- HTML:
+{% highlight html %}
+{% include_relative basic/index.html %}
+{% endhighlight %}
+- Example:
+{% include_relative basic/index.html %}
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
@@ -34,13 +37,15 @@ aka: Expanding Content Panel
 ## [Adjust `::marker`](adjust-marker)
 - Adjust the `::marker` appearance via CSS.
 - JS: No
-- Baseline: [`::marker`](https://webstatus.dev/features/marker)
+- Baseline: [`name`](https://webstatus.dev/features/details),
+            [`::marker`](https://webstatus.dev/features/marker)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - JS: No
-- Baseline: [`::details-content`](https://webstatus.dev/features/details-content), 
+- Baseline: [`name`](https://webstatus.dev/features/details),
+            [`::details-content`](https://webstatus.dev/features/details-content), 
             [`content-visibility`](https://webstatus.dev/features/content-visibility), 
             [`transition-behavior`](https://webstatus.dev/features/transition-behavior), 
             [`interpolate-size`](https://webstatus.dev/features/interpolate-size)
