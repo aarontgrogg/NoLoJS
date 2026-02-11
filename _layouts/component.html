@@ -3,7 +3,7 @@
 <head>
     {% include head.html %}
 </head>
-<body class="index">
+<body class="component">
   {% include header.html %}
 
   {% assign file_path_to_check = page.dir'/styles.css' %}
@@ -17,12 +17,14 @@
   {% endfor %}
   
   {% if file_exists %}
-  <style stle="display: block;">{% include_relative file_path_to_check %}</style>
+  <style style="display: block;">
+      {% include_relative file_path_to_check %}
+  </style>
   {% else %}
   <p>No Special CSS.</p>
   {% endif %}
 
-  <article class="standalone">
+  <article>
     {{ content }}
   </article>
     
