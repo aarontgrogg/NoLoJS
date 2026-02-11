@@ -69,23 +69,33 @@ hr {
 p {
     margin-block: .5em;
 }
-code,
-pre {
+:not(figure) {
+  pre, code {
     background-color: #333;
     color: lime;
     & span {
         color: red;
     }
-}
-code {
+  }
+  pre {
     padding-block: 2px;
     padding-inline: 4px;
+  }
+}
+pre, code {
+    color: lime;
 }
 blockquote {
     color: currentColor;
     border-left: 4px solid currentColor;
     padding: 0 1em;
     margin-inline: 0;
+}
+figure.example {
+    margin: 0;
+    padding: 14px;
+    outline: 1px solid currentColor;
+    background-color: var(--green-med);
 }
 dialog {
     max-width: 90%;
@@ -112,4 +122,16 @@ img, video {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/** Highlight overrides **/
+figure.highlight {
+    margin: 0;
+}
+.highlight pre {
+    padding-inline: 14px;
+}
+.highlight .err {
+    color: red;
+    background-color: transparent;
 }
