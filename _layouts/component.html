@@ -22,7 +22,7 @@
         <h2>CSS</h2>
 {% if page.css %}
         <style style="display: block; font-family: monospace; unicode-bidi: isolate; white-space: pre;">
-{% include_relative style.css %}
+{% include_relative styles.css %}
         </style>
 {% else %}
         <p>No CSS.</p>
@@ -31,7 +31,7 @@
         <h2>JS</h2>
 {% if page.js %}
         <script style="display: block; font-family: monospace; unicode-bidi: isolate; white-space: pre;">
-{% include_relative script.js %}
+{% include_relative scripts.js %}
         </script>
 {% else %}
         <p>No JS.</p>
