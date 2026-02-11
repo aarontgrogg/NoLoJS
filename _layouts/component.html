@@ -11,31 +11,29 @@
 {% include_relative component.html %}
       
         <h2>HTML</h2>
-{% if page.html %}
 {% highlight html %}
 {% include_relative component.html %}
 {% endhighlight %}
-{% else %}
-        <p>No HTML.</p>
-{% endif %}
         
         <h2>CSS</h2>
-{% if page.css %}
-        <style style="display: block; font-family: monospace; unicode-bidi: isolate; white-space: pre;">
+        {% if page.css %}
+        <link rel="stylesheet" href="styles.css" media="all">
+{% highlight css %}
 {% include_relative styles.css %}
-        </style>
-{% else %}
-        <p>No CSS.</p>
-{% endif %}
+{% endhighlight %}
+        {% else %}
+        <p>No special CSS required.</p>
+        {% endif %}
         
         <h2>JS</h2>
-{% if page.js %}
-        <script style="display: block; font-family: monospace; unicode-bidi: isolate; white-space: pre;">
+        {% if page.js %}
+        <script src="scripts.js"></script>
+{% highlight js %}
 {% include_relative scripts.js %}
-        </script>
-{% else %}
-        <p>No JS.</p>
-{% endif %}
+{% endhighlight %}
+        {% else %}
+        <p>No JS required.</p>
+        {% endif %}
       
     </article>
 {% include footer.html %}
