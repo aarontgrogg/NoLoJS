@@ -3,6 +3,7 @@ layout: default
 title: Accordion
 name: Accordion
 ---
+
 # Accordion
 
 aka: Expanding Content Panel
@@ -17,9 +18,6 @@ aka: Expanding Content Panel
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
 - CSS: Nothing special.
 - HTML: 
-{% highlight html %}
-{% page.dir.basic.index.html }}
-{% endhighlight %}
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
