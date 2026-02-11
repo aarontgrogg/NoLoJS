@@ -1,0 +1,62 @@
+.progressbar {      
+    /* The duration of the animation */
+    --duration: 5s;
+    /* Schemes using light and dark */
+    color-scheme: light dark;
+    color: light-dark(#333, #f8f8f8);
+    background-color: light-dark(#ddd, #333);
+    /* Basic styling */
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    margin: .5em 0;
+    /* Hide the checkbox */
+    input[type="checkbox"] {
+        display: none;
+    }
+    /* Show the start label when the checkbox isn't checked */
+    label:before {
+        color: white;
+        position: absolute;
+        background-color: light-dark(#ddd, #333);
+        content: 'start';
+        font-size: 1em;
+    }
+    /* Change the label to running when the checkbox is checked */
+    input[type="checkbox"]:checked + label:before{
+        content:'running';
+    } 
+    /* Animate the progress bar when the checkbox is checked */
+    input[type="checkbox"]:checked + label:after{ 
+        width: 0;
+        transition: width var(--duration) linear;
+    }
+    /* The progress cover - we animate from right to left */
+    label:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: light-dark(#ccc, #999);
+        display: block;
+        width: 100%;
+        height: 10px;
+        transition: width 400ms linear;
+    }
+    /* The progress bar itself - a gradient that fills the width of the label */
+    label {
+        text-indent: 5px;
+        font-size: 1em;
+        padding: 5px 0 15px 0;
+        position: relative;
+        display: block;
+        background: linear-gradient(to right, green 50%, yellow 80%, red);
+        overflow: hidden;
+        background-size: 100% 10px;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
