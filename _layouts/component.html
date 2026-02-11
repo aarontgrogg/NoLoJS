@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="index">
+
+  {% assign file_path_to_check = page.dir'/styles.css' %}
+  {% assign file_exists = false %}
+  
+  {% for static_file in site.static_files %}
+    {% if static_file.path == file_path_to_check %}
+      {% assign file_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  
+  {% if file_exists %}
+  <style stle="display: block;">{% include_relative file_path_to_check %}</style>
+  {% else %}
+  <p>No Special CSS.</p>
+  {% endif %}
+
+  <article class="standalone">
+    {{ content }}
+  </article>
+  <footer>
+    {% include footer.html %}
+  </footer>
+  <!--script src="/NoLoJS/assets/scripts.js"></script-->
+</body>
+</html>
