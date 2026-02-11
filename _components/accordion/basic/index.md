@@ -1,6 +1,6 @@
 ---
 name: Accordion - Basic
-template: component
+layout: component
 html: true
 css: false
 js: false
