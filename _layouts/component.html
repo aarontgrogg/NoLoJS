@@ -7,10 +7,13 @@
     {% include header.html %}
     <article class="standalone">
       
+        <h2>Example</h2>
+        {% include_relative component.html %}
+      
         <h2>HTML</h2>
         {% if page.html %}
         {% highlight html %}
-        {{ page.content }}
+        {% include_relative component.html %}
         {% endhighlight %}
         {% else %}
         <p>No HTML.</p>
@@ -33,9 +36,6 @@
         {% else %}
         <p>No JS.</p>
         {% endif %}
-      
-        <h2>Example</h2>
-        {{ page.content }}
       
     </article>
     {% include footer.html %}
