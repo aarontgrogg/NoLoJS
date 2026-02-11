@@ -1,5 +1,6 @@
-title: NoLoJS - Reduce the JS Workload with no- or lo-JS options.
-description: An organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
+name: NoLoJS
+tagline: Reduce the JS Workload with no- or lo-JS options
+description: An organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS
 markdown: kramdown
 highlighter: rouge
 collections:
