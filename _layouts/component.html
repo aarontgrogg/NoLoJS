@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include head.html %}
+{% include head.html %}
 </head>
 <body class="component">
-    {% include header.html %}
+{% include header.html %}
     <article class="standalone">
       
         <h2>Example</h2>
-        {% include_relative component.html %}
+{% include_relative component.html %}
       
         <h2>HTML</h2>
-        {% if page.html %}
-        {% highlight html %}
-        {% include_relative component.html %}
-        {% endhighlight %}
-        {% else %}
+{% if page.html %}
+{% highlight html %}
+{% include_relative component.html %}
+{% endhighlight %}
+{% else %}
         <p>No HTML.</p>
-        {% endif %}
+{% endif %}
         
         <h2>CSS</h2>
-        {% if page.css %}
+{% if page.css %}
         <style style="display: block;">
-          {% include_relative style.css %}
+{% include_relative style.css %}
         </style>
-        {% else %}
+{% else %}
         <p>No CSS.</p>
-        {% endif %}
+{% endif %}
         
         <h2>JS</h2>
-        {% if page.js %}
+{% if page.js %}
         <script style="display: block;">
-          {% include_relative script.js %}
+{% include_relative script.js %}
         </script>
-        {% else %}
+{% else %}
         <p>No JS.</p>
-        {% endif %}
+{% endif %}
       
     </article>
-    {% include footer.html %}
+{% include footer.html %}
 </body>
 </html>
