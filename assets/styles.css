@@ -35,9 +35,6 @@ h1 {
     font-size: 2rem;
     text-align: center;
 }
-h2 {
-    text-align: center;
-}
 header,
 footer {
     display: flex;
@@ -69,8 +66,7 @@ hr {
 p {
     margin-block: .5em;
 }
-:not(figure) {
-  pre, code {
+pre, code {
     background-color: #333;
     color: lime;
     & span {
@@ -81,9 +77,6 @@ p {
     padding-block: 2px;
     padding-inline: 4px;
   }
-}
-pre, code {
-    color: lime;
 }
 blockquote {
     color: currentColor;
@@ -129,9 +122,12 @@ figure.highlight {
     margin: 0;
 }
 .highlight pre {
-    padding-inline: 14px;
+    padding: 14px;
+    overflow: scroll;
+}
+.highlight span {
+    background-color: transparent;
 }
 .highlight .err {
     color: red;
-    background-color: transparent;
 }
