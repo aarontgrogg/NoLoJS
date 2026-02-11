@@ -15,12 +15,6 @@ aka: Expanding Content Panel
 - JS: No
 - Baseline: [`details`](https://webstatus.dev/features/details)
 - CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
-- HTML:
-{% highlight html %}
-{% include_relative basic/index.html %}
-{% endhighlight %}
-- Example:
-{% include_relative basic/index.html %}
 
 ## [Initially Open](initially-open)
 - Add an `open` attribute to the `details` elements to set it to be initially open.
