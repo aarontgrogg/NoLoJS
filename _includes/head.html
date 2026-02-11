@@ -1,0 +1,14 @@
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta property="og:url" content="https://aarontgrogg.github.io/NoLoJS{{ page.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title"content="{{ page.title }}" />
+  {% if page.summary %}
+  <meta property="og:description" content="{{ page.summary }}" />
+  {% endif %}
+  {% if page.heroimage %}
+  <meta property="og:image"content="{{ page.heroimage }}" />
+  {% endif %}
+  <link rel="icon" href="https://aarontgrogg.com/favicon.ico">
+  <!--link rel="stylesheet" href="/NoLoJS/assets/styles.css"-->
