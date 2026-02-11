@@ -4,11 +4,10 @@
     {% include head.html %}
 </head>
 <body class="component">
-  {% include header.html %}
+    {% include header.html %}
+    <article class="standalone">
 
-  <article>
-
-    <h2>CSS</h2>
+        <h2>CSS</h2>
         {% assign file_path_to_check = 'styles.css' %}
         {% assign file_exists = false %}
         
@@ -27,16 +26,15 @@
         <p>No Special CSS.</p>
         {% endif %}
       
-    <h2>HTML</h2>
+        <h2>HTML</h2>
         {% highlight html %}
         {{ content }}
         {% endhighlight %}
       
-    <h2>Example</h2>
+        <h2>Example</h2>
         {{ content }}
       
-  </article>
-    
-  {% include footer.html %}
+    </article>
+    {% include footer.html %}
 </body>
 </html>
