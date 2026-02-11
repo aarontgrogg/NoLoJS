@@ -4,6 +4,7 @@
     {% include head.html %}
 </head>
 <body class="index">
+  {% include header.html %}
 
   {% assign file_path_to_check = page.dir'/styles.css' %}
   {% assign file_exists = false %}
@@ -24,9 +25,7 @@
   <article class="standalone">
     {{ content }}
   </article>
-  <footer>
-    {% include footer.html %}
-  </footer>
-  <!--script src="/NoLoJS/assets/scripts.js"></script-->
+    
+  {% include footer.html %}
 </body>
 </html>
