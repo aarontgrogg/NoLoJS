@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accordion
+name: Accordion
 ---
 # Accordion
 
