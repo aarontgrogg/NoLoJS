@@ -18,7 +18,7 @@ aka: Expanding Content Panel
 - CSS: Nothing special.
 - HTML: 
 {% highlight html %}
-{% include basic/index.html }}
+{% page.dir.basic.index.html }}
 {% endhighlight %}
 
 ## [Initially Open](initially-open)
