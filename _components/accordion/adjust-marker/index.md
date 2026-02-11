@@ -2,7 +2,7 @@
 name: Accordion - Adjust Marker
 layout: component
 html: true
-css: false
+css: true
 js: false
 ---
 
