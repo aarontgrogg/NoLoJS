@@ -1,5 +1,5 @@
 /* Basic carousel CSS */
-ul {
+.css-carousel {
   /* Resets for carousel appearance */
   list-style: none;
   padding: 0;
@@ -15,12 +15,11 @@ ul {
     /* Makes the sliding a little smoother */
     scroll-behavior: smooth;
   }
-}
-  
-/* Add snap-to position */
-li {
-  /* Optionally force swipes to center the new slide; can also use: `start` or `end` */
-  scroll-snap-align: center;
-  /* Optionally force swipes to stop for each slide; can also use: `normal` */
-  scroll-snap-stop: always;
+  /* Add snap-to position */
+  li {
+    /* Optionally force swipes to center the new slide; can also use: `start` or `end` */
+    scroll-snap-align: center;
+    /* Optionally force swipes to stop for each slide; can also use: `normal` */
+    scroll-snap-stop: always;
+  }
 }
