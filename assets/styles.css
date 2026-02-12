@@ -103,14 +103,13 @@ blockquote {
 }
 details {
     padding: 0;
-    outline: 1px solid var(--green-dark);
+    outline: 1px solid var(--green-light);
     background-color: var(--green-med);
     &::details-content {
-        padding: 14px;
-        block-size: 0;
+        padding-inline: 14px;
     }
     &[open]::details-content {
-        block-size: auto;
+        padding-block: 14px;
     }
 }
 summary {
