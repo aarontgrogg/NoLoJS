@@ -11,36 +11,54 @@
             {{ page.content }}
         </section>
       
-        <h2>Example</h2>
-        <figure class="example">
+        <section>
+            <h2>Example</h2>
+            <figure class="example">
 {% include_relative component.html %}
-        </figure>
+            </figure>
+        </section>
       
-        <h2>HTML</h2>
+        <section>
+            <h2>HTML</h2>
 {% highlight html %}
 {% include_relative component.html %}
 {% endhighlight %}
+        </section>
         
-        <h2>CSS</h2>
-        {% if page.css %}
-        <link rel="stylesheet" href="styles.css" media="all">
+        <section>
+            <h2>CSS</h2>
+            {% if page.css %}
+            <link rel="stylesheet" href="styles.css" media="all">
 {% highlight css %}
 {% include_relative styles.css %}
 {% endhighlight %}
-        {% else %}
-        <figure class="highlight"><pre><code>No special CSS required.</code></pre></figure>
-        {% endif %}
+            {% else %}
+            <figure class="highlight"><pre><code>No special CSS required.</code></pre></figure>
+            {% endif %}
+        </section>
         
-        <h2>JS</h2>
-        {% if page.js %}
-        <script src="scripts.js"></script>
+        <section>
+            <h2>JS</h2>
+            {% if page.js %}
+            <script src="scripts.js"></script>
 {% highlight js %}
 {% include_relative scripts.js %}
 {% endhighlight %}
-        {% else %}
-        <figure class="highlight"><pre><code>No JS required.</code></pre></figure>
-        {% endif %}
-      
+            {% else %}
+            <figure class="highlight"><pre><code>No JS required.</code></pre></figure>
+            {% endif %}
+        </section>
+            
+        <section>
+            <h2>Baseline</h2>
+            {{ page.baseline }}
+        </section>
+            
+        <section>
+            <h2>CodePen</h2>
+            {{ page.codepen }}
+        </section>
+            
     </article>
 {% include footer.html %}
 </body>
