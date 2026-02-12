@@ -7,7 +7,7 @@
 {% include header.html %}
     <article class="standalone">
 
-        <section>
+        <section class="intro">
             {{ page.content }}
             <ul>
                 <li><a href="#demo">Demo</a></li>
@@ -20,21 +20,21 @@
             
         </section>
       
-        <section>
+        <section class="demo">
             <h2 id="demo">Demo</h2>
             <figure class="demo">
 {% include_relative component.html %}
             </figure>
         </section>
       
-        <section>
+        <section class="html">
             <h2 id="html">HTML</h2>
 {% highlight html %}
 {% include_relative component.html %}
 {% endhighlight %}
         </section>
         
-        <section>
+        <section class="css">
             <h2 id="css">CSS</h2>
             {% if page.css %}
             <link rel="stylesheet" href="styles.css" media="all">
@@ -46,7 +46,7 @@
             {% endif %}
         </section>
         
-        <section>
+        <section class="js">
             <h2 id="js">JS</h2>
             {% if page.js %}
             <script src="scripts.js"></script>
@@ -58,14 +58,14 @@
             {% endif %}
         </section>
             
-        <section>
+        <section class="baseline">
             <h2 id="baseline">Baseline</h2>
             {% for id in page.baseline %}
             <baseline-status featureId="{{ id }}">[`{{ id }}`](https://webstatus.dev/features/{{ id }})</baseline-status>
             {% endfor %}
         </section>
             
-        <section>
+        <section class="codepen">
             <h2 id="codepen">CodePen</h2>
             <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="{{ page.codepen }}" 
                 data-preview="true" data-editable="true" data-user="aarontgrogg">
