@@ -6,7 +6,7 @@ css: true
 js: false
 ---
 
-# [Adjust `::marker`](adjust-marker)
+# Accordion - Adjust Marker
 - Adjust the `::marker` appearance via CSS.
 - JS: No
 - Baseline: [`name`](https://webstatus.dev/features/details),
