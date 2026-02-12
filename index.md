@@ -20,7 +20,7 @@ As HTML and CSS continue to mature, this collection should expand.
 > And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
 
 ## Components
-<ul id="components" class="multicolumn">
+<ul class="components multicolumn">
 {% for c in site.components %}
   <li class="{{ c.tags | join }}">
     <a href="/NoLoJS{{ c.url }}">{{ c.name }}</a>
