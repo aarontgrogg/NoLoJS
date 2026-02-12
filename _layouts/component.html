@@ -60,7 +60,9 @@
             
         <section>
             <h2 id="baseline">Baseline</h2>
-            {{ page.baseline }}
+            {% for id in page.baseline %}
+            <baseline-status featureId="{{ id }}">[`{{ id }}`](https://webstatus.dev/features/{{ id }})</baseline-status>
+            {% endfor %}
         </section>
             
         <section>
