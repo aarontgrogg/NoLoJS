@@ -41,6 +41,7 @@
     aspect-ratio: 2 / 1;
     min-width: 100%;
     outline: 1px solid;
+    place-content: center;
     text-align: center;
     /* LIs should always snap and stop */
     scroll-snap-stop: always;
