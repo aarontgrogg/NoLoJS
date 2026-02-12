@@ -185,8 +185,7 @@ figure.highlight {
 
 /** Baseline component overrides**/
 baseline-status {
-    max-width: 600px;
-    min-height: 102px;
+    max-width: 100%;
     padding-block: 6px;
     padding-inline: 0;
     display: flex;
