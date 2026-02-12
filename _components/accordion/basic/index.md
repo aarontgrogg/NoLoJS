@@ -9,5 +9,4 @@ baseline: <baseline-status featureId="details">[`details`](https://webstatus.dev
 ---
 
 # Accordion - Basic
-- Native HTML accordion, no special CSS required.
-- JS: No
+With no CSS or JS required, you can create a Native HTML accordion, including open and close actions.
