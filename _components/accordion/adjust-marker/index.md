@@ -11,4 +11,4 @@ js: false
 - JS: No
 - Baseline: [`name`](https://webstatus.dev/features/details),
             [`::marker`](https://webstatus.dev/features/marker)
-- CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- CodePen: [https://codepen.io/aarontgrogg/pen/GgoOqVX](https://codepen.io/aarontgrogg/pen/GgoOqVX)
