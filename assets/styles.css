@@ -155,6 +155,7 @@ figure.highlight {
 /** Baseline component overrides**/
 baseline-status {
     max-width: 600px;
+    min-height: 102px;
     display: flex;
     gap: 1rem;
     align-items: baseline;
