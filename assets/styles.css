@@ -102,6 +102,9 @@ figure.example {
     outline: 1px solid currentColor;
     background-color: var(--green-med);
 }
+summary {
+    cursor: pointer;
+}
 dialog {
     max-width: 90%;
     padding-inline: 1rem;
