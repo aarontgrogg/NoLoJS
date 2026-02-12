@@ -18,8 +18,8 @@
 
   ul {
     /* Some resets, because I am using a `ul` */
-  	list-style: none;
-  	padding: 0;
+    list-style: none;
+    padding: 0;
     /* Both ULs should be `flex` and have animation */
     display: flex;
     flex-wrap: nowrap;
@@ -37,10 +37,10 @@
   }
   
   li {
-		/* To make this a little more appealing */
-		aspect-ratio: 1 / 1;
-		min-width: 300px;
-		outline: 1px solid;
+    /* To make this a little more appealing */
+    aspect-ratio: 1 / 1;
+    min-width: 300px;
+    outline: 1px solid;
     text-align: center;
     /* LIs should always snap and stop */
     scroll-snap-stop: always;
