@@ -10,5 +10,4 @@ baseline: <baseline-status featureId="details">[`name`](https://webstatus.dev/fe
 ---
 
 # Accordion - Exclusive Open
-- Add a `name` attribute with the same value to multiple `details` elements to restrict only one to be open at a time, similar to `radio` buttons.
-- JS: No
+By adding a `name` attribute with the same value to multiple `details` elements you can force only one to be open at a time, similar to `radio` buttons, with no JS required.
