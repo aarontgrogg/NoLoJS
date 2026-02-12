@@ -1,5 +1,5 @@
 /* Basic carousel CSS */
-ul {
+.css-carousel {
   /* Resets for carousel appearance */
   list-style: none;
   padding: 0;
@@ -58,6 +58,11 @@ ul {
   }
   
   li {
+    /* Make things look a little nicer */
+    min-width: 300px;
+    aspect-ratio: 2 / 1;
+    border: 1px solid;
+    text-align: center;
     /* Optionally force swipes to center the new slide */
     scroll-snap-align: center;
     /* Optionally force swipes to stop for each slide */
