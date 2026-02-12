@@ -24,9 +24,6 @@
     background-color: yellow;
 }
 html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
     background-color: var(--green-dark);
     scroll-padding-block: 1lh;
     @media (prefers-reduced-motion: no-preference) {
@@ -40,6 +37,10 @@ body {
     font-size: 16px;
     line-height: 1.2;
     color: #444;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    text-wrap: pretty;
     scrollbar-gutter: stable;
 }
 header,
