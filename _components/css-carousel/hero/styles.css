@@ -30,7 +30,7 @@
   &::scroll-button(*) {
     position-anchor: --css-carousel__hero;
     position: fixed;
-    top: calc(anchor(top) + 40%);
+    top: anchor(center);
     z-index: 1;
   }
   &::scroll-button(inline-start) {
