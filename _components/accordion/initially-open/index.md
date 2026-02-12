@@ -10,4 +10,4 @@ js: false
 - Add an `open` attribute to the `details` elements to set it to be initially open.
 - JS: No
 - Baseline: [`open`](https://webstatus.dev/features/details)
-- CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- CodePen: [https://codepen.io/aarontgrogg/pen/GgoOqVX](https://codepen.io/aarontgrogg/pen/GgoOqVX)
