@@ -80,15 +80,15 @@ p {
     margin-block: .5em;
 }
 pre, code {
+    padding-inline: 4px;
+    padding-block: 2px;
+    font-size: 14px;
+    line-height: 1.5;
     background-color: #333;
     color: lime;
     & span {
         color: red;
     }
-}
-pre {
-    padding-block: 2px;
-    padding-inline: 4px;
 }
 blockquote {
     color: currentColor;
