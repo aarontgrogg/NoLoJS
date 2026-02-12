@@ -21,6 +21,7 @@
     min-width: 200px;
     aspect-ratio: 1 / 1;
     border: 1px solid;
+    place-content: center;
     text-align: center;
     /* Optionally force swipes to center the new slide; can also use: `start` or `end` */
     scroll-snap-align: center;
