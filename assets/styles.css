@@ -101,13 +101,19 @@ blockquote {
     padding: 0 1em;
     margin-inline: 0;
 }
-figure.demo {
-    margin: 0;
-    padding: 14px;
-    outline: 1px solid currentColor;
+details {
+    padding: 0;
+    outline: 1px solid var(--green-dark);
     background-color: var(--green-med);
+    &::details-content {
+        padding: 14px;
+    }
 }
 summary {
+    padding-block: 8px;
+    padding-inline: 14px;
+    background-color: var(--green-dark);
+    color: white;
     cursor: pointer;
 }
 dialog {
@@ -147,6 +153,11 @@ img, video {
     border: 2px solid; 
     margin: 1em 0; 
     padding: 1em;
+}
+
+/** Override default `figure` CSS **/
+figure.demo {
+    margin: 0;
 }
 
 /** Highlight overrides **/
