@@ -39,7 +39,7 @@
   li {
     /* To make this a little more appealing */
     aspect-ratio: 2 / 1;
-    min-width: 600px;
+    min-width: 100%;
     outline: 1px solid;
     text-align: center;
     /* LIs should always snap and stop */
@@ -54,13 +54,13 @@
     transform: translate3d(0, 0, 0);
   }
   33.333% {
-    transform: translate3d(-600px, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
   66.666% {
-    transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-200%, 0, 0);
   }
   99.999% {
-    transform: translate3d(-1800px, 0, 0);
+    transform: translate3d(-300%, 0, 0);
   }
   100% {
     transform: translate3d(0, 0, 0);
