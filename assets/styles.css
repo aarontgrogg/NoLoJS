@@ -80,7 +80,7 @@ p {
 a {
     color: var(--green-dark);
 }
-section ul {
+.intro ul {
     border: 1px solid currentColor;
     padding: 16px 36px;
     border-radius: 10px;
