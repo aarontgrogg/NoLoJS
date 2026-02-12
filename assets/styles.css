@@ -151,3 +151,16 @@ figure.highlight {
 .highlight .err {
     color: red;
 }
+
+/** Baseline component overrides**/
+baseline-status {
+    max-width: 600px;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    border: 0;
+    border-block-end: 1px solid #ccc;
+    border-radius: 0;
+    padding-block: 6px;
+    padding-inline: 0;
+}
