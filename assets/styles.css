@@ -64,6 +64,7 @@ footer {
 footer {
     flex-direction: column;
     text-align: center;
+    padding-block-end: 100px;
 }
 article {
     padding-block: 1rem;
