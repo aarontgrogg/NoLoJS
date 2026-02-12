@@ -75,6 +75,9 @@ h1 {
 p {
     margin-block: .5em;
 }
+a {
+    color: var(--green-dark);
+}
 section ul {
     border: 1px solid currentColor;
     padding: 16px 36px;
@@ -106,10 +109,10 @@ details {
     outline: 1px solid var(--green-light);
     background-color: var(--green-med);
     &::details-content {
-        padding-inline: 14px;
+        padding-inline: 1em;
     }
     &[open]::details-content {
-        padding-block: 14px;
+        padding-block: .5em;
     }
 }
 summary {
