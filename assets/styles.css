@@ -125,6 +125,7 @@ figure.highlight {
     padding: 14px;
     overflow: scroll;
 }
+.highlight code,
 .highlight span {
     background-color: transparent;
 }
