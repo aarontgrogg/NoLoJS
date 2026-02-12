@@ -6,7 +6,7 @@ css: false
 js: false
 ---
 
-# [Basic](basic)
+# Accordion - Basic
 - Native HTML accordion, no special CSS required.
 - JS: No
 - Baseline: [`details`](https://webstatus.dev/features/details)
