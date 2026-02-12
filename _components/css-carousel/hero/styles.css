@@ -49,7 +49,7 @@
     position-visibility: always;
     position: fixed;
     /* Give some breathing room */
-    top: 1rem;
+    top: 2rem;
     /* Customize the dots as you wish */
     display: grid;
     grid-auto-columns: 20px;
