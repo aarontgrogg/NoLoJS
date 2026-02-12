@@ -6,20 +6,31 @@
  * Base CSS, for comsetics
 *****/
 :root {
-  --green-dark: #34a0a4;
-  --green-med: #a1c9c9;
-  --green-light: #f6f7f1;
-  --header-height-large: 150px;
-  --header-height-small: 75px;
-  --header-padding: 1rem;
-  --content-margin: var(--header-height-large);
-  --small-screen-breakpoint: 600px;
+    interpolate-size: allow-keywords;
+    view-transition-name: root;
+    --green-dark: #34a0a4;
+    --green-med: #a1c9c9;
+    --green-light: #f6f7f1;
+    --header-height-large: 150px;
+    --header-height-small: 75px;
+    --header-padding: 1rem;
+    --content-margin: var(--header-height-large);
+    --small-screen-breakpoint: 600px;
 }
 *, ::before, ::after {
     box-sizing: border-box;
 }
+::selection {
+    background-color: yellow;
+}
 html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
     background-color: var(--green-dark);
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
 }
 body {
     margin: 0;
@@ -28,6 +39,7 @@ body {
     font-size: 16px;
     line-height: 1.2;
     color: #444;
+    scrollbar-gutter: stable;
 }
 h1 {
     margin: 0;
