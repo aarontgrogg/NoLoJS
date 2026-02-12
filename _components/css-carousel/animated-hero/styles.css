@@ -30,10 +30,6 @@
     @media (prefers-reduced-motion: no-preference) { 
       animation: animated-loop__hero 10s ease-in-out infinite;
       animation-fill-mode: forwards;
-      /* Optionally pause animation if the user hovers over **the parent** */
-      &:hover {
-        animation-play-state: paused;
-      }
     }
   }
 }
