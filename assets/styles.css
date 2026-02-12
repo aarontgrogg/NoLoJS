@@ -159,8 +159,10 @@ baseline-status {
     gap: 1rem;
     align-items: baseline;
     border: 0;
-    border-block-end: 1px solid #ccc;
     border-radius: 0;
     padding-block: 6px;
     padding-inline: 0;
+    &:not(:last-child) {
+        border-block-end: 1px solid #aaa;
+    }
 }
