@@ -72,6 +72,7 @@ h1 {
     margin: 0;
     padding-block: 1rem;
     font-size: 2rem;
+    line-height: 1.25;
 }
 p {
     margin-block: .5em;
