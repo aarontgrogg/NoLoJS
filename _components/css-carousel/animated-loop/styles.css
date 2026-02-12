@@ -3,11 +3,6 @@
   /* Some resets, because I am using a `ul` */
 	list-style: none;
 	padding: 0;
-	/* To make this a little more appealing */
-	aspect-ratio: 1 / 1;
-	min-width: 100px;
-	outline: 1px solid;
-	text-align: center;
 	/* Optionally remove the scrollbar */
 	scrollbar-width: none;
 	/* Setup basic Carousel */
@@ -29,6 +24,13 @@
 	  @media (prefers-reduced-motion: no-preference) { 
 		animation: animated-loop 20s linear infinite;
 	  }
+	}
+	li {
+		/* To make this a little more appealing */
+		aspect-ratio: 1 / 1;
+		min-width: 100px;
+		outline: 1px solid;
+		text-align: center;
 	}
 }
 
