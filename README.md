@@ -14,16 +14,15 @@ So as HTML and CSS continue to get stronger, we should transfer any JavaScript w
 This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
 As HTML and CSS continue to mature, this collection should expand.
 
+## Demos and Documentation
+https://aarontgrogg.github.io/NoLoJS/ \
+(work in progress)
+
 > [!TIP]
 > Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).\
 > And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
 
-Please feel free to copy these and suggest others; [Issues and PRs are welcome](#contribute)!
-
-
-## Demo
-Page using several of these NoLoJS patterns:\
-https://aarontgrogg.com/nolojs/
+[Issues and PRs are welcome](#contribute)!
 
 
 ## Resources
