@@ -107,12 +107,17 @@ details {
     background-color: var(--green-med);
     &::details-content {
         padding: 14px;
+        block-size: 0;
+    }
+    &[open]::details-content {
+        block-size: auto;
     }
 }
 summary {
     padding-block: 8px;
     padding-inline: 14px;
     background-color: var(--green-dark);
+    border-bottom: 1px solid var(--green-light);
     color: white;
     cursor: pointer;
 }
