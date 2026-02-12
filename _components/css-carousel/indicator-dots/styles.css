@@ -44,6 +44,7 @@
     min-width: 200px;
     aspect-ratio: 1 / 1;
     border: 1px solid;
+    place-content: center;
     text-align: center;
     /* Create a dot for each slide */
     &::scroll-marker {
