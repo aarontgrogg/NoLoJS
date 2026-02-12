@@ -10,4 +10,4 @@ js: false
 - Add a `name` attribute with the same value to multiple `details` elements to restrict only one to be open at a time, similar to `radio` buttons.
 - JS: No
 - Baseline: [`name`](https://webstatus.dev/features/details)
-- CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- CodePen: [https://codepen.io/aarontgrogg/pen/GgoOqVX](https://codepen.io/aarontgrogg/pen/GgoOqVX)
