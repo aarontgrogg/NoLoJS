@@ -13,5 +13,4 @@ baseline: <baseline-status featureId="details">[`name`](https://webstatus.dev/fe
 ---
 
 # Accordion - Animate Open/Close
-- Animate the open/close states via CSS.
-- JS: No
+With a little CSS you can animate the open/close states of the details content.
