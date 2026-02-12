@@ -14,4 +14,4 @@ js: false
             [`content-visibility`](https://webstatus.dev/features/content-visibility), 
             [`transition-behavior`](https://webstatus.dev/features/transition-behavior), 
             [`interpolate-size`](https://webstatus.dev/features/interpolate-size)
-- CodePen: https://codepen.io/aarontgrogg/pen/GgoOqVX
+- CodePen: [https://codepen.io/aarontgrogg/pen/GgoOqVX](https://codepen.io/aarontgrogg/pen/GgoOqVX)
