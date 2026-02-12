@@ -17,6 +17,11 @@
   }
   /* Add snap-to position */
   li {
+    /* Make things look a little nicer */
+    min-width: 200px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid;
+    text-align: center;
     /* Optionally force swipes to center the new slide; can also use: `start` or `end` */
     scroll-snap-align: center;
     /* Optionally force swipes to stop for each slide; can also use: `normal` */
