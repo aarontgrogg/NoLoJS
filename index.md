@@ -2,9 +2,7 @@
 layout: home
 ---
 
-# NoLoJS
-
-Reduce the JS Workload with no- or lo-JS options.
+# Reduce the JS Workload with no- or lo-JS options
 
 > ***I have nothing against JS***, \
 > but it has better things to do \
@@ -21,6 +19,7 @@ As HTML and CSS continue to mature, this collection should expand.
 > Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).\
 > And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
 
+## Components
 <ul id="snippets" class="multicolumn">
 {% for c in site.components %}
   <li class="{{ c.tags | join }}">
