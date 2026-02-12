@@ -41,11 +41,6 @@ body {
     color: #444;
     scrollbar-gutter: stable;
 }
-h1 {
-    margin: 0;
-    padding-block: 1rem;
-    font-size: 2rem;
-}
 header,
 footer {
     display: flex;
@@ -71,9 +66,10 @@ article {
     margin-inline: auto;
     padding-inline: 2rem;
 }
-hr {
-    margin-block: 2em;
-    margin-inline: 1rem;
+h1 {
+    margin: 0;
+    padding-block: 1rem;
+    font-size: 2rem;
 }
 p {
     margin-block: .5em;
@@ -93,6 +89,10 @@ pre, code {
     & span {
         color: red;
     }
+}
+hr {
+    margin-block: 2em;
+    margin-inline: 1rem;
 }
 blockquote {
     color: currentColor;
