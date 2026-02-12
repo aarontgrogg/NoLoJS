@@ -8,51 +8,28 @@ aka: Slider, Swiper
 - CSS-only carousels can **not** do everything you/marketing will want them to do, so some designs might require a little JS added. But the starting blocks, can *absolutely* be CSS-only.
 
 ## [Simple Swiper](simple-swiper)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
-            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+As simple as it gets, with a collection of elements, the user can simply “swipe” (or drag the scrollbar handle) left and right to make the images “slide” around, all CSS, no JS required.
 
 ## [Snappy Swiper](snappy-swiper)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
-            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+With one line of additional CSS, the slides “snap” into place as the user swipes (in the center, in this case). Note that even when dragging the scrollbar, the “snap to the center” still happens after releasing the scrollbar, all CSS, no JS required.
 
 ## [Navigation Buttons](navigation-buttons)
-- JS: No
-- Baseline: [`scroll-buttons`](https://webstatus.dev/features/scroll-buttons)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+Adding the ubiqitous `<` and `>` buttons, including all functionality and the “disabled” state when you reach the end of either direction, is all CSS, automatically handled by the browser, no JS required.
 
 ## [Indicator Dots](indicator-dots)
-- JS: No
-- Baseline: [`scroll-target-group`](https://webstatus.dev/features/scroll-target-group)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+The common “dot navigation indicators” below the carousel, including all functionality (click interactions, which dot is the `:target-current`), is all CSS, automatically handled by the browser, no JS required.
 
 ## [Swipe by Groups](swipe-by-groups)
-- JS: No
-- Baseline: [`column-pseudo`](https://webstatus.dev/features/column-pseudo)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+If swiping “by groups”, or an implicit number of slides, is ever desired, all CSS, no JS required.
 
 ## [Animated Loop](animated-loop)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
-            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+This automatically animated loop, likely for logos or testimonials, does require dupe HTML, but the animation and looping is all CSS, no JS required.
 
-## [The Hero](the-hero)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
-            [`scroll-snap`](https://webstatus.dev/features/scroll-snap), 
-            [`scroll-buttons`](https://webstatus.dev/features/scroll-buttons), 
-            [`scroll-target-group`](https://webstatus.dev/features/scroll-target-group)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+## [Hero](hero)
+The traditional hero carousel, often at the top of the page, with navigation buttons and indicators, is all CSS, no JS required.
 
-## [The Animted Hero](the-animated-hero)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior), 
-            [`scroll-snap`](https://webstatus.dev/features/scroll-snap)
-- CodePen: https://codepen.io/aarontgrogg/pen/myEyQoo
+## [Animted Hero](animated-hero)
+Similliar to the traditional Hero above, but with automated animation from slide-to-slide, all CSS, no JS required.
 
 ## Resources
 - https://adactio.com/journal/tags/carousel
