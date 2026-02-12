@@ -6,7 +6,7 @@ css: true
 js: false
 codepen: myEyQoo
 baseline: <baseline-status featureId="scroll-behavior">[`name`](https://webstatus.dev/features/scroll-behavior)</baseline-status> 
-            <baseline-status featureId="scroll-snap">[`::marker`](https://webstatus.dev/features/scroll-snap)</baseline-status>
+          <baseline-status featureId="scroll-snap">[`::marker`](https://webstatus.dev/features/scroll-snap)</baseline-status>
 ---
 
 # CSS Carousel - Animated Loop
