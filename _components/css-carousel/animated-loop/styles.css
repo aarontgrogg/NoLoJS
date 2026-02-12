@@ -28,8 +28,9 @@
 	li {
 		/* To make this a little more appealing */
 		aspect-ratio: 1 / 1;
-		min-width: 100px;
+		min-width: 10vw;
 		outline: 1px solid;
+    place-content: center;
     text-align: center;
 	}
 }
