@@ -59,10 +59,10 @@
   
   li {
     /* Make things look a little nicer */
-    min-width: 300px;
+    min-width: 100%;
     aspect-ratio: 2 / 1;
     border: 1px solid;
-    text-align: center;
+    place-content: center;
     /* Optionally force swipes to center the new slide */
     scroll-snap-align: center;
     /* Optionally force swipes to stop for each slide */
