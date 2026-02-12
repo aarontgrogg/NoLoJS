@@ -2,7 +2,7 @@
 name: Accordion - Exclusive Open
 layout: component
 html: true
-css: true
+css: false
 js: false
 ---
 
