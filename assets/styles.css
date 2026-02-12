@@ -28,6 +28,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     background-color: var(--green-dark);
+    scroll-padding-block: 1lh;
     @media (prefers-reduced-motion: no-preference) {
         scroll-behavior: smooth;
     }
