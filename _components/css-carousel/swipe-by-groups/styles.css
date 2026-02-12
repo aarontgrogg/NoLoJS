@@ -1,5 +1,5 @@
 /* Basic carousel CSS */
-ul {
+.css-carousel {
   /* Resets for carousel appearance */
   list-style: none;
   padding: 0;
@@ -27,6 +27,11 @@ ul {
   text-align: center;
   
   li {
+    /* Make things look a little nicer */
+    min-width: 200px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid;
+    text-align: center;
     /* Allow slides to sit side-by-side */
     display: inline-block;
   }
