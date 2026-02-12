@@ -1,28 +1,27 @@
 /** Requires wrapper element to control overflow **/
-div {
-  /* Optionally remove the scrollbar */
-  scrollbar-width: none;
-  /* Setup basic Carousel */
-  display: flex;
-  overflow-inline: auto;
-  /* Prevent accidental page Back/Forward */
-  overscroll-behavior-inline: contain;
-  /* Confine the scrolling direction */
-  scroll-snap-type: inline mandatory;
-  /* Be nice to others */
-  @media (prefers-reduced-motion: no-preference) { 
-    /* Makes the sliding a little smoother */
-    scroll-behavior: smooth;
-  }
-}
-
-/** Both ULs should be `flex` and have animation **/
-ul {
-  display: flex;
-  /* Be nice to others */
-  @media (prefers-reduced-motion: no-preference) { 
-    animation: animated-loop 20s linear infinite;
-  }
+.css-carousel {
+	/* Optionally remove the scrollbar */
+	scrollbar-width: none;
+	/* Setup basic Carousel */
+	display: flex;
+	overflow-inline: auto;
+	/* Prevent accidental page Back/Forward */
+	overscroll-behavior-inline: contain;
+	/* Confine the scrolling direction */
+	scroll-snap-type: inline mandatory;
+	/* Be nice to others */
+	@media (prefers-reduced-motion: no-preference) { 
+		/* Makes the sliding a little smoother */
+		scroll-behavior: smooth;
+	}
+	/** Both ULs should be `flex` and have animation **/
+	ul {
+	  display: flex;
+	  /* Be nice to others */
+	  @media (prefers-reduced-motion: no-preference) { 
+		animation: animated-loop 20s linear infinite;
+	  }
+	}
 }
 
 /* Create the animation for the loop effect */
