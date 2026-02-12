@@ -10,5 +10,4 @@ baseline: <baseline-status featureId="details">[`name`](https://webstatus.dev/fe
 ---
 
 # Accordion - Adjust Marker
-- Adjust the `::marker` appearance via CSS.
-- JS: No
+With just a little CSS, you can alter the appearance of the `::marker`.
