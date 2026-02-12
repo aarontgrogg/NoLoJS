@@ -3,6 +3,7 @@
   /* Optionally remove the scrollbar */
   scrollbar-width: none;
   /* Setup basic Carousel */
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-inline: auto;
@@ -16,15 +17,15 @@
     scroll-behavior: smooth;
   }
 
-  ul {
-    /* Some resets, because I am using a `ul` */
-    list-style: none;
-    padding: 0;
-    /* Both ULs should be `flex` and have animation */
-    display: flex;
-    flex-wrap: nowrap;
-    /* Allow both ULs to expand fully, preventing overlap */
-    flex: 0 0 auto;
+  div {
+    /* To make this a little more appealing */
+    aspect-ratio: 2 / 1;
+    min-width: 100%;
+    border: 1px solid;
+    place-content: center;
+    text-align: center;
+    /* LIs should always snap and stop */
+    scroll-snap-stop: always;
     /* Be nice to others */
     @media (prefers-reduced-motion: no-preference) { 
       animation: animated-loop__hero 10s ease-in-out infinite;
@@ -34,17 +35,6 @@
         animation-play-state: paused;
       }
     }
-  }
-  
-  li {
-    /* To make this a little more appealing */
-    aspect-ratio: 2 / 1;
-    min-width: 100%;
-    outline: 1px solid;
-    place-content: center;
-    text-align: center;
-    /* LIs should always snap and stop */
-    scroll-snap-stop: always;
   }
 }
 
