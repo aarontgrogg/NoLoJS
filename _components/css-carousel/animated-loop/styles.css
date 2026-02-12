@@ -1,8 +1,5 @@
 /** Requires wrapper element to control overflow **/
 .css-carousel {
-  /* Some resets, because I am using a `ul` */
-	list-style: none;
-	padding: 0;
 	/* Optionally remove the scrollbar */
 	scrollbar-width: none;
 	/* Setup basic Carousel */
@@ -19,10 +16,13 @@
 	}
 	/** Both ULs should be `flex` and have animation **/
 	ul {
+    /* Some resets, because I am using a `ul` */
+  	list-style: none;
+  	padding: 0;
 	  display: flex;
 	  /* Be nice to others */
 	  @media (prefers-reduced-motion: no-preference) { 
-		animation: animated-loop 20s linear infinite;
+		  animation: animated-loop 20s linear infinite;
 	  }
 	}
 	li {
