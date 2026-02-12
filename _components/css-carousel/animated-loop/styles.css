@@ -1,5 +1,13 @@
 /** Requires wrapper element to control overflow **/
 .css-carousel {
+	/* Some resets, because I am using a `ul` */
+	list-style: none;
+  	padding: 0;
+	/* To make this a little more appealing */
+	aspect-ratio: 1 / 1;
+    min-width: 100px;
+    outline: 1px solid;
+    text-align: center;
 	/* Optionally remove the scrollbar */
 	scrollbar-width: none;
 	/* Setup basic Carousel */
