@@ -14,4 +14,11 @@
     /* Makes the sliding a little smoother */
     scroll-behavior: smooth;
   }
+  li {
+    /* Make things look a little nicer */
+    min-width: 200px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid;
+    text-align: center;
+  }
 }
