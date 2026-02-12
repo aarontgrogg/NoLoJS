@@ -126,7 +126,7 @@ figure.highlight {
     overflow: scroll;
 }
 .highlight code,
-.highlight span {
+.highlight .err {
     background-color: transparent;
 }
 .highlight .err {
