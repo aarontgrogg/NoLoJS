@@ -85,11 +85,10 @@ pre, code {
     & span {
         color: red;
     }
-  }
-  pre {
+}
+pre {
     padding-block: 2px;
     padding-inline: 4px;
-  }
 }
 blockquote {
     color: currentColor;
