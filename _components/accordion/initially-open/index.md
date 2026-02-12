@@ -5,7 +5,7 @@ html: true
 css: false
 js: false
 codepen: GgoOqVX
-baseline: <baseline-status featureId="details">[`open`](https://webstatus.dev/features/details)</baseline-status> 
+baseline: ['details']
 ---
 
 # Accordion - Initially Open
