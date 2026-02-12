@@ -136,6 +136,18 @@ img, video {
     margin: 0 auto;
 }
 
+/** Style CodePen embed **/
+.codepen {
+    height: 300px; 
+    box-sizing: border-box; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid; 
+    margin: 1em 0; 
+    padding: 1em;
+}
+
 /** Highlight overrides **/
 figure.highlight {
     margin: 0;
