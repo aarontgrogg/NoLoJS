@@ -78,6 +78,11 @@ hr {
 p {
     margin-block: .5em;
 }
+section ul {
+    border: 1px solid currentColor;
+    padding: 16px 36px;
+    border-radius: 10px;
+}
 pre, code {
     padding-inline: 4px;
     padding-block: 2px;
