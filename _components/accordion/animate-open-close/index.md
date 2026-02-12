@@ -6,7 +6,7 @@ css: true
 js: false
 ---
 
-## [Animate Open/Close](animate-open-close)
+# [Animate Open/Close](animate-open-close)
 - Animate the open/close states via CSS.
 - JS: No
 - Baseline: [`name`](https://webstatus.dev/features/details),
