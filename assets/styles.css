@@ -157,7 +157,7 @@ baseline-status {
     max-width: 600px;
     display: flex;
     gap: 1rem;
-    align-items: start;
+    align-items: baseline;
     border: 0;
     border-block-end: 1px solid #ccc;
     border-radius: 0;
