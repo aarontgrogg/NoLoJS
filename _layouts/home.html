@@ -4,9 +4,10 @@
     {% include head.html %}
 </head>
 <body class="index">
-  <article class="standalone">
-    {{ content }}
-  </article>
-  {% include footer.html %}
+    {% include header.html %}
+    <article class="standalone">
+        {{ content }}
+    </article>
+    {% include footer.html %}
 </body>
 </html>
