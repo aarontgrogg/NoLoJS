@@ -9,5 +9,4 @@ baseline: <baseline-status featureId="details">[`open`](https://webstatus.dev/fe
 ---
 
 # Accordion - Initially Open
-- Add an `open` attribute to the `details` elements to set it to be initially open.
-- JS: No
+By adding an `open` attribute to the `details` element, you can to set it to be initially open. Clicking the `summary` still toggles the open and close state as normal.
