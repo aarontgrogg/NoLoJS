@@ -16,11 +16,11 @@ As HTML and CSS continue to mature, this collection should expand.
 
 ## Demos and Documentation
 https://aarontgrogg.github.io/NoLoJS/ \
-(work in progress)
+(conversion to Pages is still a work in progress)
 
 > [!TIP]
-> Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).\
-> And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
+> Most components have variations within the parent folder (for example, `css-carousels` contains 8 variations within).\
+> All components have a corresponding CodePen that demonstrates a working example.
 
 [Issues and PRs are welcome](#contribute)!
 
