@@ -1,5 +1,10 @@
 file, input, output, select, textarea {
   field-sizing: content;
-  /* Prevent emtpy elements fromo collapsing completely */
+}
+/* Prevent emtpy elements fromo collapsing completely */
+input, textarea {
   min-width: 200px;
+}
+textarea {
+  min-height: 3rem;
 }
