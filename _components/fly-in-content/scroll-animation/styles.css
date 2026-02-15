@@ -1,3 +1,10 @@
+/* For demo appearance only */
+.scroll-animation--fly-in {
+  padding-block: 1rem;
+  margin-block: 1rem;
+  border-block-end: 1px solid;
+}
+
 /* Only apply if the user did NOT request reduced motion */
 @media (prefers-reduced-motion: no-preference) {
   /* Define the scroll animations */
