@@ -14,7 +14,8 @@ So as HTML and CSS continue to get stronger, we should transfer any JavaScript w
 This is an organic collection of common JS patterns that can be replaced with just HTML, CSS, and no, or very low, JS.
 As HTML and CSS continue to mature, this collection should expand.
 
-## Demos and Documentation
+## Docs and Demos
+This repo has also been used to create a static site, where each compomnent has its own page, including a description of the compomnent, a working demo, exposing the HTML, CSS and JS if needed, and a live Baseline and CodePen widget: \
 https://aarontgrogg.github.io/NoLoJS/ \
 (conversion to Pages is still a work in progress)
 
