@@ -5,7 +5,7 @@ html: true
 css: true
 js: false
 codepen: ZYOyjRY
-baseline: ['view-timeline', 'animation-timeline', 'animation-range', 'scroll-driven-animations']
+baseline: ['scroll-driven-animations']
 ---
 
 # Fly-In Content - Scroll Animation
