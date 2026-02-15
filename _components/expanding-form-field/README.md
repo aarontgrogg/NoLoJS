@@ -7,7 +7,5 @@ aka: Auto-Growing Inputs
 - The value `content` allows all of the above form elements to collapse to the minimum width required or expand as necessary, and allows `output` or `textarea` elements to expand their height as necessary.
 - The value `fixed` (default) restricts all of the above behavior.
 
-## [CSS](styles.css)
-- JS: No
-- Baseline: [`field-sizing`](https://webstatus.dev/features/field-sizing)
-- CodePen: https://codepen.io/aarontgrogg/pen/myPGBWG
+# Expanding Form Field
+With one line of CSS, `text`, `output`, `select`, and `textarea` form fields can automatically adjust to fit the contents, no JS required.
