@@ -12,9 +12,7 @@ aka: Animated Content, Slide-In Panels
 > And other people just may not enjoy motion like that, so, we might as well just be nice. :-)
 
 ## [Scroll Animation](scroll-animation)
-- JS: No
-- Baseline: [`scroll-driven-animations`](https://webstatus.dev/features/scroll-driven-animations)
-- CodePen: https://codepen.io/aarontgrogg/pen/ZYOyjRY
+Create animation as the user scrolls, all CSS, no JS required.
 
 ## Resources
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/view-timeline
