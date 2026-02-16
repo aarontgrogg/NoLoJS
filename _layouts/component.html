@@ -4,77 +4,81 @@
 {% include head.html %}
 </head>
 <body class="component">
+  <header>
 {% include header.html %}
-    <article class="standalone">
+  </header>
+  <article class="standalone">
 
-        <section class="intro">
-            {{ page.content }}
-            <ul>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#html">HTML</a></li>
-                <li><a href="#css">CSS</a></li>
-                <li><a href="#js">JS</a></li>
-                <li><a href="#baseline">Baseline</a></li>
-                <li><a href="#codepen">CodePen</a></li>
-            </ul>
-            
-        </section>
-      
-        <section class="demo">
-            <h2 id="demo">Demo</h2>
-            <figure class="demo">
+      <section class="intro">
+          {{ page.content }}
+          <ul>
+              <li><a href="#demo">Demo</a></li>
+              <li><a href="#html">HTML</a></li>
+              <li><a href="#css">CSS</a></li>
+              <li><a href="#js">JS</a></li>
+              <li><a href="#baseline">Baseline</a></li>
+              <li><a href="#codepen">CodePen</a></li>
+          </ul>
+          
+      </section>
+    
+      <section class="demo">
+          <h2 id="demo">Demo</h2>
+          <figure class="demo">
 {% include_relative component.html %}
-            </figure>
-        </section>
-      
-        <section class="html">
-            <h2 id="html">HTML</h2>
+          </figure>
+      </section>
+    
+      <section class="html">
+          <h2 id="html">HTML</h2>
 {% highlight html %}
 {% include_relative component.html %}
 {% endhighlight %}
-        </section>
-        
-        <section class="css">
-            <h2 id="css">CSS</h2>
-            {% if page.css %}
-            <link rel="stylesheet" href="styles.css" media="all">
+      </section>
+      
+      <section class="css">
+          <h2 id="css">CSS</h2>
+          {% if page.css %}
+          <link rel="stylesheet" href="styles.css" media="all">
 {% highlight css %}
 {% include_relative styles.css %}
 {% endhighlight %}
-            {% else %}
-            <figure class="highlight"><pre><code>No special CSS required.</code></pre></figure>
-            {% endif %}
-        </section>
-        
-        <section class="js">
-            <h2 id="js">JS</h2>
-            {% if page.js %}
-            <script src="scripts.js"></script>
+          {% else %}
+          <figure class="highlight"><pre><code>No special CSS required.</code></pre></figure>
+          {% endif %}
+      </section>
+      
+      <section class="js">
+          <h2 id="js">JS</h2>
+          {% if page.js %}
+          <script src="scripts.js"></script>
 {% highlight js %}
 {% include_relative scripts.js %}
 {% endhighlight %}
-            {% else %}
-            <figure class="highlight"><pre><code>No JS required.</code></pre></figure>
-            {% endif %}
-        </section>
-            
-        <section class="baseline">
-            <h2 id="baseline">Baseline</h2>
-            {% for id in page.baseline %}
-            <baseline-status featureId="{{ id }}">[`{{ id }}`](https://webstatus.dev/features/{{ id }})</baseline-status>
-            {% endfor %}
-        </section>
-            
-        <section class="codepen">
-            <h2 id="codepen">CodePen</h2>
-            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="{{ page.codepen }}" 
-                data-preview="true" data-editable="true" data-user="aarontgrogg">
-                <a href="https://codepen.io/aarontgrogg/pen/{{ page.codepen }}">See the Pen</a> on <a href="https://codepen.io">CodePen</a>.
-            </p>
-            <script async src="https://public.codepenassets.com/embed/index.js"></script>
-        </section>
-            
-    </article>
+          {% else %}
+          <figure class="highlight"><pre><code>No JS required.</code></pre></figure>
+          {% endif %}
+      </section>
+          
+      <section class="baseline">
+          <h2 id="baseline">Baseline</h2>
+          {% for id in page.baseline %}
+          <baseline-status featureId="{{ id }}">[`{{ id }}`](https://webstatus.dev/features/{{ id }})</baseline-status>
+          {% endfor %}
+      </section>
+          
+      <section class="codepen">
+          <h2 id="codepen">CodePen</h2>
+          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="{{ page.codepen }}" 
+              data-preview="true" data-editable="true" data-user="aarontgrogg">
+              <a href="https://codepen.io/aarontgrogg/pen/{{ page.codepen }}">See the Pen</a> on <a href="https://codepen.io">CodePen</a>.
+          </p>
+          <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      </section>
+          
+  </article>
+  <footer>
 {% include footer.html %}
+  </footer>
 </body>
 </html>
