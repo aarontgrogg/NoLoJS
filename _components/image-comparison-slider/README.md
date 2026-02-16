@@ -7,14 +7,10 @@ aka: Side-by-Side Comparison
             image comparison tool.
 
 ## [Basic](basic)
-- JS: No
-- Baseline: [`anchor-positioning`](https://webstatus.dev/features/anchor-positioning)
-- CodePen: https://codepen.io/aarontgrogg/pen/LEZQRzG
+Compare two images, one over the other, by panning a slider bar back and forth.
 
 ## [Custom Handle](custom-handle)
-- JS: No
-- Baseline: [`anchor-positioning`](https://webstatus.dev/features/anchor-positioning)
-- CodePen: https://codepen.io/aarontgrogg/pen/LEZQRzG
+Same as the [Basic](basic), but with some UI customization.
 
 ## Resources
 - https://codepen.io/jamessw/pen/wvbPBQG
