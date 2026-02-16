@@ -1,4 +1,4 @@
-# Input with Autofilter Suggestions Dropdown
+# Input with Dropdown
 
 aka: Combobox
 
@@ -7,16 +7,7 @@ aka: Combobox
 - But you can also add a custom entry.
 
 ## [Text input](text)
-- JS: No
-- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
-- CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
 
 ## [Number input](number)
-- JS: No
-- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
-- CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
 
 ## [Time input](time)
-- JS: No
-- Baseline: [`datalist`](https://webstatus.dev/features/datalist)
-- CodePen: https://codepen.io/aarontgrogg/pen/yyePPor
