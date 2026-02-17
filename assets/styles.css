@@ -17,6 +17,9 @@
     --content-margin: var(--header-height-large);
     --small-screen-breakpoint: 600px;
 }
+@view-transition {
+    navigation: auto;
+}
 *, ::before, ::after {
     box-sizing: border-box;
 }
