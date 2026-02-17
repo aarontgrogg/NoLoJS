@@ -13,29 +13,16 @@ aka: Modal / Overlay
 > If you want to prevent layout shift as the scrollbar disappears/reappears, add this to your `html` CSS: `scrollbar-gutter: stable;`
 
 ## [Auto](auto) (default)
-- JS: No
-- Baseline: [`popover`](https://webstatus.dev/features/popover)
-- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+The `auto` attribute value is the default, and is the same as having no value at all and having a value of "", and allows for an implicit close.
 
 ## [Manual](manual)
-- JS: No
-- Baseline: [`popover`](https://webstatus.dev/features/popover)
-- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+The `manual` attribute value requires an explicit "close" action.
 
 ## [Add "close" button](add-close-button)
-- Add a "close" button to the popover.
-- JS: No
-- Baseline: [`popovertargetaction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
-- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+Add a "close" button to the popover; helpful for `manual` popovers.
 
 ## [Add `::backdrop`](add-backdrop)
-- Add a `::backdrop` via CSS.
-- JS: No
-- Baseline: [`::backdrop`](https://webstatus.dev/features/backdrop)
-- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+Use `::backdrop` via CSS to create a native visual layer between your modal/popover element and the page, no JS required.
 
 ## [Animate Open/Close](animate-open-close)
-- Animate the open/close states via CSS.
-- JS: No
-- Baseline: [`animations-css`](https://webstatus.dev/features/animations-css)
-- CodePen: https://codepen.io/aarontgrogg/pen/QwyOKNW
+Animate the open/close states via CSS, no JS required.
