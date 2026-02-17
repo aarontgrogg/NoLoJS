@@ -9,4 +9,4 @@ baseline: ['perspective', 'transform-style', 'transform']
 ---
 
 # Parallax - Perspective
-Create parallax animation as the user scrolls, all CSS, no JS required.
+Create parallax animation as the user scrolls, via CSS `perspective`, `transform-style` and `transform` only, no JS required.
