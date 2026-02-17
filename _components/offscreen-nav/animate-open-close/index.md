@@ -1,5 +1,5 @@
 ---
-name: Offscreen nav - Animate Open/Close
+name: Offscreen Nav - Animate Open/Close
 layout: component
 html: true
 css: true
