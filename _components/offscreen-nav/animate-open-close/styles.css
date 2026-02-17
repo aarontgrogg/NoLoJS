@@ -20,6 +20,6 @@ nav {
 /* Animate nav open/close, if user is okay with animation */
 @media (prefers-reduced-motion: no-preference) { /* Be nice to others */
   nav ul {
-    transition: all 150ms;
+    transition: translate 150ms;
   }
 }
