@@ -3,7 +3,7 @@
 aka: Related Content
 
 - Using the HTML [`popover`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover) attribute creates no-JavaScript offscreen content.
-- There are three values for the `popover` attribute: `auto` (default, same as none and ""), `manual` and `hint`.\
+- There are three values for the `popover` attribute: `auto` (default, same as no attribute value and empty ""), `manual` and `hint`.\
 (At this time, `hint` is implemented inconsistently, so recommend avoiding it.)
 - The default CSS for any `popover` is: `position: fixed`, `margin: auto` and `display: none` (if not `open`).
 - You can override any of this via CSS.
