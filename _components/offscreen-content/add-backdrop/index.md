@@ -1,5 +1,5 @@
 ---
-name: Offscreen Content - Add-Backdrop
+name: Offscreen Content - Add Backdrop
 layout: component
 html: true
 css: true
@@ -8,5 +8,5 @@ codepen: wBMPMVG
 baseline: ['backdrop']
 ---
 
-# Offscreen Content - Add-Backdrop
+# Offscreen Content - Add Backdrop
 Use `::backdrop` via CSS to create a native visual layer between your modal/popover/dialog element, no JS required.
