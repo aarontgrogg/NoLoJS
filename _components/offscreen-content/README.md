@@ -13,24 +13,13 @@ aka: Related Content
 > If you want to prevent layout shift as the scrollbar disappears/reappears, add this to your `html` CSS: `scrollbar-gutter: stable;`
 
 ## [Related Content](related-content)
-- JS: No
-- Baseline: [`popover`](https://webstatus.dev/features/popover)
-- CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
+Basic, native HTML "popover", created just by adding the `popover` attribute to an HTML element.
 
 ## [Add "close" button](add-close-button)
-- Add a "close" button to popover.
-- JS: No
-- Baseline: [`popovertargetaction`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#popovertargetaction)
-- CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
+Building on the above version, adding an explicit "close" button.
 
 ## [Add `::backdrop`](add-backdrop)
-- Add a `::backdrop` via CSS.
-- JS: No
-- Baseline: [`::backdrop`](https://webstatus.dev/features/backdrop)
-- CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
+Building on the above versions, adding a native CSS "backdrop" to the popover element.
 
 ## [Animate Open/Close](animate-open-close)
-- Animate the open/close states via CSS.
-- JS: No
-- Baseline: [`animations-css`](https://webstatus.dev/features/animations-css)
-- CodePen: https://codepen.io/aarontgrogg/pen/wBMPMVG
+Buliding on the above versions, adding some simple animation as the popover opens and closes.
