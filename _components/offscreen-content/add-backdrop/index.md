@@ -9,4 +9,4 @@ baseline: ['backdrop']
 ---
 
 # Offscreen Content - Add Backdrop
-Use `::backdrop` via CSS to create a native visual layer between your modal/popover/dialog element, no JS required.
+Use `::backdrop` via CSS to create a native visual layer between your offscreen content element and the page, no JS required.
