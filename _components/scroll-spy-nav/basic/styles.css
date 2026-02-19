@@ -5,6 +5,7 @@ figure.demo ul {
   a:target-current {
     /* Whatever style you wish to denote the "current target" */
     font-weight: bold;
+  }
 }
 
 /* Only used for the demo */
