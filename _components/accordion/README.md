@@ -20,3 +20,6 @@ aka: Expanding Content Panel
 
 ## [Animate Open/Close](animate-open-close)
 - Animate the open/close states using only CSS.
+
+## [Force Open](force-open)
+- Force all details panels openusing only CSS.
