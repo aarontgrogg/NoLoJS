@@ -8,7 +8,8 @@
   --article-margin: calc(var(--logo-height-large) + (var(--header-padding) * 2));
 }
 
-header {
+figure.demo {
+  & header {
   /* Fix to the top of the page, full-width */
   position: fixed;
   top: 0;
@@ -26,12 +27,12 @@ header {
   & svg {
     height: var(--logo-height-large);
   }
-}
 
-/* Give the content some breathing room for the fixed header */
-article {
-  /* The height of the logo, plus the header top & bottom padding */
-  margin-top: var(--article-margin);
+  /* Give the content some breathing room for the fixed header */
+  article {
+    /* The height of the logo, plus the header top & bottom padding */
+    margin-top: var(--article-margin);
+  }
 }
 
 /* Only apply if the user did NOT request reduced motion */
@@ -57,19 +58,21 @@ article {
     }
     
     /* Assign the animations to the elements */
-    svg {
-      animation: shrink-logo linear both;
-    }
-    h1 {
-      animation: shrink-title linear both;
-    }
-    
-    /* You have to assign the scroll animation to all of the elements that you plan to animate */
-    svg, h1 {
-      /* Passing nothing into `scroll()` will assign the animation to the document scroll */
-      animation-timeline: scroll();
-      /* 100px is a magic number; the animation will start at 0 and end at 100px; choose whatever numbers you want */
-      animation-range: 0 100px;
+    figure.demo {
+      svg {
+        animation: shrink-logo linear both;
+      }
+      h1 {
+        animation: shrink-title linear both;
+      }
+      
+      /* You have to assign the scroll animation to all of the elements that you plan to animate */
+      svg, h1 {
+        /* Passing nothing into `scroll()` will assign the animation to the document scroll */
+        animation-timeline: scroll();
+        /* 100px is a magic number; the animation will start at 0 and end at 100px; choose whatever numbers you want */
+        animation-range: 0 100px;
+      }
     }
     
   }
