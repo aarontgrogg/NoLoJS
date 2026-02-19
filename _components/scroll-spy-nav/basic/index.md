@@ -4,7 +4,7 @@ layout: component
 html: true
 css: true
 js: false
-codepen: GgoOqVX
+codepen: pvbdLaK
 baseline: ['scroll-target-group', 'scroll-marker-targets']
 ---
 
