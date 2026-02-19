@@ -1,5 +1,5 @@
 ---
-name: Scrolled Header Shadow
+name: Scroll - Header Shadow
 layout: component
 html: true
 css: true
@@ -8,5 +8,5 @@ codepen: azZLwWe
 baseline: ['container-scroll-state-queries']
 ---
 
-# Scrolled Header Shadow
+# Scroll - Header Shadow
 Update a component appearance based on the user's scroll action, all CSS, no JS required.
