@@ -9,6 +9,8 @@
 }
 
 figure.demo {
+  /* */
+  position: relative;
   & header {
   /* Fix to the top of the page, full-width */
   position: fixed;
@@ -59,15 +61,15 @@ figure.demo {
     
     /* Assign the animations to the elements */
     figure.demo {
-      svg {
+      & svg {
         animation: shrink-logo linear both;
       }
-      h1 {
+      & h1 {
         animation: shrink-title linear both;
       }
       
       /* You have to assign the scroll animation to all of the elements that you plan to animate */
-      svg, h1 {
+      & svg, h1 {
         /* Passing nothing into `scroll()` will assign the animation to the document scroll */
         animation-timeline: scroll();
         /* 100px is a magic number; the animation will start at 0 and end at 100px; choose whatever numbers you want */
