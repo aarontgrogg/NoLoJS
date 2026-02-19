@@ -9,7 +9,4 @@ aka: Auto-Updating Nav Tracking
 > This is another wonderful progressive enhancement! If `scroll-target-group` and `:target-current` are not supported, everything still works just fine, simply without some fancy decoration...
 
 ## [Basic](basic)
-- JS: No
-- Baseline: [`scroll-target-group`](https://webstatus.dev/features/scroll-target-group), 
-            [`:target-current`](https://webstatus.dev/features/scroll-marker-targets)
-- CodePen: https://codepen.io/aarontgrogg/pen/pvbdLaK
+A navigation menu that automatically highlights the current section of the page, as the user scrolls.
