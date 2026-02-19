@@ -4,7 +4,7 @@ layout: component
 html: true
 css: true
 js: false
-codepen: azZLwWe
+codepen: emzzVGR
 baseline: ['scroll-driven-animations', 'container-scroll-state-queries']
 ---
 
