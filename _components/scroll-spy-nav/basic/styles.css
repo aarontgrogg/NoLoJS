@@ -1,4 +1,4 @@
-ul {
+figure.demo ul {
   /* Identify the scroll group that the browser monitors */
   scroll-target-group: auto;
   /* And as <a> elements within that group come into frame, they are automatically treated as the "current target" */
@@ -8,7 +8,7 @@ ul {
 }
 
 /* Only used for the demo */
-.demo {
+figure.demo {
   max-height: 300px;
   overflow-y: scroll;
   display: grid;
