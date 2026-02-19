@@ -9,8 +9,6 @@ figure.demo ul {
 
 /* Only used for the demo */
 figure.demo {
-  max-height: 300px;
-  overflow-y: scroll;
   display: grid;
   grid-template-columns: 
     minmax(100px, 1fr) 
