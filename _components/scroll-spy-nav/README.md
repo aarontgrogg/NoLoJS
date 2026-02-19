@@ -1,4 +1,4 @@
-# Scroll Spy Nav Panel
+# Scroll - Spy
 
 aka: Auto-Updating Nav Tracking
 
@@ -8,5 +8,5 @@ aka: Auto-Updating Nav Tracking
 > [!INFO]
 > This is another wonderful progressive enhancement! If `scroll-target-group` and `:target-current` are not supported, everything still works just fine, simply without some fancy decoration...
 
-## [Basic](basic)
+## [Nav Menu](Nav Menu)
 A navigation menu that automatically highlights the current section of the page, as the user scrolls.
