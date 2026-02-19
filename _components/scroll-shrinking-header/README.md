@@ -1,10 +1,10 @@
-# Shrinking Header
+# Scroll - Shrinking Header
 
 aka: Fixed Header, Shrink on Scroll Header
 
-- No special HTML required, just need a header element that is `position: fixed;`
-- Adding CSS [`animation-timeline: scroll()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/scroll) to an HTML element along with a CSS animation that should happen as the user scrolls, 
-  creates a no-JavaScript "shrinking" header.
+- No special HTML required, just need a header element that is `position: fixed;` or  `position: sticky;`
+- Adding CSS [`animation-timeline: scroll()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/scroll)
+  to an HTML element along with a CSS animation that should happen as the user scrolls, creates a no-JavaScript "shrinking" header.
 
 > [!IMPORTANT]
 > Animation like this should always be placed within a `media` query that checks whether or not the user `prefers-reduced-motion`. \
@@ -15,9 +15,7 @@ aka: Fixed Header, Shrink on Scroll Header
 > Depending on what you are animating, it may be possible to have child elements respond to the parent container's size, meaning you would only need to animate the parent container's size!
 
 ## [Basic](basic)
-- JS: No
-- Baseline: [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline), [`scroll()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/scroll)
-- CodePen: https://codepen.io/aarontgrogg/pen/emzzVGR
+Update a component appearance based on the user's scroll action, all CSS, no JS required.
 
 ## Resources
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline
