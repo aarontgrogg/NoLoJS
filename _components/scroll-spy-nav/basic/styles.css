@@ -6,3 +6,22 @@ ul {
     /* Whatever style you wish to denote the "current target" */
     font-weight: bold;
 }
+
+/* Only used for the demo */
+.demo {
+  max-height: 300px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 
+    minmax(100px, 1fr) 
+    minmax(300px, 3fr);
+  gap: 2em;
+  ul {
+    position: sticky;
+    top: 0;
+  }
+  section {
+    padding-block-end: 1rem;
+    margin-block-end: 1rem;
+  }
+}
