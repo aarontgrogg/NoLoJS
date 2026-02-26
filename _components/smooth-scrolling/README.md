@@ -20,7 +20,5 @@
 > }
 > ```
 
-## [CSS](styles.css)
-- JS: No
-- Baseline: [`scroll-behavior`](https://webstatus.dev/features/scroll-behavior)
-- CodePen: https://codepen.io/aarontgrogg/pen/OPNovZR
+## [Basic](basic)
+One line of CSS allows the user to scroll "smoothly" to the target, rather than "jump" to it, no JS required.
