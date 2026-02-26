@@ -1,35 +1,33 @@
-/* Make these elements "sticky" */
-h2, nav, aside {
-  position: sticky;
-  top: 0;
-}
-/* Optionally reposition some elements */
-nav, aside {
-  top: 50px;
+/* Contain scope to only the demo section of the page */
+figure.demo {
+  /* Make these elements "sticky" */
+  h2, nav, aside {
+    position: sticky;
+    top: 0;
+  }
+  /* Optionally reposition some elements */
+  nav, aside {
+    top: 50px;
+  }
 }
 
 
 /** Only for the demo **/
-:root {
-  --green-dark: #34a0a4;
-  --green-med: #a1c9c9;
-  --green-light: #f6f7f1;
-}
-#container {
+.sticky-container {
   display: grid;
   grid-template-columns: 
     minmax(100px, 1fr) 
     minmax(300px, 3fr) 
     minmax(100px, 1fr);
   gap: 2em;
-}
-h2, nav ul, aside ul {
-  margin: 0;
-  padding: 0;
-  background-color: var(--green-med);
-  list-style: none;
-}
-h2, li {
-  padding: .25em;
-  border-bottom: 1px solid var(--green-dark);
+  h2, nav ul, aside ul {
+    margin: 0;
+    padding: 0;
+    background-color: #a1c9c9;
+    list-style: none;
+  }
+  h2, li {
+    padding: .25em;
+    border-bottom: 1px solid #34a0a4;
+  }
 }
