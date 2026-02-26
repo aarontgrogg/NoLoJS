@@ -1,11 +1,11 @@
- <!-- `popovertarget` on the `button` connects to the `id` on the `ul` -->
+ <!-- `popovertarget` on the `button` connects to the `id` on the `popover` -->
  <button popovertarget="menu">
     Toggle Menu
  </button>
-<nav>
-  <!-- This examples uses a "manual" popover, which requires an explicit close, using the same `id` for the `ul` -->
+<nav popover="manual" id="menu" role="menu">
+  <!-- This examples uses a "manual" popover, which requires an explicit close; use the same `id` for the `popover` -->
   <button popovertarget="menu" popovertargetaction="hide">Close</button>
-  <ul popover="manual" id="menu" role="menu">
+  <ul>
      <li>Nav option 1</li>
      <li>Nav option 2</li>
      <li>Nav option 3</li>
@@ -18,3 +18,8 @@
      <li>Nav option 10</li>
   </ul>
 </nav>
+<p>This content is meaningless, completely unnecessary for the component.</p>
+<p>However, it helps explain this variance.</p>
+<p>The page contains a navigation menu that is initially-offscreen.</p>
+<p>Clicking the button brings that component onscreen.</p>
+<p>All CSS, no JS required.</p>
