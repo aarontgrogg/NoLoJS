@@ -1,10 +1,11 @@
+ <!-- `popovertarget` on the `button` connects to the `id` on the `ul` -->
+ <button popovertarget="menu">
+    Toggle Menu
+ </button>
 <nav>
-   <!-- `popovertarget` on the `button` connects to... -->
-   <button popovertarget="menu">
-      Toggle Menu
-   </button>
-   <!-- ...the `id` on the `ul` -->
-   <ul popover id="menu" role="menu">
+  <!-- This examples uses a "manual" popover, which requires an explicit close, using the same `id` for the `ul` -->
+  <button popovertarget="menu" popovertargetaction="hide">Close</button>
+  <ul popover="manual" id="menu" role="menu">
      <li>Nav option 1</li>
      <li>Nav option 2</li>
      <li>Nav option 3</li>
@@ -15,5 +16,5 @@
      <li>Nav option 8</li>
      <li>Nav option 9</li>
      <li>Nav option 10</li>
-   </ul>
+  </ul>
 </nav>
