@@ -3,7 +3,7 @@
   --title-size-large: 3rem;
   --title-size-small: 1rem;
   --header-padding-large: 1rem;
-  --header-padding-small: .5rem;
+  --header-padding-small: .25rem;
   --article-margin: calc(var(--logo-height-large) + (var(--header-padding-large) * 2));
 }
 
