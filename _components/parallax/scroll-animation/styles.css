@@ -3,14 +3,9 @@
     position: relative;
     height: 50vh;
     overflow: clip;
-    display: grid;
-    grid-template: "container";
     place-items: center;
     place-content: center;
     text-align: center;
-    & > * {
-      grid-area: container;
-    }
     & img {
       max-width: 100vw;
     }
