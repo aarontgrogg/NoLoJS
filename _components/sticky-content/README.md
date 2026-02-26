@@ -10,7 +10,5 @@ aka: Sticky Headers, Floating Sidebar
 > There are [some "oddities"](https://frontendmasters.com/blog/the-weird-parts-of-position-sticky/) that you should be aware of. \
 > Also, `overflow: hidden` will prevent `position: sticky` from working; [use `overflow: clip` instead](https://gomakethings.com/the-overflow-hidden-property-and-sticky-headers/).
 
-## [CSS](styles.css)
-- JS: No
-- Baseline: [`sticky-positioning`](https://webstatus.dev/features/sticky-positioning)
-- CodePen: https://codepen.io/aarontgrogg/pen/RNaYByN
+## [Basic](basic)
+One line of CSS allows us to make an element scroll normally with the page, but then "stick" to the top of the browser window until its container scrolls out of the browser window, no JS required.
