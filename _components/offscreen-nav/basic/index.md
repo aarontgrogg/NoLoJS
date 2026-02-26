@@ -1,5 +1,5 @@
 ---
-name: Offscreen Nav - Nav Menu
+name: Offscreen Nav - Basic
 layout: component
 html: true
 css: true
@@ -8,5 +8,5 @@ codepen: wBMPMVG
 baseline: ['popover']
 ---
 
-# Offscreen Nav - Nav Menu
+# Offscreen Nav - Basic
 Add a `popover` attribute to any element to create a native HTML offscreen nav element that opens onscreen, no JS required.
