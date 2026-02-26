@@ -19,6 +19,8 @@ As HTML and CSS continue to mature, this collection should expand.
 > Most components have variations within the parent folder (for example, opening `css-carousels` reveals 8 variations within).\
 > And all components have a corresponding CodePen in the top-level `README` that demonstrates a working example.
 
+[The repo can be found on GitHub](https://github.com/aarontgrogg/NoLoJS/).
+
 ## Components
 <ul class="components multicolumn">
 {% for c in site.components %}
