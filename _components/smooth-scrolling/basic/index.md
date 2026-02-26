@@ -1,5 +1,5 @@
 ---
-name: Scroll - Smooth Scrolling
+name: Smooth Scrolling
 layout: component
 html: true
 css: true
@@ -8,5 +8,5 @@ codepen: OPNovZR
 baseline: ['scroll-behavior']
 ---
 
-# Scroll - Smooth Scrolling
+# Smooth Scrolling
 One line of CSS allows the user to scroll "smoothly" to the target, rather than "jump" to it, no JS required.
