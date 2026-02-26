@@ -155,9 +155,11 @@ img, video {
     margin: 0 auto;
 }
 
-/** Override default `figure` CSS **/
+/** Customize `figure` section **/
 figure.demo {
     margin: 0;
+    border: 1px solid var(--green-dark);
+    padding: 1rem;
 }
 
 /** Highlight overrides **/
