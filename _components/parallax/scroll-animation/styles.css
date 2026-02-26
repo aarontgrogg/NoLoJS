@@ -1,8 +1,30 @@
+/* Aligns content element over the media element, makes the demo look good... */
+.parallax-container {
+    height: 50vh;
+    display: grid;
+    grid-template: "container";
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    & > * {
+      grid-area: container;
+    }
+    & img {
+      max-width: 100vw;
+    }
+}
+.parallax-foreground {
+    color: rgba(255, 255, 255, .85);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .75);
+    text-transform: uppercase;
+}
+
 /* Only apply if the user did NOT request reduced motion */
 @media (prefers-reduced-motion: no-preference) {
   /* Create 3D animations */
-  /* Reduce the parallax "speed" by reducing the Y animation from/to "range". 
-     From -10% to -90% would create a much faster parallax effect.
+  /* Alter the parallax "speed" by reducing the "range" of the Y value's from/to:
+     Going from -50% to -55% would create a slower parallax effect.
+     Going from -10% to -90% would create a faster parallax effect.
   */
   /* Animation for background image */
   @keyframes parallax-image {
@@ -27,7 +49,7 @@
     view-timeline: --parallax-on-scroll;
     & > div {
       /* Initial position, to allow animation*/
-      position: fixed;
+      position: absolute;
       top: 50%;
       left: 50%;
       width: 100%;
@@ -43,10 +65,4 @@
   .parallax-foreground {
     animation: parallax-text linear both;
   }
-}
-/* The header and main elements need this to "overlap" the parallax background image */
-header,
-main {
-    position: relative;
-    z-index: 1;
 }
