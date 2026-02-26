@@ -1,6 +1,8 @@
 /* Aligns content element over the media element, makes the demo look good... */
 .parallax-container {
+    position: relative;
     height: 50vh;
+    overflow: clip;
     display: grid;
     grid-template: "container";
     place-items: center;
@@ -29,19 +31,19 @@
   /* Animation for background image */
   @keyframes parallax-image {
     from {
-      translate: -50% -50% 0;
+      translate: 0% -50% 0;
     }
     to {
-      translate: -50% -75% 0;
+      translate: 0% -75% 0;
     }
   }
   /* Animation for foreground text */
   @keyframes parallax-text {
     from {
-      translate: -50% 150% 0;
+      translate: 0% 150% 0;
     }
     to {
-      translate: -50% -250% 0;
+      translate: 0% -250% 0;
     }
   }
   /* Create 3D animation context */
@@ -51,7 +53,7 @@
       /* Initial position, to allow animation*/
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 0;
       width: 100%;
       /* Add timeline and range*/
       animation-timeline: --parallax-on-scroll;
