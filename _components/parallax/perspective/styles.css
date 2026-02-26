@@ -3,6 +3,8 @@ figure.demo {
     height: 50vh;
     overflow-x: clip;
     overflow-y: scroll;
+    /* Make the demo text easy to see */
+    color: white;
 }
 
 /* Aligns content element over the media element */
