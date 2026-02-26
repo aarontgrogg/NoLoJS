@@ -2,25 +2,23 @@ nav {
   /* Set as custom properties for consistency */
   --hidden: -100vw;
   --visible: 0;
-  ul {
-    /* Override User-Agent styles */
-    margin: 0; /* Prevents center/center */
-    border: 0; /* Kills fat black border */
-    /* Start offstage... */
-    translate: var(--hidden);
-    /* ... and move onstage when open */
-    &:popover-open {
-      translate: var(--visible);
-      @starting-style {
-        translate: var(--hidden);
-      }
+  /* Override User-Agent styles */
+  margin: 0; /* Prevents center/center */
+  border: 0; /* Kills fat black border */
+  /* Start offstage... */
+  translate: var(--hidden);
+  /* ... and move onstage when open */
+  &:popover-open {
+    translate: var(--visible);
+    @starting-style {
+      translate: var(--hidden);
     }
-    /* Add close button positioning */
-    position: relative;
-    & button {
-      position: absolute;
-      top: .5rem;
-      right: 1em;
-    }
+  }
+  /* Add close button positioning */
+  position: relative;
+  & button {
+    position: absolute;
+    top: .5rem;
+    right: 1em;
   }
 }
