@@ -1,12 +1,12 @@
 /* Contain scope to only the demo section of the page */
 figure.demo {
   /* Make these elements "sticky" */
-  h2, nav, aside {
+  h2, nav ul, aside ul {
     position: sticky;
     top: 0;
   }
   /* Optionally reposition some elements */
-  nav, aside {
+  nav ul, aside ul {
     top: 50px;
   }
 }
