@@ -14,11 +14,11 @@ nav {
       translate: var(--hidden);
     }
   }
-  /* Add close button positioning */
-  position: relative;
-  & button {
+  padding-top: 2rem; /* Make room for the "close" button */
+  position: relative; /* Add close button positioning */
+  & button { /* Position the button */
     position: absolute;
     top: .5rem;
-    right: 1em;
+    left: 1em;
   }
 }
