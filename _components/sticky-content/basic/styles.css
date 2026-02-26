@@ -1,5 +1,5 @@
 /* Make these elements "sticky" */
-header, nav, aside {
+h2, nav, aside {
   position: sticky;
   top: 0;
 }

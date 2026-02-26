@@ -1,10 +1,16 @@
+<p>This content is meaningless, completely unnecessary for the component.</p>
+<p>However, it helps demonstrate this variance of the "offscreen-content"...</p>
+<p>In this case, if the author were writing about something and had a bit of <em>related content</em> to share, 
+  but they didn't necessarily want to interrupt the article, they might offer that related content in an 
+  initially-offscreen component that interested readers could explicitly request, while others could simply ignore...</p>
+
 <!-- `popovertarget="related"` on the `button` connects to `id="related"` on the `aside` -->
 <button popovertarget="related">
-  Related Content
+  Learn More About This
 </button></p>
 <aside popover="manual" id="related">
   <p>This is the related content.</p>
   <p>It requires an explicit close action.</p>
-  <p>Click either the same "Related Content" button or the "Close Related Content" button below, to close it.</p>
+  <p>To close it, click either the same button that opened this or the "Close" button in this component.</p>
   <button popovertarget="related" popovertargetaction="hide">×</button>
 </aside>

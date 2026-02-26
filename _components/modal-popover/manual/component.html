@@ -5,8 +5,12 @@
 <dialog popover="manual" id="pop-manual">
   <h2>I'm <code>manual</code> Popover!</h2>
   <p>A <code>manual</code> popover can <strong>not</strong> be "light dismissed".</p>
-  <p>Opening a <code>manual</code> popover does <strong>not</strong> automatically close any other <code>manual</code> popovers that were open, but <em>will</em> close any <code>auto</code> popovers that were open.</p>
-  <p>Clicking the element that opened a <code>manual</code> popover a second time will close the popover that it opened.</p>
+  <p>Opening a <code>manual</code> popover does <strong>not</strong> automatically close any other <code>manual</code> popovers that were open, 
+    but <em>will</em> close any <code>auto</code> popovers that were open.</p>
+  <p>Clicking the element that opened a <code>manual</code> popover a second time will close the popover that it opened,
+    but clicking "outside" of the popover will <strong>not</strong>.</p>
+  <p>Therefore, you should include an explicit "close" button within the popover.</p>
   <p>The default CSS is initially `position: fixed` and hidden offscreen.</p>
   <p>When opened, the default CSS positions the popover center/center on screen.</p>
+  <button popovertarget="pop-manual" popovertargetaction="hide">Close</button>
 </dialog>

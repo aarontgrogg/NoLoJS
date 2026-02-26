@@ -1,0 +1,7 @@
+/* If you wish to re-position the popover via CSS... */
+dialog {
+  position: relative; /* Replaces the default position: fixed */
+  margin: 0; /* Remove the default center/center */
+  top: 10%;  /* Provide a different top/left */
+  left: 50%;  /* Provide a different top/left */
+}
