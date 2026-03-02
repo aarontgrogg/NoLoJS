@@ -5,7 +5,7 @@ html: true
 css: true
 js: false
 codepen: PwzJKVg
-baseline: ['scroll-marker-group', 'scroll-markers', 'scroll-snap', anchor-positioning', 'scroll-behavior']
+baseline: ['scroll-marker-group', 'scroll-markers', 'scroll-snap', 'anchor-positioning', 'scroll-behavior']
 ---
 
 # Tabs - Animated Content
