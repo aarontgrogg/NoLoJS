@@ -1,5 +1,5 @@
 ---
-name: Tabs - basic
+name: Tabs - Basic
 layout: component
 html: true
 css: true
@@ -8,5 +8,5 @@ codepen: PwzJKVg
 baseline: ['scroll-marker-group', 'scroll-markers', 'scroll-snap', anchor-positioning']
 ---
 
-# Tabs - basic
+# Tabs - Basic
 Using a combination of several CSS features allows us to make a tabbed content component, no JS required.
