@@ -1,4 +1,4 @@
-/* Media grid, aligns `video` element over `picture` element */
+/* This grid aligns the `.container--content` "over" the `.container--media` */
 .container--media-content {
   display: grid;
   grid-template: "media-content";
@@ -8,6 +8,7 @@
     grid-area: media-content;
   }
 }
+/* This grid aligns the `video` "over" the `picture/img` */
 .container--media {
   width: 100%;
   height: 100%;
