@@ -1,4 +1,4 @@
-/* Wrapper grid, aligns content over media */
+/* Media grid, aligns `video` element over `picture` element */
 .container--media-content {
   display: grid;
   grid-template: "media-content";
@@ -8,7 +8,6 @@
     grid-area: media-content;
   }
 }
-/* Media grid, aligns `picture` element over `video` element */
 .container--media {
   width: 100%;
   height: 100%;
@@ -19,6 +18,7 @@
   & > * {
     grid-area: media;
   }
+  /* Make sure video and image assets are the same size, so this aligns them perfectly */
   & img, video {
     display: block;
     width: 100%;
@@ -26,7 +26,21 @@
     object-fit: cover;
   }
 }
-/* Needed to retain accessibility to content, for CTA, etc. */
 .container--content {
+  /* Needed to retain accessibility to content, for CTA, etc. */
   position: relative;
+  /* For cosmetics */
+  padding: 4em;
+  background-color: rgb(from var(--green-light) r g b / .8);
+  color: var(--green-dark);
+  button {
+    border-radius: 4px;
+    border: 1px solid var(--green-med);
+    background-color: var(--green-dark);
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    color: var(--green-light);
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
