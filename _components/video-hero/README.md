@@ -13,11 +13,8 @@
 - No JS needed to check screen size and update asset URLs, so no waiting for LCP, and no related CLS when sizes change onscreen.
 
 ## [Content over `video`/`picture`](content-over-video-picture)
-- JS: No
-- Baseline: [`picture`](https://webstatus.dev/features/picture), 
-            [`video`](https://webstatus.dev/features/video), 
-            [`grid`](https://webstatus.dev/features/grid)
+Using CSS grid to position a video element "over" a picture element to serve as responsive placeholder images, no JS required.
 
 ## Resources
-- Explanation: https://aarontgrogg.com/blog/2026/01/06/improving-lcp-for-video-hero-components/
+- Explainer: https://aarontgrogg.com/blog/2026/01/06/improving-lcp-for-video-hero-components/
 - Demo: https://aarontgrogg.com/lab/video-hero-components/
