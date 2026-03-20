@@ -46,6 +46,7 @@ And here are a couple of fantastic all-around "no or low JS" resources:
 - [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic!)
 - [Utsav Meena](https://www.linkedin.com/in/utsavmeena/)
 - [Lionel Péramo](https://lionel-peramo.com)
+
 There are surely many more examples, so please contribute to this list!
 
 > [!NOTE]
