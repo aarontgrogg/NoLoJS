@@ -31,7 +31,7 @@ As HTML and CSS continue to mature, this collection should expand.
 
 ## Resources
 
-A lot of people have been writing on this topic for quite some time. Here are just a few (note, some are a bit dated now, so buyer-beware):
+A lot of people have been writing on this topic for quite some time. Here are just a few (note, some are a bit dated by now, so buyer-beware):
 - [You Don't Need JavaScript for That!](https://thoughtbot.com/blog/you-don-t-need-javascript-for-that) by [Cristina Silva](https://cristinasilva.co/) (2016-05)
 - [Less JavaScript](https://adactio.medium.com/less-javascript-70735cb87495) by [Jeremy Keith](http://adactio.com/) (2016-11)
 - [HTML and CSS techniques to reduce your JavaScript](https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/) by [Anthony Ricaud](https://ricaud.me/) (2020-12)
@@ -45,6 +45,7 @@ A lot of people have been writing on this topic for quite some time. Here are ju
 And here are a couple of fantastic all-around "no or low JS" resources:
 - [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic!)
 - [Utsav Meena](https://www.linkedin.com/in/utsavmeena/)
+- [Lionel Péramo](https://lionel-peramo.com)
 There are surely many more examples, so please contribute to this list!
 
 > [!NOTE]
@@ -72,5 +73,5 @@ and ideally a contact method, should there be questions.
 
 ## Contact
 
-If you'd like to just reach out to me for some reason, please feel free to do so via email (aarontgrogg@gmail.com) or any of the contact methods listed on [my GitHub profile](https://github.com/aarontgrogg).
+If you'd like to just reach out to me for some reason, please feel free to do so via email (aarontgrogg@gmail.com) or any of the contact methods listed on [my GitHub profile](https://github.com/aarontgrogg) or [my website](https://aarontgrogg.com/).
 
