@@ -1,0 +1,64 @@
+/* Once any filter item has been checked, initially hide all content items... */
+:has(:checked) li {
+  display: none;
+}
+/* ...then display only those that are checked:
+   If the `name="angular"` checkbox is checked, 
+   display any content item that has the CSS class of "angular", etc.
+*/
+:has([name="angular"]:checked) li.angular,
+:has([name="css"]:checked) li.css,
+:has([name="html"]:checked) li.html,
+:has([name="js"]:checked) li.js,
+:has([name="php"]:checked) li.php,
+:has([name="python"]:checked) li.python,
+:has([name="react"]:checked) li.react,
+:has([name="scss"]:checked) li.scss,
+:has([name="svelte"]:checked) li.svelte,
+:has([name="tailwind"]:checked) li.tailwind {
+  display: list-item;
+}
+
+
+/* Only for layout/cosmetics */
+:root {
+  --green-dark: #34a0a4;
+  --green-med: #a1c9c9;
+  --green-light: #f6f7f1;
+}
+body {
+  margin: 0;
+  background-color: var(--green-light);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 1rem;
+  padding-block-end: 100rem;
+}
+hr {
+  margin-block: 2em;
+}
+fieldset {
+  background-color: var(--green-med);
+  border: 1px solid var(--green-dark);
+}
+legend {
+  padding-block: 2px;
+  padding-inline: 8px;
+  background-color: var(--green-light);
+  border: 1px solid var(--green-dark);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+li {
+  flex: 1 1 200px;
+  padding-block: 2px;
+  padding-inline: 8px;
+  background-color: var(--green-med);
+  border: 1px solid var(--green-dark);
+}
