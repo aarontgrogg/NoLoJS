@@ -1,0 +1,68 @@
+<!-- List of labels and checkboxes for each filter option; note the `name` attribute here matches the CSS `class` below -->
+<fieldset>
+  <legend>Filter</legend>
+  <input id="angular" name="angular" type="checkbox">
+  <label for="angular">Angular</label>
+  <input id="css" name="css" type="checkbox">
+  <label for="css">CSS</label>
+  <input id="html" name="html" type="checkbox">
+  <label for="html">HTML</label>
+  <input id="js" name="js" type="checkbox">
+  <label for="js">JS</label>
+  <input id="php" name="php" type="checkbox">
+  <label for="php">PHP</label>
+  <input id="python" name="python" type="checkbox">
+  <label for="python">Python</label>
+  <input id="react" name="react" type="checkbox">
+  <label for="react">React</label>
+  <input id="scss" name="scss" type="checkbox">
+  <label for="scss">SCSS</label>
+  <input id="svelte" name="svelte" type="checkbox">
+  <label for="svelte">Svelte</label>
+  <input id="tailwind" name="tailwind" type="checkbox">
+  <label for="tailwind">Tailwind</label>
+</fieldset>
+
+<!-- Content that will be filtered; note the CSS `class` here matches the `name` attribute above -->
+<ul>
+  <li class="angular js">
+    <h3>Angular</h3>
+    <p>This card has both "angular" and "js" CSS classes, so once you have interacted with the filter, it should be visible if "Angular" <em>and/or</em> "JS" is checked.</p>
+  </li>
+  <li class="css">
+    <h3>CSS</h3>
+    <p>This card only has a "css" class, so once you have interacted with the filter, it should <em>only</em> be visible if "CSS" is checked.</p>
+  </li>
+  <li class="html">
+    <h3>HTML</h3>
+    <p>This card only has a "html" class, so once you have interacted with the filter, it should <em>only</em> be visible if "HTML" is checked.</p>
+  </li>
+  <li class="js">
+    <h3>JS</h3>
+    <p>This card only has a "js" class, so once you have interacted with the filter, it should <em>only</em> be visible if "JS" is checked.</p>
+  </li>
+  <li class="php">
+    <h3>PHP</h3>
+    <p>This card only has a "php" class, so once you have interacted with the filter, it should <em>only</em> be visible if "PHP" is checked.</p>
+  </li>
+  <li class="python">
+    <h3>Python</h3>
+    <p>This card only has a "python" class, so once you have interacted with the filter, it should <em>only</em> be visible if "Python" is checked.</p>
+  </li>
+  <li class="react js">
+    <h3>React</h3>
+    <p>This card has both "react" and "js" CSS classes, so once you have interacted with the filter, it should be visible if "React" <em>and/or</em> "JS" is checked.</p>
+  </li>
+  <li class="scss css">
+    <h3>SCSS</h3>
+    <p>This card has both "scss" and "css" CSS classes, so once you have interacted with the filter, it should be visible if "SCSS" <em>and/or</em> "CSS" is checked.</p>
+  </li>
+  <li class="svelte js">
+    <h3>Svelte</h3>
+    <p>This card has both "svelte" and "js" CSS classes, so once you have interacted with the filter, it should be visible if "Svelte" <em>and/or</em> "JS" is checked.</p>
+  </li>
+  <li class="tailwind css">
+    <h3>Tailwind</h3>
+    <p>This card has both "tailwind" and "css" CSS classes, so once you have interacted with the filter, it should be visible if "Tailwind" <em>and/or</em> "CSS" is checked.</p>
+  </li>
+</ul>
