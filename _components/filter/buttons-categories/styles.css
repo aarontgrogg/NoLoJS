@@ -1,0 +1,100 @@
+/** Used for the demo **/
+/* Hide all LIs if any LI is checked... */
+:has(:checked) section li {
+  display: none;
+}
+/* then display only those that are checked */
+:has([name="angular"]:checked) li:has([data-category="angular"]),
+:has([name="css"]:checked) li:has([data-category="css"]),
+:has([name="html"]:checked) li:has([data-category="html"]),
+:has([name="js"]:checked) li:has([data-category="js"]),
+:has([name="php"]:checked) li:has([data-category="php"]),
+:has([name="python"]:checked) li:has([data-category="python"]),
+:has([name="react"]:checked) li:has([data-category="react"]),
+:has([name="scss"]:checked) li:has([data-category="scss"]),
+:has([name="svelte"]:checked) li:has([data-category="svelte"]),
+:has([name="tailwind"]:checked) li:has([data-category="tailwind"]) {
+  display: list-item;
+}
+
+/* Only for comsetics */
+:root {
+  --green-dark: #34a0a4;
+  --green-med: #a1c9c9;
+  --green-light: #f6f7f1;
+}
+body {
+  margin: 0;
+  background-color: var(--green-light);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 1rem;
+  padding-block-end: 100rem;
+}
+hr {
+  margin-block: 2em;
+}
+fieldset {
+  background-color: var(--green-med);
+  border: 1px solid var(--green-dark);
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  li {
+    position: relative;
+  }
+  label {
+    position: relative;
+    padding-block: 2px;
+    padding-inline: 8px;
+    background-color: var(--green-light);
+    border: 1px solid var(--green-dark);
+  }
+  input {
+    position: absolute;
+  }
+  /* If any filter is checked, erduce opacity for all...*/
+  :has(:checked) li {
+    opacity: .25;
+  }
+  /* ... then restore opacity for whatever IS checked. */
+  :has(:checked) li:has(:checked) {
+    opacity: 1;
+  }
+}
+legend {
+  padding-block: 2px;
+  padding-inline: 8px;
+  background-color: var(--green-light);
+  border: 1px solid var(--green-dark);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+
+section {
+  ul {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  li {
+    flex: 1 1 200px;
+    padding-block: 2px;
+    padding-inline: 8px;
+    background-color: var(--green-med);
+    border: 1px solid var(--green-dark);
+  }
+  span {
+    margin: 2px;
+    padding: 2px 4px;
+    background-color: var(--green-light);
+    border: 1px solid var(--green-dark);
+    border-radius: 4px;
+    font-size: .8rem;
+  }
+}
