@@ -6,3 +6,6 @@
 
 ## [Basic](basic)
 A CSS-only content filter.
+
+## [Buttons & Categories](buttons-categories)
+A CSS-only content filter, making the filters look more like buttons, and showing based on "categories".
