@@ -57,11 +57,11 @@ If you'd like to add your favorite no- or lo-JS pattern, please submit a PR, and
   Each variation should have a brief description, list whether it is "No JS" or "Lo JS", link to Baseline or CanIUse for that feature, and ideally provide a working example via CodePen or similar.
   Example: Within the `accordion` pattern, [the `README.md`](https://github.com/aarontgrogg/NoLoJS/tree/main/accordion) states "aka: Expanding Content Panel", how it is 
   implemented and why that is a benefit, then lists (and links to) five variations of that pattern, including links to a CodePen for each.
-- Finally, within each variation, include a simple index.html, styles.css and script.js, each as needed, with _as little code as is required to make the pattern work_ (not an entire HTML document). 
-  Ideally code can be kept to a minimum, to help with clarity and to reduce confusion, but feel free to include comments if you think they will help the user better understand. 
+- Finally, within each variation, include a simple index.md, component.html, styles.css and script.js, each as needed, with _as little code as is required to make the pattern work_ (not an entire HTML document). 
+  Ideally code can be kept to a minimum, to increase clarity and reduce confusion, but feel free to include comments if you think they will help the user better understand. 
   Try to eliminate unnecessary fonts, colors, margins, padding, etc., unless it is crucial to making the pattern work.\
-  Example: [The `accordion` > `adjust-marker` pattern](https://github.com/aarontgrogg/NoLoJS/tree/main/accordion/adjust-marker) contains an 
-  [index.html](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/index.html) and [styles.css](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/styles.css) file, 
+  Example: [The `accordion` > `adjust-marker` pattern](https://github.com/aarontgrogg/NoLoJS/tree/main/accordion/adjust-marker) contains a 
+  [component.html](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/component.html) and [styles.css](https://github.com/aarontgrogg/NoLoJS/blob/main/accordion/adjust-marker/styles.css) file, 
   each with the minimal code needed to make the pattern work. The HTML file includes a comment that the heavy-lifting is handled in the CSS file, and the CSS file includes comments 
   explaining each various "bit" to the pattern.
 
