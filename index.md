@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Reduce the JS Workload with no- or lo-JS options
+# Reduce the JS Workload with No- or Lo-JS options
 
 > ***I have nothing against JS***, \
 > but it has better things to do \
