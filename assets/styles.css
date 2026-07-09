@@ -155,8 +155,9 @@ img, video {
     margin: 0 auto;
 }
 ul.components {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    container-type: inline-size;
+    column-width: 25ch;
+    column-gap: 3rem;
 }
 
 /** Customize `figure` section **/
