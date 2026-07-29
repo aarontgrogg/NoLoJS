@@ -43,7 +43,7 @@ A lot of people have been writing on this topic for quite some time. Here are ju
 - [Modern CSS Techniques That Replace JavaScript](https://medium.com/@muhammadhashir752/modern-css-techniques-that-replace-javascript-and-save-you-time-a9f6c595318a) by [Muhammad Hashir](https://www.linkedin.com/in/m-hashir) (2025-06)
 
 And here are a couple of fantastic all-around "no or low JS" resources:
-- [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic!)
+- [Theo Soti](https://theosoti.com/) (Theo even wrote [a book](https://theosoti.com/you-dont-need-js/) about this topic, and created [CSS Radar](https://cssradar.com/) to help find patterns that could be replaced with no or low JS!)
 - [Utsav Meena](https://www.linkedin.com/in/utsavmeena/)
 - [Lionel Péramo](https://lionel-peramo.com)
 
